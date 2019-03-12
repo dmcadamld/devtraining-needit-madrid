@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Addresses_for_Country_Format_Extension_Request bsvc:version="${Put_Addresses_for_Country_Format_Extension_Request}">
+         <bsvc:Address_Reference bsvc:Descriptor="${Put_Addresses_for_Country_Format_Extension_Request.Address_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Address_Reference.ID}">${Address_Reference.ID}</bsvc:ID>
+         </bsvc:Address_Reference>
+         <!--1 or more repetitions:-->
+         <bsvc:Address_Data>
+            <!--Optional:-->
+            <bsvc:Address_Line_1>${Address_Data.Address_Line_1}</bsvc:Address_Line_1>
+            <!--Optional:-->
+            <bsvc:Address_Line_2>${Address_Data.Address_Line_2}</bsvc:Address_Line_2>
+            <!--Optional:-->
+            <bsvc:Address_Line_3>${Address_Data.Address_Line_3}</bsvc:Address_Line_3>
+            <!--Optional:-->
+            <bsvc:Address_Line_4>${Address_Data.Address_Line_4}</bsvc:Address_Line_4>
+            <!--Optional:-->
+            <bsvc:Address_Line_5>${Address_Data.Address_Line_5}</bsvc:Address_Line_5>
+            <!--Optional:-->
+            <bsvc:Address_Line_6>${Address_Data.Address_Line_6}</bsvc:Address_Line_6>
+            <!--Optional:-->
+            <bsvc:Address_Line_7>${Address_Data.Address_Line_7}</bsvc:Address_Line_7>
+            <!--Optional:-->
+            <bsvc:Address_Line_8>${Address_Data.Address_Line_8}</bsvc:Address_Line_8>
+            <!--Optional:-->
+            <bsvc:Address_Line_9>${Address_Data.Address_Line_9}</bsvc:Address_Line_9>
+            <!--Optional:-->
+            <bsvc:City>${Address_Data.City}</bsvc:City>
+            <!--Optional:-->
+            <bsvc:City_Subdivision_1>${Address_Data.City_Subdivision_1}</bsvc:City_Subdivision_1>
+            <!--Optional:-->
+            <bsvc:City_Subdivision_2>${Address_Data.City_Subdivision_2}</bsvc:City_Subdivision_2>
+            <!--Optional:-->
+            <bsvc:Country_Region_Reference bsvc:Descriptor="${Address_Data.Country_Region_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Country_Region_Reference.ID}">${Country_Region_Reference.ID}</bsvc:ID>
+            </bsvc:Country_Region_Reference>
+            <!--Optional:-->
+            <bsvc:Region_Subdivision_1>${Address_Data.Region_Subdivision_1}</bsvc:Region_Subdivision_1>
+            <!--Optional:-->
+            <bsvc:Region_Subdivision_2>${Address_Data.Region_Subdivision_2}</bsvc:Region_Subdivision_2>
+            <!--Optional:-->
+            <bsvc:Postal_Code>${Address_Data.Postal_Code}</bsvc:Postal_Code>
+            <!--Optional:-->
+            <bsvc:Country_Reference bsvc:Descriptor="${Address_Data.Country_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+            </bsvc:Country_Reference>
+            <!--Optional:-->
+            <bsvc:Address_Line_1_-_Local>${Address_Data.Address_Line_1_-_Local}</bsvc:Address_Line_1_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_2_-_Local>${Address_Data.Address_Line_2_-_Local}</bsvc:Address_Line_2_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_3_-_Local>${Address_Data.Address_Line_3_-_Local}</bsvc:Address_Line_3_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_4_-_Local>${Address_Data.Address_Line_4_-_Local}</bsvc:Address_Line_4_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_5_-_Local>${Address_Data.Address_Line_5_-_Local}</bsvc:Address_Line_5_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_6_-_Local>${Address_Data.Address_Line_6_-_Local}</bsvc:Address_Line_6_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_7_-_Local>${Address_Data.Address_Line_7_-_Local}</bsvc:Address_Line_7_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_8_-_Local>${Address_Data.Address_Line_8_-_Local}</bsvc:Address_Line_8_-_Local>
+            <!--Optional:-->
+            <bsvc:Address_Line_9_-_Local>${Address_Data.Address_Line_9_-_Local}</bsvc:Address_Line_9_-_Local>
+            <!--Optional:-->
+            <bsvc:City_-_Local>${Address_Data.City_-_Local}</bsvc:City_-_Local>
+            <!--Optional:-->
+            <bsvc:City_Subdivision_1_-_Local>${Address_Data.City_Subdivision_1_-_Local}</bsvc:City_Subdivision_1_-_Local>
+            <!--Optional:-->
+            <bsvc:City_Subdivision_2_-_Local>${Address_Data.City_Subdivision_2_-_Local}</bsvc:City_Subdivision_2_-_Local>
+            <!--Optional:-->
+            <bsvc:Region_Subdivision_1_-_Local>${Address_Data.Region_Subdivision_1_-_Local}</bsvc:Region_Subdivision_1_-_Local>
+            <!--Optional:-->
+            <bsvc:Region_Subdivision_2_-_Local>${Address_Data.Region_Subdivision_2_-_Local}</bsvc:Region_Subdivision_2_-_Local>
+         </bsvc:Address_Data>
+      </bsvc:Put_Addresses_for_Country_Format_Extension_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Addresses_for_Country_Format_Extension</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Addresses_for_Country_Format_Extension ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:24</sys_created_on>
+        <sys_id>dbd429994f003300f94a00fe9310c75f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Addresses_for_Country_Format_Extension</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_dbd429994f003300f94a00fe9310c75f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:24</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

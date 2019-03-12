@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Committee_Meeting_Request bsvc:Add_Only="${Put_Committee_Meeting_Request}" bsvc:version="${Put_Committee_Meeting_Request}">
+         <!--Optional:-->
+         <bsvc:Committee_Meeting_Reference bsvc:Descriptor="${Put_Committee_Meeting_Request.Committee_Meeting_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Committee_Meeting_Reference.ID}">${Committee_Meeting_Reference.ID}</bsvc:ID>
+         </bsvc:Committee_Meeting_Reference>
+         <bsvc:Committee_Meeting_Data>
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_ID>${Committee_Meeting_Data.Committee_Meeting_ID}</bsvc:Committee_Meeting_ID>
+            <bsvc:Committee_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Reference.ID}">${Committee_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Reference>
+            <bsvc:Committee_Meeting_Status_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Meeting_Status_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Meeting_Status_Reference.ID}">${Committee_Meeting_Status_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Meeting_Status_Reference>
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_Host>${Committee_Meeting_Data.Committee_Meeting_Host}</bsvc:Committee_Meeting_Host>
+            <bsvc:Committee_Meeting_Type_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Meeting_Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Meeting_Type_Reference.ID}">${Committee_Meeting_Type_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Meeting_Type_Reference>
+            <bsvc:Committee_Meeting_Subject>${Committee_Meeting_Data.Committee_Meeting_Subject}</bsvc:Committee_Meeting_Subject>
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_Abstract>${Committee_Meeting_Data.Committee_Meeting_Abstract}</bsvc:Committee_Meeting_Abstract>
+            <bsvc:Committee_Meeting_Date>${Committee_Meeting_Data.Committee_Meeting_Date}</bsvc:Committee_Meeting_Date>
+            <bsvc:Committee_Meeting_Time>${Committee_Meeting_Data.Committee_Meeting_Time}</bsvc:Committee_Meeting_Time>
+            <bsvc:Committee_Meeting_Time_Zone_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Meeting_Time_Zone_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Meeting_Time_Zone_Reference.ID}">${Committee_Meeting_Time_Zone_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Meeting_Time_Zone_Reference>
+            <bsvc:Duration_in_Hours>${Committee_Meeting_Data.Duration_in_Hours}</bsvc:Duration_in_Hours>
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_Location>${Committee_Meeting_Data.Committee_Meeting_Location}</bsvc:Committee_Meeting_Location>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_Invite_All_Members>${Committee_Meeting_Data.Committee_Meeting_Invite_All_Members}</bsvc:Committee_Meeting_Invite_All_Members>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Member_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Member_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Member_Reference.ID}">${Committee_Member_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Member_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Meeting_Attendee_Reference bsvc:Descriptor="${Committee_Meeting_Data.Committee_Meeting_Attendee_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Meeting_Attendee_Reference.ID}">${Committee_Meeting_Attendee_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Meeting_Attendee_Reference>
+            <!--Optional:-->
+            <bsvc:Committee_Meeting_Minutes_Data>
+               <!--Optional:-->
+               <bsvc:Minutes_Reference bsvc:Descriptor="${Committee_Meeting_Minutes_Data.Minutes_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Minutes_Reference.ID}">${Minutes_Reference.ID}</bsvc:ID>
+               </bsvc:Minutes_Reference>
+               <!--Optional:-->
+               <bsvc:Details>${Committee_Meeting_Minutes_Data.Details}</bsvc:Details>
+               <!--Optional:-->
+               <bsvc:Committee_Meeting_Minutes_ID>${Committee_Meeting_Minutes_Data.Committee_Meeting_Minutes_ID}</bsvc:Committee_Meeting_Minutes_ID>
+            </bsvc:Committee_Meeting_Minutes_Data>
+            <!--Optional:-->
+            <bsvc:Attachments>
+               <!--Zero or more repetitions:-->
+               <bsvc:Committee_Meeting_Attachment_Data>
+                  <!--Optional:-->
+                  <bsvc:Attachment_Reference bsvc:Descriptor="${Committee_Meeting_Attachment_Data.Attachment_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Attachment_Reference.ID}">${Attachment_Reference.ID}</bsvc:ID>
+                  </bsvc:Attachment_Reference>
+                  <!--Optional:-->
+                  <bsvc:ID>${Committee_Meeting_Attachment_Data.ID}</bsvc:ID>
+                  <bsvc:Filename>${Committee_Meeting_Attachment_Data.Filename}</bsvc:Filename>
+                  <!--Optional:-->
+                  <bsvc:Comment>${Committee_Meeting_Attachment_Data.Comment}</bsvc:Comment>
+                  <!--Optional:-->
+                  <bsvc:File>cid:1207293647642</bsvc:File>
+               </bsvc:Committee_Meeting_Attachment_Data>
+            </bsvc:Attachments>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Meeting_Action_Item_Data bsvc:Delete="${Committee_Meeting_Data.Committee_Meeting_Action_Item_Data}" bsvc:Add_Only="${Committee_Meeting_Data.Committee_Meeting_Action_Item_Data}">
+               <!--Optional:-->
+               <bsvc:Action_Item_Reference bsvc:Descriptor="${Committee_Meeting_Action_Item_Data.Action_Item_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Action_Item_Reference.ID}">${Action_Item_Reference.ID}</bsvc:ID>
+               </bsvc:Action_Item_Reference>
+               <!--Optional:-->
+               <bsvc:Action_Item_ID>${Committee_Meeting_Action_Item_Data.Action_Item_ID}</bsvc:Action_Item_ID>
+               <bsvc:Item>${Committee_Meeting_Action_Item_Data.Item}</bsvc:Item>
+               <!--Zero or more repetitions:-->
+               <bsvc:Assignee_Reference bsvc:Descriptor="${Committee_Meeting_Action_Item_Data.Assignee_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Assignee_Reference.ID}">${Assignee_Reference.ID}</bsvc:ID>
+               </bsvc:Assignee_Reference>
+               <!--Optional:-->
+               <bsvc:Details>${Committee_Meeting_Action_Item_Data.Details}</bsvc:Details>
+               <!--Optional:-->
+               <bsvc:Complete>${Committee_Meeting_Action_Item_Data.Complete}</bsvc:Complete>
+            </bsvc:Committee_Meeting_Action_Item_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Meeting_Agenda_Item_Data bsvc:Delete_Only="${Committee_Meeting_Data.Committee_Meeting_Agenda_Item_Data}" bsvc:Add_Only="${Committee_Meeting_Data.Committee_Meeting_Agenda_Item_Data}">
+               <!--Optional:-->
+               <bsvc:Agenda_Item_Reference bsvc:Descriptor="${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Agenda_Item_Reference.ID}">${Agenda_Item_Reference.ID}</bsvc:ID>
+               </bsvc:Agenda_Item_Reference>
+               <!--Optional:-->
+               <bsvc:Agenda_Item_ID>${Committee_Meeting_Agenda_Item_Data.Agenda_Item_ID}</bsvc:Agenda_Item_ID>
+               <bsvc:Agenda_Item_Number>${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Number}</bsvc:Agenda_Item_Number>
+               <bsvc:Agenda_Item_Description>${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Description}</bsvc:Agenda_Item_Description>
+               <bsvc:Committee_Meeting_Agenda_Item_Type_Reference bsvc:Descriptor="${Committee_Meeting_Agenda_Item_Data.Committee_Meeting_Agenda_Item_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Committee_Meeting_Agenda_Item_Type_Reference.ID}">${Committee_Meeting_Agenda_Item_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Committee_Meeting_Agenda_Item_Type_Reference>
+               <!--Optional:-->
+               <bsvc:Agenda_Item_Presenter>${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Presenter}</bsvc:Agenda_Item_Presenter>
+               <!--Optional:-->
+               <bsvc:Agenda_Item_Details>${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Details}</bsvc:Agenda_Item_Details>
+               <!--Optional:-->
+               <bsvc:Related_Academic_Appointment_Event_Reference bsvc:Descriptor="${Committee_Meeting_Agenda_Item_Data.Related_Academic_Appointment_Event_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Related_Academic_Appointment_Event_Reference.ID}">${Related_Academic_Appointment_Event_Reference.ID}</bsvc:ID>
+               </bsvc:Related_Academic_Appointment_Event_Reference>
+               <!--Optional:-->
+               <bsvc:Agenda_Item_Minutes_Data>
+                  <!--Optional:-->
+                  <bsvc:Minutes_Reference bsvc:Descriptor="${Agenda_Item_Minutes_Data.Minutes_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Minutes_Reference.ID}">${Minutes_Reference.ID}</bsvc:ID>
+                  </bsvc:Minutes_Reference>
+                  <!--Optional:-->
+                  <bsvc:Details>${Agenda_Item_Minutes_Data.Details}</bsvc:Details>
+                  <!--Optional:-->
+                  <bsvc:Committee_Meeting_Minutes_ID>${Agenda_Item_Minutes_Data.Committee_Meeting_Minutes_ID}</bsvc:Committee_Meeting_Minutes_ID>
+               </bsvc:Agenda_Item_Minutes_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Agenda_Item_Action_Item_Data bsvc:Delete="${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Action_Item_Data}" bsvc:Add_Only="${Committee_Meeting_Agenda_Item_Data.Agenda_Item_Action_Item_Data}">
+                  <!--Optional:-->
+                  <bsvc:Action_Item_Reference bsvc:Descriptor="${Agenda_Item_Action_Item_Data.Action_Item_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Action_Item_Reference.ID}">${Action_Item_Reference.ID}</bsvc:ID>
+                  </bsvc:Action_Item_Reference>
+                  <!--Optional:-->
+                  <bsvc:Action_Item_ID>${Agenda_Item_Action_Item_Data.Action_Item_ID}</bsvc:Action_Item_ID>
+                  <bsvc:Item>${Agenda_Item_Action_Item_Data.Item}</bsvc:Item>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Assignee_Reference bsvc:Descriptor="${Agenda_Item_Action_Item_Data.Assignee_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Assignee_Reference.ID}">${Assignee_Reference.ID}</bsvc:ID>
+                  </bsvc:Assignee_Reference>
+                  <!--Optional:-->
+                  <bsvc:Details>${Agenda_Item_Action_Item_Data.Details}</bsvc:Details>
+                  <!--Optional:-->
+                  <bsvc:Complete>${Agenda_Item_Action_Item_Data.Complete}</bsvc:Complete>
+               </bsvc:Agenda_Item_Action_Item_Data>
+               <!--Optional:-->
+               <bsvc:Attachments>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Committee_Meeting_Agenda_Item_Attachment_Data>
+                     <!--Optional:-->
+                     <bsvc:Attachment_Reference bsvc:Descriptor="${Committee_Meeting_Agenda_Item_Attachment_Data.Attachment_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Attachment_Reference.ID}">${Attachment_Reference.ID}</bsvc:ID>
+                     </bsvc:Attachment_Reference>
+                     <!--Optional:-->
+                     <bsvc:ID>${Committee_Meeting_Agenda_Item_Attachment_Data.ID}</bsvc:ID>
+                     <bsvc:Filename>${Committee_Meeting_Agenda_Item_Attachment_Data.Filename}</bsvc:Filename>
+                     <!--Optional:-->
+                     <bsvc:Comment>${Committee_Meeting_Agenda_Item_Attachment_Data.Comment}</bsvc:Comment>
+                     <!--Optional:-->
+                     <bsvc:File>cid:386862270187</bsvc:File>
+                  </bsvc:Committee_Meeting_Agenda_Item_Attachment_Data>
+               </bsvc:Attachments>
+               <!--Zero or more repetitions:-->
+               <bsvc:Committee_Meeting_Agenda_Item_Vote bsvc:Add_Only="${Committee_Meeting_Agenda_Item_Data.Committee_Meeting_Agenda_Item_Vote}">
+                  <!--Optional:-->
+                  <bsvc:Agenda_Item_Vote_Reference bsvc:Descriptor="${Committee_Meeting_Agenda_Item_Vote.Agenda_Item_Vote_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Agenda_Item_Vote_Reference.ID}">${Agenda_Item_Vote_Reference.ID}</bsvc:ID>
+                  </bsvc:Agenda_Item_Vote_Reference>
+                  <!--Optional:-->
+                  <bsvc:Passing_Vote>${Committee_Meeting_Agenda_Item_Vote.Passing_Vote}</bsvc:Passing_Vote>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Committee_Meeting_Vote_Record_Data_Subedit bsvc:Add_Only="${Committee_Meeting_Agenda_Item_Vote.Committee_Meeting_Vote_Record_Data_Subedit}" bsvc:Delete="${Committee_Meeting_Agenda_Item_Vote.Committee_Meeting_Vote_Record_Data_Subedit}">
+                     <!--Optional:-->
+                     <bsvc:Agenda_Item_Vote_Record_Reference bsvc:Descriptor="${Committee_Meeting_Vote_Record_Data_Subedit.Agenda_Item_Vote_Record_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Agenda_Item_Vote_Record_Reference.ID}">${Agenda_Item_Vote_Record_Reference.ID}</bsvc:ID>
+                     </bsvc:Agenda_Item_Vote_Record_Reference>
+                     <!--Optional:-->
+                     <bsvc:Vote_Status_Reference bsvc:Descriptor="${Committee_Meeting_Vote_Record_Data_Subedit.Vote_Status_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Vote_Status_Reference.ID}">${Vote_Status_Reference.ID}</bsvc:ID>
+                     </bsvc:Vote_Status_Reference>
+                     <!--Optional:-->
+                     <bsvc:Vote_Count>${Committee_Meeting_Vote_Record_Data_Subedit.Vote_Count}</bsvc:Vote_Count>
+                  </bsvc:Committee_Meeting_Vote_Record_Data_Subedit>
+               </bsvc:Committee_Meeting_Agenda_Item_Vote>
+            </bsvc:Committee_Meeting_Agenda_Item_Data>
+         </bsvc:Committee_Meeting_Data>
+      </bsvc:Put_Committee_Meeting_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Committee_Meeting</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Committee_Meeting ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:32</sys_created_on>
+        <sys_id>99e469994f003300f94a00fe9310c719</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Committee_Meeting</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_99e469994f003300f94a00fe9310c719</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

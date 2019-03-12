@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:DaaS_Star_Fleet_Request bsvc:version="${DaaS_Star_Fleet_Request}">
+         <!--Optional:-->
+         <bsvc:Star_Fleet_Name>${DaaS_Star_Fleet_Request.Star_Fleet_Name}</bsvc:Star_Fleet_Name>
+         <!--Optional:-->
+         <bsvc:Star_Fleet_Description>${DaaS_Star_Fleet_Request.Star_Fleet_Description}</bsvc:Star_Fleet_Description>
+         <!--Zero or more repetitions:-->
+         <bsvc:Star_Fleet_Mission>
+            <!--Optional:-->
+            <bsvc:Name>${Star_Fleet_Mission.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Description>${Star_Fleet_Mission.Description}</bsvc:Description>
+            <!--Optional:-->
+            <bsvc:Costs>${Star_Fleet_Mission.Costs}</bsvc:Costs>
+            <!--Optional:-->
+            <bsvc:Concluded>${Star_Fleet_Mission.Concluded}</bsvc:Concluded>
+            <!--Optional:-->
+            <bsvc:Start_Date>${Star_Fleet_Mission.Start_Date}</bsvc:Start_Date>
+            <!--Optional:-->
+            <bsvc:Currency_Reference bsvc:Descriptor="${Star_Fleet_Mission.Currency_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Currency_Reference.ID}">${Currency_Reference.ID}</bsvc:ID>
+            </bsvc:Currency_Reference>
+            <!--Optional:-->
+            <bsvc:Distance_Traveled>${Star_Fleet_Mission.Distance_Traveled}</bsvc:Distance_Traveled>
+            <!--Optional:-->
+            <bsvc:Planet_Reference bsvc:Descriptor="${Star_Fleet_Mission.Planet_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Planet_Reference.ID}">${Planet_Reference.ID}</bsvc:ID>
+            </bsvc:Planet_Reference>
+            <!--Optional:-->
+            <bsvc:Objective_Reference bsvc:Descriptor="${Star_Fleet_Mission.Objective_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Objective_Reference.ID}">${Objective_Reference.ID}</bsvc:ID>
+            </bsvc:Objective_Reference>
+            <!--Optional:-->
+            <bsvc:Scope_Reference bsvc:Descriptor="${Star_Fleet_Mission.Scope_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Scope_Reference.ID}">${Scope_Reference.ID}</bsvc:ID>
+            </bsvc:Scope_Reference>
+         </bsvc:Star_Fleet_Mission>
+         <!--Zero or more repetitions:-->
+         <bsvc:Squadron>
+            <!--Optional:-->
+            <bsvc:Name>${Squadron.Name}</bsvc:Name>
+            <!--Zero or more repetitions:-->
+            <bsvc:Personnel>
+               <!--Optional:-->
+               <bsvc:Name>${Personnel.Name}</bsvc:Name>
+               <!--Optional:-->
+               <bsvc:Hire_Date>${Personnel.Hire_Date}</bsvc:Hire_Date>
+               <!--Optional:-->
+               <bsvc:Termination_Date>${Personnel.Termination_Date}</bsvc:Termination_Date>
+               <!--Optional:-->
+               <bsvc:Personnel_Type_Reference bsvc:Descriptor="${Personnel.Personnel_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Personnel_Type_Reference.ID}">${Personnel_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Personnel_Type_Reference>
+               <!--Optional:-->
+               <bsvc:Personnel_Gender_Reference bsvc:Descriptor="${Personnel.Personnel_Gender_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Personnel_Gender_Reference.ID}">${Personnel_Gender_Reference.ID}</bsvc:ID>
+               </bsvc:Personnel_Gender_Reference>
+            </bsvc:Personnel>
+         </bsvc:Squadron>
+      </bsvc:DaaS_Star_Fleet_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>DaaS_Star_Fleet</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ DaaS_Star_Fleet ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:26</sys_created_on>
+        <sys_id>01c2b68f4f372300f94a00fe9310c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DaaS_Star_Fleet</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_01c2b68f4f372300f94a00fe9310c798</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:26</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

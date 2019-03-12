@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Get_Work_Shifts_Request bsvc:version="${Get_Work_Shifts_Request}">
+         <!--Optional:-->
+         <bsvc:Request_References>
+            <!--Zero or more repetitions:-->
+            <bsvc:Work_Shift_Reference bsvc:Descriptor="${Request_References.Work_Shift_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Work_Shift_Reference.ID}">${Work_Shift_Reference.ID}</bsvc:ID>
+            </bsvc:Work_Shift_Reference>
+         </bsvc:Request_References>
+         <!--Optional:-->
+         <bsvc:Response_Filter>
+            <!--Optional:-->
+            <bsvc:As_Of_Effective_Date>${Response_Filter.As_Of_Effective_Date}</bsvc:As_Of_Effective_Date>
+            <!--Optional:-->
+            <bsvc:As_Of_Entry_DateTime>${Response_Filter.As_Of_Entry_DateTime}</bsvc:As_Of_Entry_DateTime>
+            <!--Optional:-->
+            <bsvc:Page>${Response_Filter.Page}</bsvc:Page>
+            <!--Optional:-->
+            <bsvc:Count>${Response_Filter.Count}</bsvc:Count>
+         </bsvc:Response_Filter>
+      </bsvc:Get_Work_Shifts_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Get_Work_Shifts</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Get_Work_Shifts ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:16</sys_created_on>
+        <sys_id>76b2768f4f372300f94a00fe9310c7e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get_Work_Shifts</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_76b2768f4f372300f94a00fe9310c7e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:16</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

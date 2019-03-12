@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Job_Profile_Request bsvc:Add_Only="${Put_Job_Profile_Request}" bsvc:version="${Put_Job_Profile_Request}">
+         <!--Optional:-->
+         <bsvc:Job_Profile_Reference bsvc:Descriptor="${Put_Job_Profile_Request.Job_Profile_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Job_Profile_Reference.ID}">${Job_Profile_Reference.ID}</bsvc:ID>
+         </bsvc:Job_Profile_Reference>
+         <bsvc:Job_Profile_Data>
+            <!--Optional:-->
+            <bsvc:Job_Code>${Job_Profile_Data.Job_Code}</bsvc:Job_Code>
+            <!--Optional:-->
+            <bsvc:Effective_Date>${Job_Profile_Data.Effective_Date}</bsvc:Effective_Date>
+            <!--Optional:-->
+            <bsvc:Job_Profile_Basic_Data>
+               <!--Optional:-->
+               <bsvc:Inactive>${Job_Profile_Basic_Data.Inactive}</bsvc:Inactive>
+               <!--Optional:-->
+               <bsvc:Job_Title>${Job_Profile_Basic_Data.Job_Title}</bsvc:Job_Title>
+               <!--Optional:-->
+               <bsvc:Include_Job_Code_in_Name>${Job_Profile_Basic_Data.Include_Job_Code_in_Name}</bsvc:Include_Job_Code_in_Name>
+               <!--Optional:-->
+               <bsvc:Job_Profile_Private_Title>${Job_Profile_Basic_Data.Job_Profile_Private_Title}</bsvc:Job_Profile_Private_Title>
+               <!--Optional:-->
+               <bsvc:Job_Profile_Summary>${Job_Profile_Basic_Data.Job_Profile_Summary}</bsvc:Job_Profile_Summary>
+               <!--Optional:-->
+               <bsvc:Job_Description>${Job_Profile_Basic_Data.Job_Description}</bsvc:Job_Description>
+               <!--Optional:-->
+               <bsvc:Additional_Job_Description>${Job_Profile_Basic_Data.Additional_Job_Description}</bsvc:Additional_Job_Description>
+               <!--Optional:-->
+               <bsvc:Work_Shift_Required>${Job_Profile_Basic_Data.Work_Shift_Required}</bsvc:Work_Shift_Required>
+               <!--Optional:-->
+               <bsvc:Public_Job>${Job_Profile_Basic_Data.Public_Job}</bsvc:Public_Job>
+               <!--Optional:-->
+               <bsvc:Management_Level_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Management_Level_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Management_Level_Reference.ID}">${Management_Level_Reference.ID}</bsvc:ID>
+               </bsvc:Management_Level_Reference>
+               <!--Optional:-->
+               <bsvc:Job_Category_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Job_Category_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Category_Reference.ID}">${Job_Category_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Category_Reference>
+               <!--Optional:-->
+               <bsvc:Job_Level_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Job_Level_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Level_Reference.ID}">${Job_Level_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Level_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Job_Family_Data bsvc:Delete="${Job_Profile_Basic_Data.Job_Family_Data}">
+                  <bsvc:Job_Family_Reference bsvc:Descriptor="${Job_Family_Data.Job_Family_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Job_Family_Reference.ID}">${Job_Family_Reference.ID}</bsvc:ID>
+                  </bsvc:Job_Family_Reference>
+               </bsvc:Job_Family_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Company_Insider_Data bsvc:Delete="${Job_Profile_Basic_Data.Company_Insider_Data}">
+                  <bsvc:Company_Insider_Type_Reference bsvc:Descriptor="${Company_Insider_Data.Company_Insider_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Company_Insider_Type_Reference.ID}">${Company_Insider_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Company_Insider_Type_Reference>
+               </bsvc:Company_Insider_Data>
+               <!--Optional:-->
+               <bsvc:Referral_Payment_Plan_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Referral_Payment_Plan_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Referral_Payment_Plan_Reference.ID}">${Referral_Payment_Plan_Reference.ID}</bsvc:ID>
+               </bsvc:Referral_Payment_Plan_Reference>
+               <!--Optional:-->
+               <bsvc:Critical_Job>${Job_Profile_Basic_Data.Critical_Job}</bsvc:Critical_Job>
+               <!--Optional:-->
+               <bsvc:Difficulty_to_Fill_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Difficulty_to_Fill_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Difficulty_to_Fill_Reference.ID}">${Difficulty_to_Fill_Reference.ID}</bsvc:ID>
+               </bsvc:Difficulty_to_Fill_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Restrict_to_Country_Reference bsvc:Descriptor="${Job_Profile_Basic_Data.Restrict_to_Country_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Restrict_to_Country_Reference.ID}">${Restrict_to_Country_Reference.ID}</bsvc:ID>
+               </bsvc:Restrict_to_Country_Reference>
+            </bsvc:Job_Profile_Basic_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Classification_Data bsvc:Delete="${Job_Profile_Data.Job_Classification_Data}">
+               <bsvc:Job_Classification_Reference bsvc:Descriptor="${Job_Classification_Data.Job_Classification_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Classification_Reference.ID}">${Job_Classification_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Classification_Reference>
+            </bsvc:Job_Classification_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Profile_Pay_Rate_Data bsvc:Delete="${Job_Profile_Data.Job_Profile_Pay_Rate_Data}">
+               <bsvc:Country_Reference bsvc:Descriptor="${Job_Profile_Pay_Rate_Data.Country_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+               </bsvc:Country_Reference>
+               <!--Optional:-->
+               <bsvc:Pay_Rate_Type_Reference bsvc:Descriptor="${Job_Profile_Pay_Rate_Data.Pay_Rate_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Pay_Rate_Type_Reference.ID}">${Pay_Rate_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Pay_Rate_Type_Reference>
+            </bsvc:Job_Profile_Pay_Rate_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Profile_Exempt_Data bsvc:Delete="${Job_Profile_Data.Job_Profile_Exempt_Data}">
+               <bsvc:Location_Context_Reference bsvc:Descriptor="${Job_Profile_Exempt_Data.Location_Context_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Location_Context_Reference.ID}" bsvc:parent_id="${Location_Context_Reference.ID}" bsvc:parent_type="${Location_Context_Reference.ID}">${Location_Context_Reference.ID}</bsvc:ID>
+               </bsvc:Location_Context_Reference>
+               <!--Optional:-->
+               <bsvc:Job_Exempt>${Job_Profile_Exempt_Data.Job_Exempt}</bsvc:Job_Exempt>
+            </bsvc:Job_Profile_Exempt_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Workers_Compensation_Code_Replacement_Data>
+               <!--Optional:-->
+               <bsvc:Workers_Compensation_Code_Reference bsvc:Descriptor="${Workers_Compensation_Code_Replacement_Data.Workers_Compensation_Code_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Workers_Compensation_Code_Reference.ID}">${Workers_Compensation_Code_Reference.ID}</bsvc:ID>
+               </bsvc:Workers_Compensation_Code_Reference>
+            </bsvc:Workers_Compensation_Code_Replacement_Data>
+            <!--Optional:-->
+            <bsvc:Qualification_Replacement_Data>
+               <!--Optional:-->
+               <bsvc:Responsibility_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Responsibility_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Responsibility_Qualification_Replacement_Data>
+                     <bsvc:Responsibility_Description>${Responsibility_Qualification_Replacement_Data.Responsibility_Description}</bsvc:Responsibility_Description>
+                     <!--Optional:-->
+                     <bsvc:Required>${Responsibility_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Responsibility_Qualification_Replacement_Data>
+               </bsvc:Responsibility_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Work_Experience_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Work_Experience_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Work_Experience_Qualification_Replacement_Data>
+                     <bsvc:Worker_Experience_Reference bsvc:Descriptor="${Work_Experience_Qualification_Replacement_Data.Worker_Experience_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Worker_Experience_Reference.ID}">${Worker_Experience_Reference.ID}</bsvc:ID>
+                     </bsvc:Worker_Experience_Reference>
+                     <!--Optional:-->
+                     <bsvc:Work_Experience_Rating_Reference bsvc:Descriptor="${Work_Experience_Qualification_Replacement_Data.Work_Experience_Rating_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Work_Experience_Rating_Reference.ID}">${Work_Experience_Rating_Reference.ID}</bsvc:ID>
+                     </bsvc:Work_Experience_Rating_Reference>
+                     <!--Optional:-->
+                     <bsvc:Required>${Work_Experience_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Work_Experience_Qualification_Replacement_Data>
+               </bsvc:Work_Experience_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Education_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Education_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Education_Qualification_Replacement_Data>
+                     <!--Optional:-->
+                     <bsvc:Degree_Reference bsvc:Descriptor="${Education_Qualification_Replacement_Data.Degree_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Degree_Reference.ID}">${Degree_Reference.ID}</bsvc:ID>
+                     </bsvc:Degree_Reference>
+                     <!--Optional:-->
+                     <bsvc:Field_Of_Study_Reference bsvc:Descriptor="${Education_Qualification_Replacement_Data.Field_Of_Study_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Field_Of_Study_Reference.ID}">${Field_Of_Study_Reference.ID}</bsvc:ID>
+                     </bsvc:Field_Of_Study_Reference>
+                     <!--Optional:-->
+                     <bsvc:Required>${Education_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Education_Qualification_Replacement_Data>
+               </bsvc:Education_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Language_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Language_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Language_Qualification_Replacement_Data>
+                     <bsvc:Language_Reference bsvc:Descriptor="${Language_Qualification_Replacement_Data.Language_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Language_Reference.ID}">${Language_Reference.ID}</bsvc:ID>
+                     </bsvc:Language_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Language_Ability_Profile_Data>
+                        <bsvc:Language_Ability_Type_Reference bsvc:Descriptor="${Language_Ability_Profile_Data.Language_Ability_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Language_Ability_Type_Reference.ID}">${Language_Ability_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:Language_Ability_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Language_Proficiency_Reference bsvc:Descriptor="${Language_Ability_Profile_Data.Language_Proficiency_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Language_Proficiency_Reference.ID}">${Language_Proficiency_Reference.ID}</bsvc:ID>
+                        </bsvc:Language_Proficiency_Reference>
+                     </bsvc:Language_Ability_Profile_Data>
+                     <!--Optional:-->
+                     <bsvc:Required>${Language_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Language_Qualification_Replacement_Data>
+               </bsvc:Language_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Competency_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Competency_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Competency_Qualification_Replacement_Data>
+                     <bsvc:Competency_Reference bsvc:Descriptor="${Competency_Qualification_Replacement_Data.Competency_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Competency_Reference.ID}">${Competency_Reference.ID}</bsvc:ID>
+                     </bsvc:Competency_Reference>
+                     <!--Optional:-->
+                     <bsvc:Proficiency_Rating_Reference bsvc:Descriptor="${Competency_Qualification_Replacement_Data.Proficiency_Rating_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Proficiency_Rating_Reference.ID}">${Proficiency_Rating_Reference.ID}</bsvc:ID>
+                     </bsvc:Proficiency_Rating_Reference>
+                     <!--Optional:-->
+                     <bsvc:Required>${Competency_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Competency_Qualification_Replacement_Data>
+               </bsvc:Competency_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Certification_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Certification_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Certification_Qualification_Replacement_Data>
+                     <!--Optional:-->
+                     <bsvc:Country_Reference bsvc:Descriptor="${Certification_Qualification_Replacement_Data.Country_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                     </bsvc:Country_Reference>
+                     <!--Optional:-->
+                     <bsvc:Certification_Reference bsvc:Descriptor="${Certification_Qualification_Replacement_Data.Certification_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Certification_Reference.ID}">${Certification_Reference.ID}</bsvc:ID>
+                     </bsvc:Certification_Reference>
+                     <!--Optional:-->
+                     <bsvc:Name>${Certification_Qualification_Replacement_Data.Name}</bsvc:Name>
+                     <!--Optional:-->
+                     <bsvc:Issuer>${Certification_Qualification_Replacement_Data.Issuer}</bsvc:Issuer>
+                     <!--Optional:-->
+                     <bsvc:Required>${Certification_Qualification_Replacement_Data.Required}</bsvc:Required>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Specialty_Achievement_Reference>
+                        <!--Optional:-->
+                        <bsvc:Specialty_Reference bsvc:Descriptor="${Specialty_Achievement_Reference.Specialty_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Specialty_Reference.ID}">${Specialty_Reference.ID}</bsvc:ID>
+                        </bsvc:Specialty_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Subspecialty_Reference bsvc:Descriptor="${Specialty_Achievement_Reference.Subspecialty_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Subspecialty_Reference.ID}">${Subspecialty_Reference.ID}</bsvc:ID>
+                        </bsvc:Subspecialty_Reference>
+                     </bsvc:Specialty_Achievement_Reference>
+                  </bsvc:Certification_Qualification_Replacement_Data>
+               </bsvc:Certification_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Training_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Training_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Training_Qualification_Replacement_Data>
+                     <!--Optional:-->
+                     <bsvc:Training_Name>${Training_Qualification_Replacement_Data.Training_Name}</bsvc:Training_Name>
+                     <!--Optional:-->
+                     <bsvc:Description>${Training_Qualification_Replacement_Data.Description}</bsvc:Description>
+                     <!--Optional:-->
+                     <bsvc:Training_Type_Reference bsvc:Descriptor="${Training_Qualification_Replacement_Data.Training_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Training_Type_Reference.ID}">${Training_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Training_Type_Reference>
+                     <!--Optional:-->
+                     <bsvc:Required>${Training_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Training_Qualification_Replacement_Data>
+               </bsvc:Training_Qualification_Replacement>
+               <!--Optional:-->
+               <bsvc:Skill_Qualification_Replacement bsvc:Delete="${Qualification_Replacement_Data.Skill_Qualification_Replacement}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Skill_Qualification_Replacement_Data>
+                     <!--Optional:-->
+                     <bsvc:Skill_Reference bsvc:Descriptor="${Skill_Qualification_Replacement_Data.Skill_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Skill_Reference.ID}">${Skill_Reference.ID}</bsvc:ID>
+                     </bsvc:Skill_Reference>
+                     <!--Optional:-->
+                     <bsvc:Name>${Skill_Qualification_Replacement_Data.Name}</bsvc:Name>
+                     <!--Optional:-->
+                     <bsvc:Required>${Skill_Qualification_Replacement_Data.Required}</bsvc:Required>
+                  </bsvc:Skill_Qualification_Replacement_Data>
+               </bsvc:Skill_Qualification_Replacement>
+            </bsvc:Qualification_Replacement_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Integration_Field_Override_Data>
+               <!--Optional:-->
+               <bsvc:Field_Reference bsvc:Descriptor="${Integration_Field_Override_Data.Field_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Field_Reference.ID}" bsvc:parent_id="${Field_Reference.ID}" bsvc:parent_type="${Field_Reference.ID}">${Field_Reference.ID}</bsvc:ID>
+               </bsvc:Field_Reference>
+               <!--Optional:-->
+               <bsvc:Value>${Integration_Field_Override_Data.Value}</bsvc:Value>
+            </bsvc:Integration_Field_Override_Data>
+            <!--Optional:-->
+            <bsvc:Job_Profile_Compensation_Data>
+               <!--Optional:-->
+               <bsvc:Compensation_Grade_Reference bsvc:Descriptor="${Job_Profile_Compensation_Data.Compensation_Grade_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Compensation_Grade_Reference.ID}">${Compensation_Grade_Reference.ID}</bsvc:ID>
+               </bsvc:Compensation_Grade_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Compensation_Grade_Profile_Reference bsvc:Descriptor="${Job_Profile_Compensation_Data.Compensation_Grade_Profile_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Compensation_Grade_Profile_Reference.ID}">${Compensation_Grade_Profile_Reference.ID}</bsvc:ID>
+               </bsvc:Compensation_Grade_Profile_Reference>
+            </bsvc:Job_Profile_Compensation_Data>
+            <!--Optional:-->
+            <bsvc:Unions_Data>
+               <!--Optional:-->
+               <bsvc:Requirement_Option_Reference bsvc:Descriptor="${Unions_Data.Requirement_Option_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Requirement_Option_Reference.ID}">${Requirement_Option_Reference.ID}</bsvc:ID>
+               </bsvc:Requirement_Option_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Union_Reference bsvc:Descriptor="${Unions_Data.Union_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Union_Reference.ID}">${Union_Reference.ID}</bsvc:ID>
+               </bsvc:Union_Reference>
+            </bsvc:Unions_Data>
+            <!--Optional:-->
+            <bsvc:Work-Study_Data>
+               <!--Optional:-->
+               <bsvc:Requirement_Option_Reference bsvc:Descriptor="${Work-Study_Data.Requirement_Option_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Requirement_Option_Reference.ID}">${Requirement_Option_Reference.ID}</bsvc:ID>
+               </bsvc:Requirement_Option_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Allowed_Student_Award_Sources_Reference bsvc:Descriptor="${Work-Study_Data.Allowed_Student_Award_Sources_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Allowed_Student_Award_Sources_Reference.ID}">${Allowed_Student_Award_Sources_Reference.ID}</bsvc:ID>
+               </bsvc:Allowed_Student_Award_Sources_Reference>
+            </bsvc:Work-Study_Data>
+         </bsvc:Job_Profile_Data>
+      </bsvc:Put_Job_Profile_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Job_Profile</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Job_Profile ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:22</sys_created_on>
+        <sys_id>32d429994f003300f94a00fe9310c731</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Job_Profile</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_32d429994f003300f94a00fe9310c731</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:22</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

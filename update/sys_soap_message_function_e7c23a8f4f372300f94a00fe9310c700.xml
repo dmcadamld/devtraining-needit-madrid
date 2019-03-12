@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Maintain_Committee_Definition_Request bsvc:Add_Only="${Maintain_Committee_Definition_Request}" bsvc:version="${Maintain_Committee_Definition_Request}">
+         <!--Optional:-->
+         <bsvc:Committee_Definition_Reference bsvc:Descriptor="${Maintain_Committee_Definition_Request.Committee_Definition_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Committee_Definition_Reference.ID}">${Committee_Definition_Reference.ID}</bsvc:ID>
+         </bsvc:Committee_Definition_Reference>
+         <bsvc:Committee_Definition_Data>
+            <!--Optional:-->
+            <bsvc:ID>${Committee_Definition_Data.ID}</bsvc:ID>
+            <!--Optional:-->
+            <bsvc:Private_Committee>${Committee_Definition_Data.Private_Committee}</bsvc:Private_Committee>
+            <!--Optional:-->
+            <bsvc:Include_Code_in_Name>${Committee_Definition_Data.Include_Code_in_Name}</bsvc:Include_Code_in_Name>
+            <bsvc:Committee_Type_Reference bsvc:Descriptor="${Committee_Definition_Data.Committee_Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Type_Reference.ID}">${Committee_Type_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Type_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Type_in_Name>${Committee_Definition_Data.Include_Type_in_Name}</bsvc:Include_Type_in_Name>
+            <bsvc:Committee_Subtype_Reference bsvc:Descriptor="${Committee_Definition_Data.Committee_Subtype_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Subtype_Reference.ID}">${Committee_Subtype_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Subtype_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Subtype_in_Name>${Committee_Definition_Data.Include_Subtype_in_Name}</bsvc:Include_Subtype_in_Name>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Classifications_Reference bsvc:Descriptor="${Committee_Definition_Data.Committee_Classifications_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Committee_Classifications_Reference.ID}">${Committee_Classifications_Reference.ID}</bsvc:ID>
+            </bsvc:Committee_Classifications_Reference>
+            <!--Optional:-->
+            <bsvc:Publishable>${Committee_Definition_Data.Publishable}</bsvc:Publishable>
+            <!--Optional:-->
+            <bsvc:External_URL_Reference bsvc:Descriptor="${Committee_Definition_Data.External_URL_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${External_URL_Reference.ID}">${External_URL_Reference.ID}</bsvc:ID>
+            </bsvc:External_URL_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Committee_Attachment_Data>
+               <!--Optional:-->
+               <bsvc:Committee_Attachment_Reference bsvc:Descriptor="${Committee_Attachment_Data.Committee_Attachment_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Committee_Attachment_Reference.ID}">${Committee_Attachment_Reference.ID}</bsvc:ID>
+               </bsvc:Committee_Attachment_Reference>
+               <!--Optional:-->
+               <bsvc:ID>${Committee_Attachment_Data.ID}</bsvc:ID>
+               <bsvc:FileName>${Committee_Attachment_Data.FileName}</bsvc:FileName>
+               <!--Optional:-->
+               <bsvc:File>cid:914897705945</bsvc:File>
+               <!--Optional:-->
+               <bsvc:Comment>${Committee_Attachment_Data.Comment}</bsvc:Comment>
+            </bsvc:Committee_Attachment_Data>
+            <bsvc:Committee_Definition_Snapshot_Data>
+               <bsvc:Effective_Date>${Committee_Definition_Snapshot_Data.Effective_Date}</bsvc:Effective_Date>
+               <bsvc:Committee_Name>${Committee_Definition_Snapshot_Data.Committee_Name}</bsvc:Committee_Name>
+               <!--Optional:-->
+               <bsvc:Committee_Code>${Committee_Definition_Snapshot_Data.Committee_Code}</bsvc:Committee_Code>
+               <bsvc:Sponsoring_Organization_Reference bsvc:Descriptor="${Committee_Definition_Snapshot_Data.Sponsoring_Organization_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Sponsoring_Organization_Reference.ID}">${Sponsoring_Organization_Reference.ID}</bsvc:ID>
+               </bsvc:Sponsoring_Organization_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Job_Requisition_Reference bsvc:Descriptor="${Committee_Definition_Snapshot_Data.Job_Requisition_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Requisition_Reference.ID}">${Job_Requisition_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Requisition_Reference>
+               <!--Optional:-->
+               <bsvc:Superior_Committee_Reference bsvc:Descriptor="${Committee_Definition_Snapshot_Data.Superior_Committee_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Superior_Committee_Reference.ID}">${Superior_Committee_Reference.ID}</bsvc:ID>
+               </bsvc:Superior_Committee_Reference>
+               <!--Optional:-->
+               <bsvc:Committee_Summary>${Committee_Definition_Snapshot_Data.Committee_Summary}</bsvc:Committee_Summary>
+               <!--Optional:-->
+               <bsvc:Committee_Purpose_-_Detailed>${Committee_Definition_Snapshot_Data.Committee_Purpose_-_Detailed}</bsvc:Committee_Purpose_-_Detailed>
+               <!--Optional:-->
+               <bsvc:Inactive>${Committee_Definition_Snapshot_Data.Inactive}</bsvc:Inactive>
+               <!--Zero or more repetitions:-->
+               <bsvc:Committee_Membership_Target_Data_Reference bsvc:Delete_Only="${Committee_Definition_Snapshot_Data.Committee_Membership_Target_Data_Reference}" bsvc:Add_Only="${Committee_Definition_Snapshot_Data.Committee_Membership_Target_Data_Reference}">
+                  <!--Optional:-->
+                  <bsvc:Committee_Membership_Target_Reference bsvc:Descriptor="${Committee_Membership_Target_Data_Reference.Committee_Membership_Target_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Committee_Membership_Target_Reference.ID}">${Committee_Membership_Target_Reference.ID}</bsvc:ID>
+                  </bsvc:Committee_Membership_Target_Reference>
+                  <!--Optional:-->
+                  <bsvc:Committee_Membership_Type_Reference bsvc:Descriptor="${Committee_Membership_Target_Data_Reference.Committee_Membership_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Committee_Membership_Type_Reference.ID}">${Committee_Membership_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Committee_Membership_Type_Reference>
+                  <!--Optional:-->
+                  <bsvc:Target_Quantity>${Committee_Membership_Target_Data_Reference.Target_Quantity}</bsvc:Target_Quantity>
+                  <!--Optional:-->
+                  <bsvc:Unlimited_Quantity>${Committee_Membership_Target_Data_Reference.Unlimited_Quantity}</bsvc:Unlimited_Quantity>
+               </bsvc:Committee_Membership_Target_Data_Reference>
+            </bsvc:Committee_Definition_Snapshot_Data>
+         </bsvc:Committee_Definition_Data>
+      </bsvc:Maintain_Committee_Definition_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Maintain_Committee_Definition</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Maintain_Committee_Definition ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:36</sys_created_on>
+        <sys_id>e7c23a8f4f372300f94a00fe9310c700</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Maintain_Committee_Definition</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_e7c23a8f4f372300f94a00fe9310c700</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:36</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

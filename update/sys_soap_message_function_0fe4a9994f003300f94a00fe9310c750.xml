@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Holiday_Calendar_Request bsvc:Add_Only="${Put_Holiday_Calendar_Request}" bsvc:version="${Put_Holiday_Calendar_Request}">
+         <!--Optional:-->
+         <bsvc:Holiday_Calendar_Reference bsvc:Descriptor="${Put_Holiday_Calendar_Request.Holiday_Calendar_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Holiday_Calendar_Reference.ID}">${Holiday_Calendar_Reference.ID}</bsvc:ID>
+         </bsvc:Holiday_Calendar_Reference>
+         <bsvc:Holiday_Calendar_Data bsvc:ID="${Put_Holiday_Calendar_Request.Holiday_Calendar_Data}">
+            <bsvc:Name>${Holiday_Calendar_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Description>${Holiday_Calendar_Data.Description}</bsvc:Description>
+            <!--Optional:-->
+            <bsvc:Condition_Rule_Reference bsvc:Descriptor="${Holiday_Calendar_Data.Condition_Rule_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Condition_Rule_Reference.ID}">${Condition_Rule_Reference.ID}</bsvc:ID>
+            </bsvc:Condition_Rule_Reference>
+            <!--Optional:-->
+            <bsvc:Display_on_Time_Off_and_Leave_Calendar>${Holiday_Calendar_Data.Display_on_Time_Off_and_Leave_Calendar}</bsvc:Display_on_Time_Off_and_Leave_Calendar>
+            <!--Zero or more repetitions:-->
+            <bsvc:Holiday_Calendar_Event_Data bsvc:ID="${Holiday_Calendar_Data.Holiday_Calendar_Event_Data}">
+               <bsvc:Name>${Holiday_Calendar_Event_Data.Name}</bsvc:Name>
+               <bsvc:Start_End_Data>
+                  <!--Optional:-->
+                  <bsvc:All_Day_Event>${Start_End_Data.All_Day_Event}</bsvc:All_Day_Event>
+                  <bsvc:Start_Date>${Start_End_Data.Start_Date}</bsvc:Start_Date>
+                  <!--Optional:-->
+                  <bsvc:Start_Time_Reference bsvc:Descriptor="${Start_End_Data.Start_Time_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Start_Time_Reference.ID}">${Start_Time_Reference.ID}</bsvc:ID>
+                  </bsvc:Start_Time_Reference>
+                  <!--Optional:-->
+                  <bsvc:End_Date>${Start_End_Data.End_Date}</bsvc:End_Date>
+                  <!--Optional:-->
+                  <bsvc:End_Time_Reference bsvc:Descriptor="${Start_End_Data.End_Time_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${End_Time_Reference.ID}">${End_Time_Reference.ID}</bsvc:ID>
+                  </bsvc:End_Time_Reference>
+               </bsvc:Start_End_Data>
+               <!--Optional:-->
+               <bsvc:Recurrence_Data>
+                  <bsvc:Recurrence_Type_Reference bsvc:Descriptor="${Recurrence_Data.Recurrence_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Recurrence_Type_Reference.ID}">${Recurrence_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Recurrence_Type_Reference>
+                  <!--Optional:-->
+                  <bsvc:Recurrence_Interval_Multiplier>${Recurrence_Data.Recurrence_Interval_Multiplier}</bsvc:Recurrence_Interval_Multiplier>
+                  <!--Optional:-->
+                  <bsvc:Recurs_Every_Weekday>${Recurrence_Data.Recurs_Every_Weekday}</bsvc:Recurs_Every_Weekday>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Day_of_the_Week_Reference bsvc:Descriptor="${Recurrence_Data.Day_of_the_Week_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Day_of_the_Week_Reference.ID}">${Day_of_the_Week_Reference.ID}</bsvc:ID>
+                  </bsvc:Day_of_the_Week_Reference>
+                  <!--Optional:-->
+                  <bsvc:First_Day_of_the_Week_Reference bsvc:Descriptor="${Recurrence_Data.First_Day_of_the_Week_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${First_Day_of_the_Week_Reference.ID}">${First_Day_of_the_Week_Reference.ID}</bsvc:ID>
+                  </bsvc:First_Day_of_the_Week_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Month_Reference bsvc:Descriptor="${Recurrence_Data.Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Month_Reference.ID}">${Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Month_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Day_of_the_Month_Reference bsvc:Descriptor="${Recurrence_Data.Day_of_the_Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Day_of_the_Month_Reference.ID}">${Day_of_the_Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Day_of_the_Month_Reference>
+                  <!--Optional:-->
+                  <bsvc:Week_of_the_Month_Reference bsvc:Descriptor="${Recurrence_Data.Week_of_the_Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Week_of_the_Month_Reference.ID}">${Week_of_the_Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Week_of_the_Month_Reference>
+                  <bsvc:Recurrence_Start_Date>${Recurrence_Data.Recurrence_Start_Date}</bsvc:Recurrence_Start_Date>
+                  <!--Optional:-->
+                  <bsvc:Recurrence_End_Date>${Recurrence_Data.Recurrence_End_Date}</bsvc:Recurrence_End_Date>
+               </bsvc:Recurrence_Data>
+            </bsvc:Holiday_Calendar_Event_Data>
+         </bsvc:Holiday_Calendar_Data>
+      </bsvc:Put_Holiday_Calendar_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Holiday_Calendar</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Holiday_Calendar ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:39</sys_created_on>
+        <sys_id>0fe4a9994f003300f94a00fe9310c750</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Holiday_Calendar</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_0fe4a9994f003300f94a00fe9310c750</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:39</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

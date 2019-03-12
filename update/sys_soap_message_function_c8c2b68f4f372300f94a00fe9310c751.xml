@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Get_Job_Profiles_Request bsvc:version="${Get_Job_Profiles_Request}">
+         <!--Optional:-->
+         <bsvc:Request_References bsvc:Skip_Non_Existing_Instances="${Get_Job_Profiles_Request.Request_References}">
+            <!--1 or more repetitions:-->
+            <bsvc:Job_Profile_Reference bsvc:Descriptor="${Request_References.Job_Profile_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Profile_Reference.ID}">${Job_Profile_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Profile_Reference>
+         </bsvc:Request_References>
+         <!--Optional:-->
+         <bsvc:Request_Criteria>
+            <!--Zero or more repetitions:-->
+            <bsvc:Transaction_Log_Criteria_Data>
+               <!--Optional:-->
+               <bsvc:Transaction_Date_Range_Data>
+                  <!--Optional:-->
+                  <bsvc:Updated_From>${Transaction_Date_Range_Data.Updated_From}</bsvc:Updated_From>
+                  <!--Optional:-->
+                  <bsvc:Updated_Through>${Transaction_Date_Range_Data.Updated_Through}</bsvc:Updated_Through>
+                  <!--Optional:-->
+                  <bsvc:Effective_From>${Transaction_Date_Range_Data.Effective_From}</bsvc:Effective_From>
+                  <!--Optional:-->
+                  <bsvc:Effective_Through>${Transaction_Date_Range_Data.Effective_Through}</bsvc:Effective_Through>
+               </bsvc:Transaction_Date_Range_Data>
+               <!--You have a CHOICE of the next 2 items at this level-->
+               <!--Optional:-->
+               <bsvc:Transaction_Type_References>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Transaction_Type_Reference bsvc:Descriptor="${Transaction_Type_References.Transaction_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Transaction_Type_Reference.ID}">${Transaction_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Transaction_Type_Reference>
+               </bsvc:Transaction_Type_References>
+               <!--Optional:-->
+               <bsvc:Subscriber_Reference bsvc:Descriptor="${Transaction_Log_Criteria_Data.Subscriber_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Subscriber_Reference.ID}">${Subscriber_Reference.ID}</bsvc:ID>
+               </bsvc:Subscriber_Reference>
+            </bsvc:Transaction_Log_Criteria_Data>
+            <!--Optional:-->
+            <bsvc:Event_Reference bsvc:Descriptor="${Request_Criteria.Event_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Event_Reference.ID}">${Event_Reference.ID}</bsvc:ID>
+            </bsvc:Event_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Family_Reference bsvc:Descriptor="${Request_Criteria.Job_Family_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Family_Reference.ID}">${Job_Family_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Family_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Management_Level_Reference bsvc:Descriptor="${Request_Criteria.Management_Level_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Management_Level_Reference.ID}">${Management_Level_Reference.ID}</bsvc:ID>
+            </bsvc:Management_Level_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Level_Reference bsvc:Descriptor="${Request_Criteria.Job_Level_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Level_Reference.ID}">${Job_Level_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Level_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Category_Reference bsvc:Descriptor="${Request_Criteria.Job_Category_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Category_Reference.ID}">${Job_Category_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Category_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Company_Insider_Type_Reference bsvc:Descriptor="${Request_Criteria.Company_Insider_Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Company_Insider_Type_Reference.ID}">${Company_Insider_Type_Reference.ID}</bsvc:ID>
+            </bsvc:Company_Insider_Type_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Classification_Reference bsvc:Descriptor="${Request_Criteria.Job_Classification_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Classification_Reference.ID}">${Job_Classification_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Classification_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Classification_Group_Reference bsvc:Descriptor="${Request_Criteria.Job_Classification_Group_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Job_Classification_Group_Reference.ID}">${Job_Classification_Group_Reference.ID}</bsvc:ID>
+            </bsvc:Job_Classification_Group_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Workers_Compensation_Code_Reference bsvc:Descriptor="${Request_Criteria.Workers_Compensation_Code_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Workers_Compensation_Code_Reference.ID}">${Workers_Compensation_Code_Reference.ID}</bsvc:ID>
+            </bsvc:Workers_Compensation_Code_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Work_Hours_Profile_Reference bsvc:Descriptor="${Request_Criteria.Work_Hours_Profile_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Work_Hours_Profile_Reference.ID}">${Work_Hours_Profile_Reference.ID}</bsvc:ID>
+            </bsvc:Work_Hours_Profile_Reference>
+            <!--Optional:-->
+            <bsvc:Field_And_Parameter_Criteria_Data>
+               <!--1 or more repetitions:-->
+               <bsvc:Provider_Reference bsvc:Descriptor="${Field_And_Parameter_Criteria_Data.Provider_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Provider_Reference.ID}">${Provider_Reference.ID}</bsvc:ID>
+               </bsvc:Provider_Reference>
+            </bsvc:Field_And_Parameter_Criteria_Data>
+         </bsvc:Request_Criteria>
+         <!--Optional:-->
+         <bsvc:Response_Filter>
+            <!--Optional:-->
+            <bsvc:As_Of_Effective_Date>${Response_Filter.As_Of_Effective_Date}</bsvc:As_Of_Effective_Date>
+            <!--Optional:-->
+            <bsvc:As_Of_Entry_DateTime>${Response_Filter.As_Of_Entry_DateTime}</bsvc:As_Of_Entry_DateTime>
+            <!--Optional:-->
+            <bsvc:Page>${Response_Filter.Page}</bsvc:Page>
+            <!--Optional:-->
+            <bsvc:Count>${Response_Filter.Count}</bsvc:Count>
+         </bsvc:Response_Filter>
+         <!--Optional:-->
+         <bsvc:Response_Group>
+            <!--Optional:-->
+            <bsvc:Include_Reference>${Response_Group.Include_Reference}</bsvc:Include_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Job_Profile_Basic_Data>${Response_Group.Include_Job_Profile_Basic_Data}</bsvc:Include_Job_Profile_Basic_Data>
+            <!--Optional:-->
+            <bsvc:Include_Job_Classification_Data>${Response_Group.Include_Job_Classification_Data}</bsvc:Include_Job_Classification_Data>
+            <!--Optional:-->
+            <bsvc:Include_Job_Profile_Pay_Rate_Data>${Response_Group.Include_Job_Profile_Pay_Rate_Data}</bsvc:Include_Job_Profile_Pay_Rate_Data>
+            <!--Optional:-->
+            <bsvc:Include_Job_Profile_Exempt_Data>${Response_Group.Include_Job_Profile_Exempt_Data}</bsvc:Include_Job_Profile_Exempt_Data>
+            <!--Optional:-->
+            <bsvc:Include_Workers_Compensation_Data>${Response_Group.Include_Workers_Compensation_Data}</bsvc:Include_Workers_Compensation_Data>
+            <!--Optional:-->
+            <bsvc:Include_Responsibility_Qualifications>${Response_Group.Include_Responsibility_Qualifications}</bsvc:Include_Responsibility_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Work_Experience_Qualifications>${Response_Group.Include_Work_Experience_Qualifications}</bsvc:Include_Work_Experience_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Education_Qualifications>${Response_Group.Include_Education_Qualifications}</bsvc:Include_Education_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Language_Qualifications>${Response_Group.Include_Language_Qualifications}</bsvc:Include_Language_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Competency_Qualifications>${Response_Group.Include_Competency_Qualifications}</bsvc:Include_Competency_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Certification_Qualifications>${Response_Group.Include_Certification_Qualifications}</bsvc:Include_Certification_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Certification_Reference_Only>${Response_Group.Include_Certification_Reference_Only}</bsvc:Include_Certification_Reference_Only>
+            <!--Optional:-->
+            <bsvc:Include_Training_Qualifications>${Response_Group.Include_Training_Qualifications}</bsvc:Include_Training_Qualifications>
+            <!--Optional:-->
+            <bsvc:Include_Job_Profile_Compensation_Data>${Response_Group.Include_Job_Profile_Compensation_Data}</bsvc:Include_Job_Profile_Compensation_Data>
+            <!--Optional:-->
+            <bsvc:Include_Skill_Qualifications>${Response_Group.Include_Skill_Qualifications}</bsvc:Include_Skill_Qualifications>
+         </bsvc:Response_Group>
+      </bsvc:Get_Job_Profiles_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Get_Job_Profiles</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Get_Job_Profiles ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:22</sys_created_on>
+        <sys_id>c8c2b68f4f372300f94a00fe9310c751</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get_Job_Profiles</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_c8c2b68f4f372300f94a00fe9310c751</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:22</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

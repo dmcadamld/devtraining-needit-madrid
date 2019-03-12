@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Organization_Assignment_Restrictions_Request bsvc:version="${Put_Organization_Assignment_Restrictions_Request}">
+         <!--Optional:-->
+         <bsvc:Organization_Assignment_Restrictions_Data bsvc:Replace_All="${Put_Organization_Assignment_Restrictions_Request.Organization_Assignment_Restrictions_Data}">
+            <bsvc:Supervisory_Organization_Reference bsvc:Descriptor="${Organization_Assignment_Restrictions_Data.Supervisory_Organization_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Supervisory_Organization_Reference.ID}">${Supervisory_Organization_Reference.ID}</bsvc:ID>
+            </bsvc:Supervisory_Organization_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Organization_Assignment_Restrictions_by_Type_Data>
+               <bsvc:Organization_Type_Reference bsvc:Descriptor="${Organization_Assignment_Restrictions_by_Type_Data.Organization_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Organization_Type_Reference.ID}">${Organization_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Organization_Type_Reference>
+               <!--Zero or more repetitions:-->
+               <bsvc:Allowed_Organization_Data bsvc:Delete="${Organization_Assignment_Restrictions_by_Type_Data.Allowed_Organization_Data}">
+                  <!--1 or more repetitions:-->
+                  <bsvc:Allowed_Organization_Reference bsvc:Descriptor="${Allowed_Organization_Data.Allowed_Organization_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Allowed_Organization_Reference.ID}">${Allowed_Organization_Reference.ID}</bsvc:ID>
+                  </bsvc:Allowed_Organization_Reference>
+               </bsvc:Allowed_Organization_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Default_Organization_Data bsvc:Delete="${Organization_Assignment_Restrictions_by_Type_Data.Default_Organization_Data}">
+                  <!--Optional:-->
+                  <bsvc:Default_Organization_Reference bsvc:Descriptor="${Default_Organization_Data.Default_Organization_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Default_Organization_Reference.ID}">${Default_Organization_Reference.ID}</bsvc:ID>
+                  </bsvc:Default_Organization_Reference>
+               </bsvc:Default_Organization_Data>
+            </bsvc:Organization_Assignment_Restrictions_by_Type_Data>
+         </bsvc:Organization_Assignment_Restrictions_Data>
+      </bsvc:Put_Organization_Assignment_Restrictions_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Supervisory_Organization_Assignment_Restrictions</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Supervisory_Organization_Assignment_Restrictions ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:43</sys_created_on>
+        <sys_id>40f42d994f003300f94a00fe9310c700</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Supervisory_Organization_Assignment_Restrictions</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_40f42d994f003300f94a00fe9310c700</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:43</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

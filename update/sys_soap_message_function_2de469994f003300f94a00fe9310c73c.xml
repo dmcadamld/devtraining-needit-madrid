@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Job_Family_Group_Request bsvc:Add_Only="${Put_Job_Family_Group_Request}" bsvc:version="${Put_Job_Family_Group_Request}">
+         <!--Optional:-->
+         <bsvc:Job_Family_Group_Reference bsvc:Descriptor="${Put_Job_Family_Group_Request.Job_Family_Group_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Job_Family_Group_Reference.ID}">${Job_Family_Group_Reference.ID}</bsvc:ID>
+         </bsvc:Job_Family_Group_Reference>
+         <!--Optional:-->
+         <bsvc:Job_Family_Group_Data>
+            <!--Optional:-->
+            <bsvc:ID>${Job_Family_Group_Data.ID}</bsvc:ID>
+            <!--Optional:-->
+            <bsvc:Effective_Date>${Job_Family_Group_Data.Effective_Date}</bsvc:Effective_Date>
+            <!--Optional:-->
+            <bsvc:Name>${Job_Family_Group_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Summary>${Job_Family_Group_Data.Summary}</bsvc:Summary>
+            <!--Optional:-->
+            <bsvc:Inactive>${Job_Family_Group_Data.Inactive}</bsvc:Inactive>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Family_Data bsvc:Delete="${Job_Family_Group_Data.Job_Family_Data}">
+               <bsvc:Job_Family_Reference bsvc:Descriptor="${Job_Family_Data.Job_Family_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Family_Reference.ID}">${Job_Family_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Family_Reference>
+               <!--Optional:-->
+               <bsvc:Job_Family_Info_Data>
+                  <!--Optional:-->
+                  <bsvc:Job_Family_Name>${Job_Family_Info_Data.Job_Family_Name}</bsvc:Job_Family_Name>
+                  <!--Optional:-->
+                  <bsvc:Job_Family_Summary>${Job_Family_Info_Data.Job_Family_Summary}</bsvc:Job_Family_Summary>
+                  <!--Optional:-->
+                  <bsvc:Inactive>${Job_Family_Info_Data.Inactive}</bsvc:Inactive>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Job_Profile_Info_Data>
+                     <!--Optional:-->
+                     <bsvc:Job_Profile_Reference bsvc:Descriptor="${Job_Profile_Info_Data.Job_Profile_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Job_Profile_Reference.ID}">${Job_Profile_Reference.ID}</bsvc:ID>
+                     </bsvc:Job_Profile_Reference>
+                     <!--Optional:-->
+                     <bsvc:Job_Profile_Name>${Job_Profile_Info_Data.Job_Profile_Name}</bsvc:Job_Profile_Name>
+                     <!--Optional:-->
+                     <bsvc:Management_Level_Reference bsvc:Descriptor="${Job_Profile_Info_Data.Management_Level_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Management_Level_Reference.ID}">${Management_Level_Reference.ID}</bsvc:ID>
+                     </bsvc:Management_Level_Reference>
+                     <!--Optional:-->
+                     <bsvc:Job_Category_Reference bsvc:Descriptor="${Job_Profile_Info_Data.Job_Category_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Job_Category_Reference.ID}">${Job_Category_Reference.ID}</bsvc:ID>
+                     </bsvc:Job_Category_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Job_Family_Reference bsvc:Descriptor="${Job_Profile_Info_Data.Job_Family_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Job_Family_Reference.ID}">${Job_Family_Reference.ID}</bsvc:ID>
+                     </bsvc:Job_Family_Reference>
+                     <!--Optional:-->
+                     <bsvc:Work_Shift_Required>${Job_Profile_Info_Data.Work_Shift_Required}</bsvc:Work_Shift_Required>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Job_Profile_Exempt_Data bsvc:Delete="${Job_Profile_Info_Data.Job_Profile_Exempt_Data}">
+                        <bsvc:Location_Context_Reference bsvc:Descriptor="${Job_Profile_Exempt_Data.Location_Context_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Location_Context_Reference.ID}" bsvc:parent_id="${Location_Context_Reference.ID}" bsvc:parent_type="${Location_Context_Reference.ID}">${Location_Context_Reference.ID}</bsvc:ID>
+                        </bsvc:Location_Context_Reference>
+                        <!--Optional:-->
+                        <bsvc:Job_Exempt>${Job_Profile_Exempt_Data.Job_Exempt}</bsvc:Job_Exempt>
+                     </bsvc:Job_Profile_Exempt_Data>
+                     <!--Optional:-->
+                     <bsvc:Critical_Job>${Job_Profile_Info_Data.Critical_Job}</bsvc:Critical_Job>
+                     <!--Optional:-->
+                     <bsvc:Difficulty_to_Fill_Reference bsvc:Descriptor="${Job_Profile_Info_Data.Difficulty_to_Fill_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Difficulty_to_Fill_Reference.ID}">${Difficulty_to_Fill_Reference.ID}</bsvc:ID>
+                     </bsvc:Difficulty_to_Fill_Reference>
+                  </bsvc:Job_Profile_Info_Data>
+               </bsvc:Job_Family_Info_Data>
+            </bsvc:Job_Family_Data>
+         </bsvc:Job_Family_Group_Data>
+      </bsvc:Put_Job_Family_Group_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Job_Family_Group</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Job_Family_Group ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:33</sys_created_on>
+        <sys_id>2de469994f003300f94a00fe9310c73c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Job_Family_Group</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_2de469994f003300f94a00fe9310c73c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:33</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Change_Additional_Names_Request bsvc:version="${Change_Additional_Names_Request}">
+         <bsvc:Change_Additional_Names_Data>
+            <bsvc:Worker_Reference bsvc:Descriptor="${Change_Additional_Names_Data.Worker_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Worker_Reference.ID}">${Worker_Reference.ID}</bsvc:ID>
+            </bsvc:Worker_Reference>
+            <!--Optional:-->
+            <bsvc:Replace_All>${Change_Additional_Names_Data.Replace_All}</bsvc:Replace_All>
+            <!--Zero or more repetitions:-->
+            <bsvc:Name_Data>
+               <bsvc:Name_Detail_Data bsvc:Formatted_Name="${Name_Data.Name_Detail_Data}" bsvc:Reporting_Name="${Name_Data.Name_Detail_Data}">
+                  <bsvc:Country_Reference bsvc:Descriptor="${Name_Detail_Data.Country_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                  </bsvc:Country_Reference>
+                  <!--Optional:-->
+                  <bsvc:Prefix_Data>
+                     <!--Optional:-->
+                     <bsvc:Title_Reference bsvc:Descriptor="${Prefix_Data.Title_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Title_Reference.ID}">${Title_Reference.ID}</bsvc:ID>
+                     </bsvc:Title_Reference>
+                     <!--Optional:-->
+                     <bsvc:Title_Descriptor>${Prefix_Data.Title_Descriptor}</bsvc:Title_Descriptor>
+                     <!--Optional:-->
+                     <bsvc:Salutation_Reference bsvc:Descriptor="${Prefix_Data.Salutation_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Salutation_Reference.ID}">${Salutation_Reference.ID}</bsvc:ID>
+                     </bsvc:Salutation_Reference>
+                  </bsvc:Prefix_Data>
+                  <!--Optional:-->
+                  <bsvc:First_Name>${Name_Detail_Data.First_Name}</bsvc:First_Name>
+                  <!--Optional:-->
+                  <bsvc:Middle_Name>${Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                  <!--Optional:-->
+                  <bsvc:Last_Name>${Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                  <!--Optional:-->
+                  <bsvc:Secondary_Last_Name>${Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                  <!--Optional:-->
+                  <bsvc:Tertiary_Last_Name>${Name_Detail_Data.Tertiary_Last_Name}</bsvc:Tertiary_Last_Name>
+                  <!--Optional:-->
+                  <bsvc:Local_Name_Detail_Data bsvc:Local_Name="${Name_Detail_Data.Local_Name_Detail_Data}" bsvc:Local_Script="${Name_Detail_Data.Local_Name_Detail_Data}">
+                     <!--Optional:-->
+                     <bsvc:First_Name>${Local_Name_Detail_Data.First_Name}</bsvc:First_Name>
+                     <!--Optional:-->
+                     <bsvc:Middle_Name>${Local_Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                     <!--Optional:-->
+                     <bsvc:Last_Name>${Local_Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                     <!--Optional:-->
+                     <bsvc:Secondary_Last_Name>${Local_Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                     <!--Optional:-->
+                     <bsvc:First_Name_2>${Local_Name_Detail_Data.First_Name_2}</bsvc:First_Name_2>
+                     <!--Optional:-->
+                     <bsvc:Middle_Name_2>${Local_Name_Detail_Data.Middle_Name_2}</bsvc:Middle_Name_2>
+                     <!--Optional:-->
+                     <bsvc:Last_Name_2>${Local_Name_Detail_Data.Last_Name_2}</bsvc:Last_Name_2>
+                     <!--Optional:-->
+                     <bsvc:Secondary_Last_Name_2>${Local_Name_Detail_Data.Secondary_Last_Name_2}</bsvc:Secondary_Last_Name_2>
+                  </bsvc:Local_Name_Detail_Data>
+                  <!--Optional:-->
+                  <bsvc:Suffix_Data>
+                     <!--Optional:-->
+                     <bsvc:Social_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Social_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Social_Suffix_Reference.ID}">${Social_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Social_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Social_Suffix_Descriptor>${Suffix_Data.Social_Suffix_Descriptor}</bsvc:Social_Suffix_Descriptor>
+                     <!--Optional:-->
+                     <bsvc:Academic_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Academic_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Academic_Suffix_Reference.ID}">${Academic_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Academic_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Hereditary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Hereditary_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Hereditary_Suffix_Reference.ID}">${Hereditary_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Hereditary_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Honorary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Honorary_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Honorary_Suffix_Reference.ID}">${Honorary_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Honorary_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Professional_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Professional_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Professional_Suffix_Reference.ID}">${Professional_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Professional_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Religious_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Religious_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Religious_Suffix_Reference.ID}">${Religious_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Religious_Suffix_Reference>
+                     <!--Optional:-->
+                     <bsvc:Royal_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Royal_Suffix_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Royal_Suffix_Reference.ID}">${Royal_Suffix_Reference.ID}</bsvc:ID>
+                     </bsvc:Royal_Suffix_Reference>
+                  </bsvc:Suffix_Data>
+                  <!--Optional:-->
+                  <bsvc:Full_Name_for_Singapore_and_Malaysia>${Name_Detail_Data.Full_Name_for_Singapore_and_Malaysia}</bsvc:Full_Name_for_Singapore_and_Malaysia>
+               </bsvc:Name_Detail_Data>
+               <!--Optional:-->
+               <bsvc:Name_Type_Reference bsvc:Descriptor="${Name_Data.Name_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Name_Type_Reference.ID}">${Name_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Name_Type_Reference>
+            </bsvc:Name_Data>
+         </bsvc:Change_Additional_Names_Data>
+      </bsvc:Change_Additional_Names_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Change_Additional_Names</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Change_Additional_Names ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:08</sys_created_on>
+        <sys_id>f4b2768f4f372300f94a00fe9310c71c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Change_Additional_Names</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_f4b2768f4f372300f94a00fe9310c71c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:08</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

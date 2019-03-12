@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Get_Academic_Appointee_Request bsvc:version="${Get_Academic_Appointee_Request}">
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <!--Optional:-->
+         <bsvc:Request_References>
+            <!--1 or more repetitions:-->
+            <bsvc:Academic_Appointee_Reference bsvc:Descriptor="${Request_References.Academic_Appointee_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Academic_Appointee_Reference.ID}">${Academic_Appointee_Reference.ID}</bsvc:ID>
+            </bsvc:Academic_Appointee_Reference>
+         </bsvc:Request_References>
+         <!--Optional:-->
+         <bsvc:Request_Criteria>
+            <!--Zero or more repetitions:-->
+            <bsvc:By_Academic_Track_Type_Reference bsvc:Descriptor="${Request_Criteria.By_Academic_Track_Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${By_Academic_Track_Type_Reference.ID}">${By_Academic_Track_Type_Reference.ID}</bsvc:ID>
+            </bsvc:By_Academic_Track_Type_Reference>
+            <!--Optional:-->
+            <bsvc:By_Worker>${Request_Criteria.By_Worker}</bsvc:By_Worker>
+            <!--Optional:-->
+            <bsvc:By_Affiliate>${Request_Criteria.By_Affiliate}</bsvc:By_Affiliate>
+            <!--Optional:-->
+            <bsvc:By_Student>${Request_Criteria.By_Student}</bsvc:By_Student>
+            <!--Optional:-->
+            <bsvc:By_Active_Role>${Request_Criteria.By_Active_Role}</bsvc:By_Active_Role>
+         </bsvc:Request_Criteria>
+         <!--Optional:-->
+         <bsvc:Response_Filter>
+            <!--Optional:-->
+            <bsvc:As_Of_Effective_Date>${Response_Filter.As_Of_Effective_Date}</bsvc:As_Of_Effective_Date>
+            <!--Optional:-->
+            <bsvc:As_Of_Entry_DateTime>${Response_Filter.As_Of_Entry_DateTime}</bsvc:As_Of_Entry_DateTime>
+            <!--Optional:-->
+            <bsvc:Page>${Response_Filter.Page}</bsvc:Page>
+            <!--Optional:-->
+            <bsvc:Count>${Response_Filter.Count}</bsvc:Count>
+         </bsvc:Response_Filter>
+         <!--Optional:-->
+         <bsvc:Response_Group>
+            <!--Optional:-->
+            <bsvc:Include_Reference>${Response_Group.Include_Reference}</bsvc:Include_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Person_Name_Data>${Response_Group.Include_Person_Name_Data}</bsvc:Include_Person_Name_Data>
+            <!--Optional:-->
+            <bsvc:Include_Person_Identification_Data>${Response_Group.Include_Person_Identification_Data}</bsvc:Include_Person_Identification_Data>
+            <!--Optional:-->
+            <bsvc:Include_Personal_Information_Data>${Response_Group.Include_Personal_Information_Data}</bsvc:Include_Personal_Information_Data>
+            <!--Optional:-->
+            <bsvc:Include_Photo_Data>${Response_Group.Include_Photo_Data}</bsvc:Include_Photo_Data>
+            <!--Optional:-->
+            <bsvc:Include_Appointment_Data>${Response_Group.Include_Appointment_Data}</bsvc:Include_Appointment_Data>
+         </bsvc:Response_Group>
+      </bsvc:Get_Academic_Appointee_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Get_Academic_Appointee</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Get_Academic_Appointee ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:05</sys_created_on>
+        <sys_id>ffa2f28f4f372300f94a00fe9310c703</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get_Academic_Appointee</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_ffa2f28f4f372300f94a00fe9310c703</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:05</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

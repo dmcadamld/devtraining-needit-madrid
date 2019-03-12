@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Parse an Employee</description>
+        <internal_name>parsewdemployee</internal_name>
+        <label_cache>[{"name":"{{action.employeeresponse}}","label":"action➛EmployeeResponse","type":"action","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].e}}","label":"step➛Script step➛e","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].ei}}","label":"step➛Script step➛ei","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].eid}}","label":"step➛Script step➛eid","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].f}}","label":"step➛Script step➛f","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].fi}}","label":"step➛Script step➛fi","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].fir}}","label":"step➛Script step➛fir","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firs}}","label":"step➛Script step➛firs","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].first}}","label":"step➛Script step➛first","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firstN}}","label":"step➛Script step➛firstN","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firstNa}}","label":"step➛Script step➛firstNa","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firstNam}}","label":"step➛Script step➛firstNam","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firstName}}","label":"step➛Script step➛firstName","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].l}}","label":"step➛Script step➛l","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].la}}","label":"step➛Script step➛la","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].las}}","label":"step➛Script step➛las","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].last}}","label":"step➛Script step➛last","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].lastN}}","label":"step➛Script step➛lastN","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].lastNa}}","label":"step➛Script step➛lastNa","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].lastNam}}","label":"step➛Script step➛lastNam","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].lastName}}","label":"step➛Script step➛lastName","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].p}}","label":"step➛Script step➛p","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].pr}}","label":"step➛Script step➛pr","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].pre}}","label":"step➛Script step➛pre","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].pref}}","label":"step➛Script step➛pref","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].prefe}}","label":"step➛Script step➛prefe","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].prefer}}","label":"step➛Script step➛prefer","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferr}}","label":"step➛Script step➛preferr","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferre}}","label":"step➛Script step➛preferre","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferred}}","label":"step➛Script step➛preferred","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferredN}}","label":"step➛Script step➛preferredN","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferredNa}}","label":"step➛Script step➛preferredNa","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferredNam}}","label":"step➛Script step➛preferredNam","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferredName}}","label":"step➛Script step➛preferredName","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].em}}","label":"step➛Script step➛em","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].ema}}","label":"step➛Script step➛ema","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].emai}}","label":"step➛Script step➛emai","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].email}}","label":"step➛Script step➛email","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].ph}}","label":"step➛Script step➛ph","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].pho}}","label":"step➛Script step➛pho","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].phon}}","label":"step➛Script step➛phon","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].phone}}","label":"step➛Script step➛phone","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].a}}","label":"step➛Script step➛a","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].ad}}","label":"step➛Script step➛ad","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].add}}","label":"step➛Script step➛add","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].addr}}","label":"step➛Script step➛addr","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].addre}}","label":"step➛Script step➛addre","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].addres}}","label":"step➛Script step➛addres","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].address}}","label":"step➛Script step➛address","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].c}}","label":"step➛Script step➛c","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].ci}}","label":"step➛Script step➛ci","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].cit}}","label":"step➛Script step➛cit","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].city}}","label":"step➛Script step➛city","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].s}}","label":"step➛Script step➛s","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].st}}","label":"step➛Script step➛st","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].sta}}","label":"step➛Script step➛sta","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].stat}}","label":"step➛Script step➛stat","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].state}}","label":"step➛Script step➛state","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].z}}","label":"step➛Script step➛z","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].zi}}","label":"step➛Script step➛zi","type":"step","ref":""},{"name":"{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].zip}}","label":"step➛Script step➛zip","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>be2094814f403300f94a00fe9310c7c2</latest_snapshot>
+        <master_snapshot>faa9a6df4f332300f94a00fe9310c7fa</master_snapshot>
+        <name>WD_ParseWDEmployee</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 18:57:22</sys_created_on>
+        <sys_id>ef062e1b4f332300f94a00fe9310c74b</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>WD_ParseWDEmployee</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_ef062e1b4f332300f94a00fe9310c74b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:31:55</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=ef062e1b4f332300f94a00fe9310c74b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ef062e1b4f332300f94a00fe9310c74b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>05a9a6df4f332300f94a00fe9310c73b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 20:24:07</sys_updated_on>
+        <value/>
+        <variable display_value="">9d096e9f4f332300f94a00fe9310c7e9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>09a9a6df4f332300f94a00fe9310c73a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a509ae9f4f332300f94a00fe9310c70e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>9</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>0da9a6df4f332300f94a00fe9310c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">2d09ae9f4f332300f94a00fe9310c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>8</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>41a9a6df4f332300f94a00fe9310c73b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">ad09ae9f4f332300f94a00fe9310c725</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>45a9a6df4f332300f94a00fe9310c73a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">2509ae9f4f332300f94a00fe9310c714</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>81a9a6df4f332300f94a00fe9310c73a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">2109ae9f4f332300f94a00fe9310c720</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>8da9a6df4f332300f94a00fe9310c73a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a109ae9f4f332300f94a00fe9310c71a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>c5a9a6df4f332300f94a00fe9310c73b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:33:32</sys_updated_on>
+        <value/>
+        <variable display_value="">d1096e9f4f332300f94a00fe9310c7f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>c9a9a6df4f332300f94a00fe9310c73a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:38:24</sys_updated_on>
+        <value/>
+        <variable display_value="">1909ae9f4f332300f94a00fe9310c708</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>ef062e1b4f332300f94a00fe9310c74b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>cda9a6df4f332300f94a00fe9310c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:33:32</sys_updated_on>
+        <value/>
+        <variable display_value="">55096e9f4f332300f94a00fe9310c7f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ef062e1b4f332300f94a00fe9310c74b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>city</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>8da9a6df4f332300f94a00fe9310c72b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].city}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>emailaddress</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>05a9a6df4f332300f94a00fe9310c72c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employeeid</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>c5a9a6df4f332300f94a00fe9310c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 20:24:07</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].eid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>firstname</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>c9a9a6df4f332300f94a00fe9310c72b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:33:32</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].firstName}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>lastname</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>89a9a6df4f332300f94a00fe9310c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:33:32</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].lastName}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phonenumber</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>41a9a6df4f332300f94a00fe9310c72c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>preferredname</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>c5a9a6df4f332300f94a00fe9310c72c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 21:38:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].preferredName}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>state</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>05a9a6df4f332300f94a00fe9310c739</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].state}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>streetaddress</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>89a9a6df4f332300f94a00fe9310c72c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>zipcode</field>
+        <id>ef062e1b4f332300f94a00fe9310c74b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:13:02</sys_created_on>
+        <sys_id>09a9a6df4f332300f94a00fe9310c72b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-04 19:45:55</sys_updated_on>
+        <table>var__m_sys_hub_action_output_ef062e1b4f332300f94a00fe9310c74b</table>
+        <value>{{step[e9834f1f-8477-4fec-9d05-2ee0c8b9bf97].zip}}</value>
+    </sys_element_mapping>
+</record_update>

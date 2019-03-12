@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Workday_Account_for_Worker_Update bsvc:version="${Workday_Account_for_Worker_Update}">
+         <!--Optional:-->
+         <bsvc:Worker_Reference>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <bsvc:Employee_Reference>
+               <bsvc:Integration_ID_Reference bsvc:Descriptor="${Employee_Reference.Integration_ID_Reference}">
+                  <bsvc:ID bsvc:System_ID="${Integration_ID_Reference.ID}">${Integration_ID_Reference.ID}</bsvc:ID>
+               </bsvc:Integration_ID_Reference>
+            </bsvc:Employee_Reference>
+            <bsvc:Contingent_Worker_Reference>
+               <bsvc:Integration_ID_Reference bsvc:Descriptor="${Contingent_Worker_Reference.Integration_ID_Reference}">
+                  <bsvc:ID bsvc:System_ID="${Integration_ID_Reference.ID}">${Integration_ID_Reference.ID}</bsvc:ID>
+               </bsvc:Integration_ID_Reference>
+            </bsvc:Contingent_Worker_Reference>
+         </bsvc:Worker_Reference>
+         <!--Optional:-->
+         <bsvc:Non_Worker_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Update.Non_Worker_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Non_Worker_Reference.ID}">${Non_Worker_Reference.ID}</bsvc:ID>
+         </bsvc:Non_Worker_Reference>
+         <bsvc:Workday_Account_for_Worker_Data>
+            <bsvc:User_Name>${Workday_Account_for_Worker_Data.User_Name}</bsvc:User_Name>
+            <!--Optional:-->
+            <bsvc:Password>${Workday_Account_for_Worker_Data.Password}</bsvc:Password>
+            <!--Optional:-->
+            <bsvc:Generate_Random_Password>${Workday_Account_for_Worker_Data.Generate_Random_Password}</bsvc:Generate_Random_Password>
+            <!--Optional:-->
+            <bsvc:Require_New_Password_at_Next_Sign_In>${Workday_Account_for_Worker_Data.Require_New_Password_at_Next_Sign_In}</bsvc:Require_New_Password_at_Next_Sign_In>
+            <!--Optional:-->
+            <bsvc:One-Time_Passcode_Exempt>${Workday_Account_for_Worker_Data.One-Time_Passcode_Exempt}</bsvc:One-Time_Passcode_Exempt>
+            <!--Optional:-->
+            <bsvc:One-Time_Passcode_Grace_Period_Enabled>${Workday_Account_for_Worker_Data.One-Time_Passcode_Grace_Period_Enabled}</bsvc:One-Time_Passcode_Grace_Period_Enabled>
+            <!--Optional:-->
+            <bsvc:One-Time_Passcode_Grace_Period_Login_Remaining_Count>${Workday_Account_for_Worker_Data.One-Time_Passcode_Grace_Period_Login_Remaining_Count}</bsvc:One-Time_Passcode_Grace_Period_Login_Remaining_Count>
+            <!--Optional:-->
+            <bsvc:Account_Disabled>${Workday_Account_for_Worker_Data.Account_Disabled}</bsvc:Account_Disabled>
+            <!--Optional:-->
+            <bsvc:Account_Expiration_Date>${Workday_Account_for_Worker_Data.Account_Expiration_Date}</bsvc:Account_Expiration_Date>
+            <!--Optional:-->
+            <bsvc:OpenID_Identifier>${Workday_Account_for_Worker_Data.OpenID_Identifier}</bsvc:OpenID_Identifier>
+            <!--Optional:-->
+            <bsvc:OpenID_Internal_Identifier>${Workday_Account_for_Worker_Data.OpenID_Internal_Identifier}</bsvc:OpenID_Internal_Identifier>
+            <!--Optional:-->
+            <bsvc:OpenID_Connect_Internal_Identifier>${Workday_Account_for_Worker_Data.OpenID_Connect_Internal_Identifier}</bsvc:OpenID_Connect_Internal_Identifier>
+            <!--Optional:-->
+            <bsvc:Delegated_Authentication_Integration_System_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Data.Delegated_Authentication_Integration_System_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Delegated_Authentication_Integration_System_Reference.ID}">${Delegated_Authentication_Integration_System_Reference.ID}</bsvc:ID>
+            </bsvc:Delegated_Authentication_Integration_System_Reference>
+            <!--Optional:-->
+            <bsvc:Session_Timeout_Minutes>${Workday_Account_for_Worker_Data.Session_Timeout_Minutes}</bsvc:Session_Timeout_Minutes>
+            <!--Optional:-->
+            <bsvc:Show_User_Name_in_Browser_Window>${Workday_Account_for_Worker_Data.Show_User_Name_in_Browser_Window}</bsvc:Show_User_Name_in_Browser_Window>
+            <!--Optional:-->
+            <bsvc:Display_XML_Icon_on_Reports>${Workday_Account_for_Worker_Data.Display_XML_Icon_on_Reports}</bsvc:Display_XML_Icon_on_Reports>
+            <!--Optional:-->
+            <bsvc:Enable_Workbox>${Workday_Account_for_Worker_Data.Enable_Workbox}</bsvc:Enable_Workbox>
+            <!--Optional:-->
+            <bsvc:Locale_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Data.Locale_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Locale_Reference.ID}">${Locale_Reference.ID}</bsvc:ID>
+            </bsvc:Locale_Reference>
+            <!--Optional:-->
+            <bsvc:User_Language_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Data.User_Language_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${User_Language_Reference.ID}">${User_Language_Reference.ID}</bsvc:ID>
+            </bsvc:User_Language_Reference>
+            <!--Optional:-->
+            <bsvc:Preferred_Communication_Language_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Data.Preferred_Communication_Language_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Preferred_Communication_Language_Reference.ID}">${Preferred_Communication_Language_Reference.ID}</bsvc:ID>
+            </bsvc:Preferred_Communication_Language_Reference>
+            <!--Optional:-->
+            <bsvc:Preferred_Search_Scope_Reference bsvc:Descriptor="${Workday_Account_for_Worker_Data.Preferred_Search_Scope_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Preferred_Search_Scope_Reference.ID}">${Preferred_Search_Scope_Reference.ID}</bsvc:ID>
+            </bsvc:Preferred_Search_Scope_Reference>
+            <!--Optional:-->
+            <bsvc:Allow_Mixed-Language_Transactions>${Workday_Account_for_Worker_Data.Allow_Mixed-Language_Transactions}</bsvc:Allow_Mixed-Language_Transactions>
+            <!--Zero or more repetitions:-->
+            <bsvc:Notification_Sub_Type_Configurations>
+               <!--Zero or more repetitions:-->
+               <bsvc:Notification_Sub_Type_Configuration>
+                  <!--Optional:-->
+                  <bsvc:Notification_Sub_Type_Reference bsvc:Descriptor="${Notification_Sub_Type_Configuration.Notification_Sub_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Notification_Sub_Type_Reference.ID}">${Notification_Sub_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Notification_Sub_Type_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Notification_channels_Reference bsvc:Descriptor="${Notification_Sub_Type_Configuration.Notification_channels_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Notification_channels_Reference.ID}">${Notification_channels_Reference.ID}</bsvc:ID>
+                  </bsvc:Notification_channels_Reference>
+               </bsvc:Notification_Sub_Type_Configuration>
+            </bsvc:Notification_Sub_Type_Configurations>
+            <!--Optional:-->
+            <bsvc:Exempt_from_Delegated_Authentication>${Workday_Account_for_Worker_Data.Exempt_from_Delegated_Authentication}</bsvc:Exempt_from_Delegated_Authentication>
+         </bsvc:Workday_Account_for_Worker_Data>
+      </bsvc:Workday_Account_for_Worker_Update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Update_Workday_Account</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Update_Workday_Account ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:33</sys_created_on>
+        <sys_id>25e469994f003300f94a00fe9310c73b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update_Workday_Account</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_25e469994f003300f94a00fe9310c73b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:33</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

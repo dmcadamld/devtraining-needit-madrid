@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Organization_Add_Update bsvc:version="${Organization_Add_Update}">
+         <bsvc:Organization_Data bsvc:Effective_Date="${Organization_Add_Update.Organization_Data}">
+            <!--Optional:-->
+            <bsvc:Organization_Reference_ID>${Organization_Data.Organization_Reference_ID}</bsvc:Organization_Reference_ID>
+            <!--Optional:-->
+            <bsvc:Include_Organization_ID_in_Name>${Organization_Data.Include_Organization_ID_in_Name}</bsvc:Include_Organization_ID_in_Name>
+            <!--Optional:-->
+            <bsvc:Integration_ID_Data>
+               <!--1 or more repetitions:-->
+               <bsvc:ID bsvc:System_ID="${Integration_ID_Data.ID}">${Integration_ID_Data.ID}</bsvc:ID>
+            </bsvc:Integration_ID_Data>
+            <!--Optional:-->
+            <bsvc:Organization_Name>${Organization_Data.Organization_Name}</bsvc:Organization_Name>
+            <!--Optional:-->
+            <bsvc:Availability_Date>${Organization_Data.Availability_Date}</bsvc:Availability_Date>
+            <!--Optional:-->
+            <bsvc:Include_Organization_Code_In_Name>${Organization_Data.Include_Organization_Code_In_Name}</bsvc:Include_Organization_Code_In_Name>
+            <!--Optional:-->
+            <bsvc:Organization_Code>${Organization_Data.Organization_Code}</bsvc:Organization_Code>
+            <!--Optional:-->
+            <bsvc:Include_Leader_In_Name>${Organization_Data.Include_Leader_In_Name}</bsvc:Include_Leader_In_Name>
+            <!--Optional:-->
+            <bsvc:Frozen_Status>${Organization_Data.Frozen_Status}</bsvc:Frozen_Status>
+            <!--Optional:-->
+            <bsvc:Job_Management_Enabled>${Organization_Data.Job_Management_Enabled}</bsvc:Job_Management_Enabled>
+            <!--Optional:-->
+            <bsvc:Position_Management_Enabled>${Organization_Data.Position_Management_Enabled}</bsvc:Position_Management_Enabled>
+            <!--Optional:-->
+            <bsvc:Superior_Organization_Reference>
+               <bsvc:Organization_Reference>
+                  <bsvc:Integration_ID_Reference bsvc:Descriptor="${Organization_Reference.Integration_ID_Reference}">
+                     <bsvc:ID bsvc:System_ID="${Integration_ID_Reference.ID}">${Integration_ID_Reference.ID}</bsvc:ID>
+                  </bsvc:Integration_ID_Reference>
+               </bsvc:Organization_Reference>
+            </bsvc:Superior_Organization_Reference>
+            <!--Optional:-->
+            <bsvc:Organization_Type_Reference>
+               <bsvc:Organization_Type_Name>${Organization_Type_Reference.Organization_Type_Name}</bsvc:Organization_Type_Name>
+            </bsvc:Organization_Type_Reference>
+            <!--Optional:-->
+            <bsvc:Organization_Subtype_Reference>
+               <bsvc:Organization_Subtype_Name>${Organization_Subtype_Reference.Organization_Subtype_Name}</bsvc:Organization_Subtype_Name>
+            </bsvc:Organization_Subtype_Reference>
+            <!--Optional:-->
+            <bsvc:Organization_Visibility_Reference>
+               <bsvc:Organization_Visibility_Name>${Organization_Visibility_Reference.Organization_Visibility_Name}</bsvc:Organization_Visibility_Name>
+            </bsvc:Organization_Visibility_Reference>
+            <!--Optional:-->
+            <bsvc:Primary_Business_Site_Reference>
+               <bsvc:Business_Site_Reference>
+                  <bsvc:Integration_ID_Reference bsvc:Descriptor="${Business_Site_Reference.Integration_ID_Reference}">
+                     <bsvc:ID bsvc:System_ID="${Integration_ID_Reference.ID}">${Integration_ID_Reference.ID}</bsvc:ID>
+                  </bsvc:Integration_ID_Reference>
+               </bsvc:Business_Site_Reference>
+            </bsvc:Primary_Business_Site_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Container_Organization_Reference>
+               <bsvc:Organization_Reference>
+                  <bsvc:Integration_ID_Reference bsvc:Descriptor="${Organization_Reference.Integration_ID_Reference}">
+                     <bsvc:ID bsvc:System_ID="${Integration_ID_Reference.ID}">${Integration_ID_Reference.ID}</bsvc:ID>
+                  </bsvc:Integration_ID_Reference>
+               </bsvc:Organization_Reference>
+            </bsvc:Container_Organization_Reference>
+         </bsvc:Organization_Data>
+      </bsvc:Organization_Add_Update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Add_Update_Organization</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Add_Update_Organization ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:17</sys_created_on>
+        <sys_id>0fb2768f4f372300f94a00fe9310c7fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add_Update_Organization</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_0fb2768f4f372300f94a00fe9310c7fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:17</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

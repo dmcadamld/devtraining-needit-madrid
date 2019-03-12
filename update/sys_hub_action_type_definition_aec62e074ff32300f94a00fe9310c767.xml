@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get WD Employee information based on a given ID</description>
+        <internal_name>getwdemployeeinfo</internal_name>
+        <label_cache>[{"name":"{{action.employeeid}}","label":"action➛WD_EmployeeID","type":"action","ref":""},{"name":"{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].response_body}}","label":"step➛PullWDEmployee➛Response Body","type":"step","ref":""},{"name":"{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].error_message}}","label":"step➛PullWDEmployee➛Error Message","type":"step","ref":""},{"name":"{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].error_code}}","label":"step➛PullWDEmployee➛Error Code","type":"step","ref":""},{"name":"{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].status_code}}","label":"step➛PullWDEmployee➛Status Code","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>694e4c014f403300f94a00fe9310c7e4</latest_snapshot>
+        <master_snapshot>adeab6c34f772300f94a00fe9310c7e7</master_snapshot>
+        <name>WD_GetWDEmployee</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>fred.luddy</sys_created_by>
+        <sys_created_on>2019-02-28 00:22:06</sys_created_on>
+        <sys_id>aec62e074ff32300f94a00fe9310c767</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>WD_GetWDEmployee</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_aec62e074ff32300f94a00fe9310c767</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:23:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=aec62e074ff32300f94a00fe9310c767"/>
+    <sys_variable_value action="delete_multiple" query="document_key=aec62e074ff32300f94a00fe9310c767"/>
+    <sys_element_mapping action="delete_multiple" query="id=aec62e074ff32300f94a00fe9310c767"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errorcode</field>
+        <id>aec62e074ff32300f94a00fe9310c767</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:49:50</sys_created_on>
+        <sys_id>7bdab6c34f772300f94a00fe9310c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:49:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_aec62e074ff32300f94a00fe9310c767</table>
+        <value>{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errormessage</field>
+        <id>aec62e074ff32300f94a00fe9310c767</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:49:50</sys_created_on>
+        <sys_id>33dab6c34f772300f94a00fe9310c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:49:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_aec62e074ff32300f94a00fe9310c767</table>
+        <value>{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>aec62e074ff32300f94a00fe9310c767</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:49:50</sys_created_on>
+        <sys_id>b7dab6c34f772300f94a00fe9310c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:49:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_aec62e074ff32300f94a00fe9310c767</table>
+        <value>{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>statuscode</field>
+        <id>aec62e074ff32300f94a00fe9310c767</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:49:50</sys_created_on>
+        <sys_id>f3dab6c34f772300f94a00fe9310c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:49:50</sys_updated_on>
+        <table>var__m_sys_hub_action_output_aec62e074ff32300f94a00fe9310c767</table>
+        <value>{{step[b8e8f919-ccd2-488f-addc-894aaf9a58b6].status_code}}</value>
+    </sys_element_mapping>
+</record_update>

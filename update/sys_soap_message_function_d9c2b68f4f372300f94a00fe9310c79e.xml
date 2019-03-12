@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Import_Person_Photo_Request bsvc:version="${Import_Person_Photo_Request}">
+         <!--Optional:-->
+         <bsvc:ID>${Import_Person_Photo_Request.ID}</bsvc:ID>
+         <!--Zero or more repetitions:-->
+         <bsvc:Person_Photo_HV_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Person_Photo_Data>
+               <!--Optional:-->
+               <bsvc:Person_Reference bsvc:Descriptor="${Person_Photo_Data.Person_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Person_Reference.ID}">${Person_Reference.ID}</bsvc:ID>
+               </bsvc:Person_Reference>
+               <!--Optional:-->
+               <bsvc:Universal_ID_Reference bsvc:Descriptor="${Person_Photo_Data.Universal_ID_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Universal_ID_Reference.ID}">${Universal_ID_Reference.ID}</bsvc:ID>
+               </bsvc:Universal_ID_Reference>
+               <bsvc:Photo_Data>
+                  <!--Optional:-->
+                  <bsvc:Filename>${Photo_Data.Filename}</bsvc:Filename>
+                  <bsvc:File>cid:474844917255</bsvc:File>
+               </bsvc:Photo_Data>
+            </bsvc:Person_Photo_Data>
+         </bsvc:Person_Photo_HV_Data>
+      </bsvc:Import_Person_Photo_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Import_Person_Photos</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Import_Person_Photos ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:27</sys_created_on>
+        <sys_id>d9c2b68f4f372300f94a00fe9310c79e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import_Person_Photos</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_d9c2b68f4f372300f94a00fe9310c79e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:27</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

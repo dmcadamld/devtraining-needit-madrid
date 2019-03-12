@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>getwdemployee</internal_name>
+        <label_cache>[{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.zipcode","label":"2➛WD_HomeZipCode","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.state","label":"2➛WD_HomeState","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.city","label":"2➛WD_HomeCity","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.streetaddress","label":"2➛WD_HomeStreetAddress","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.phonenumber","label":"2➛WD_HomePhoneNumber","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.emailaddress","label":"2➛WD_HomeEmailAddress","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.preferredname","label":"2➛WD_PreferredName","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.lastname","label":"2➛WD_LegalLastName","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.firstname","label":"2➛WD_LegalFirstName","type":"string","base_type":"string"},{"name":"83fc4fc0-4d18-4348-b96f-b2ef691b78bf.employeeid","label":"2➛EmployeeId","reference_display":"EmployeeId","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.zipcode","label":"2➛ZipCode","reference_display":"ZipCode","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.state","label":"2➛State","reference_display":"State","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.city","label":"2➛City","reference_display":"City","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.streetaddress","label":"2➛StreetAddress","reference_display":"StreetAddress","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.phonenumber","label":"2➛PhoneNumber","reference_display":"PhoneNumber","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.emailaddress","label":"2➛EmailAddress","reference_display":"EmailAddress","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.preferredname","label":"2➛PreferredName","reference_display":"PreferredName","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.lastname","label":"2➛LastName","reference_display":"LastName","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.firstname","label":"2➛FirstName","reference_display":"FirstName","type":"string","base_type":"string"},{"name":"2bd8d7e2-66e5-493e-82ca-e6a6bb8e1bfb.employeeid","label":"2➛EmployeeId","reference_display":"EmployeeId","type":"string","base_type":"string"},{"name":"dcb0bf42-56e1-4d32-bb18-d9304ce4a2dc.response","label":"1➛Response","reference_display":"Response","type":"string","base_type":"string"},{"name":"dcb0bf42-56e1-4d32-bb18-d9304ce4a2dc.errormessage","label":"1➛ErrorMessage","reference_display":"ErrorMessage","type":"string","base_type":"string"},{"name":"dcb0bf42-56e1-4d32-bb18-d9304ce4a2dc.errorcode","label":"1➛ErrorCode","reference_display":"ErrorCode","type":"string","base_type":"string"},{"name":"dcb0bf42-56e1-4d32-bb18-d9304ce4a2dc.statuscode","label":"1➛StatusCode","reference_display":"StatusCode","type":"string","base_type":"string"},{"name":"subflow.employeeid","label":"Input➛WD_EmployeeId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""}]</label_cache>
+        <latest_snapshot>31f92edf4f332300f94a00fe9310c712</latest_snapshot>
+        <master_snapshot>31f92edf4f332300f94a00fe9310c712</master_snapshot>
+        <name>WD_GetEmployeeInfo</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 19:10:51</sys_created_on>
+        <sys_id>f429ee9f4f332300f94a00fe9310c77d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>WD_GetEmployeeInfo</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_f429ee9f4f332300f94a00fe9310c77d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:33:20</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f429ee9f4f332300f94a00fe9310c77d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f429ee9f4f332300f94a00fe9310c77d"/>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Academic_Unit_Hierarchy_Request bsvc:Add_Only="${Put_Academic_Unit_Hierarchy_Request}" bsvc:version="${Put_Academic_Unit_Hierarchy_Request}">
+         <!--Optional:-->
+         <bsvc:Academic_Unit_Hierarchy_Reference bsvc:Descriptor="${Put_Academic_Unit_Hierarchy_Request.Academic_Unit_Hierarchy_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Academic_Unit_Hierarchy_Reference.ID}">${Academic_Unit_Hierarchy_Reference.ID}</bsvc:ID>
+         </bsvc:Academic_Unit_Hierarchy_Reference>
+         <bsvc:Academic_Unit_Hierarchy_Data>
+            <!--Optional:-->
+            <bsvc:Academic_Unit_Hierarchy_ID>${Academic_Unit_Hierarchy_Data.Academic_Unit_Hierarchy_ID}</bsvc:Academic_Unit_Hierarchy_ID>
+            <bsvc:Name>${Academic_Unit_Hierarchy_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Code>${Academic_Unit_Hierarchy_Data.Code}</bsvc:Code>
+            <!--Optional:-->
+            <bsvc:Include_Code_in_Name>${Academic_Unit_Hierarchy_Data.Include_Code_in_Name}</bsvc:Include_Code_in_Name>
+            <!--Optional:-->
+            <bsvc:Include_Leadership_Role_Incumbent_in_Name>${Academic_Unit_Hierarchy_Data.Include_Leadership_Role_Incumbent_in_Name}</bsvc:Include_Leadership_Role_Incumbent_in_Name>
+            <!--Optional:-->
+            <bsvc:Include_Subtype_in_Name>${Academic_Unit_Hierarchy_Data.Include_Subtype_in_Name}</bsvc:Include_Subtype_in_Name>
+            <!--Optional:-->
+            <bsvc:Type_Reference bsvc:Descriptor="${Academic_Unit_Hierarchy_Data.Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+            </bsvc:Type_Reference>
+            <!--Optional:-->
+            <bsvc:External_URL_Reference bsvc:Descriptor="${Academic_Unit_Hierarchy_Data.External_URL_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${External_URL_Reference.ID}">${External_URL_Reference.ID}</bsvc:ID>
+            </bsvc:External_URL_Reference>
+            <!--Optional:-->
+            <bsvc:Superior_Reference bsvc:Descriptor="${Academic_Unit_Hierarchy_Data.Superior_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Superior_Reference.ID}">${Superior_Reference.ID}</bsvc:ID>
+            </bsvc:Superior_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Subordinate_Reference bsvc:Descriptor="${Academic_Unit_Hierarchy_Data.Subordinate_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Subordinate_Reference.ID}">${Subordinate_Reference.ID}</bsvc:ID>
+            </bsvc:Subordinate_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Academic_Unit_Reference bsvc:Descriptor="${Academic_Unit_Hierarchy_Data.Academic_Unit_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Academic_Unit_Reference.ID}">${Academic_Unit_Reference.ID}</bsvc:ID>
+            </bsvc:Academic_Unit_Reference>
+            <!--Optional:-->
+            <bsvc:Inactive>${Academic_Unit_Hierarchy_Data.Inactive}</bsvc:Inactive>
+         </bsvc:Academic_Unit_Hierarchy_Data>
+      </bsvc:Put_Academic_Unit_Hierarchy_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Academic_Unit_Hierarchy</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Put_Academic_Unit_Hierarchy ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:24</sys_created_on>
+        <sys_id>3cc2b68f4f372300f94a00fe9310c77f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Academic_Unit_Hierarchy</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_3cc2b68f4f372300f94a00fe9310c77f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:24</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Academic_Unit_Request bsvc:Add_Only="${Put_Academic_Unit_Request}" bsvc:version="${Put_Academic_Unit_Request}">
+         <!--Optional:-->
+         <bsvc:Academic_Unit_Reference bsvc:Descriptor="${Put_Academic_Unit_Request.Academic_Unit_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Academic_Unit_Reference.ID}">${Academic_Unit_Reference.ID}</bsvc:ID>
+         </bsvc:Academic_Unit_Reference>
+         <bsvc:Academic_Unit_Data>
+            <!--Optional:-->
+            <bsvc:ID>${Academic_Unit_Data.ID}</bsvc:ID>
+            <!--Optional:-->
+            <bsvc:Effective_Date>${Academic_Unit_Data.Effective_Date}</bsvc:Effective_Date>
+            <!--Optional:-->
+            <bsvc:Name>${Academic_Unit_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Code>${Academic_Unit_Data.Code}</bsvc:Code>
+            <!--Optional:-->
+            <bsvc:Is_Institution>${Academic_Unit_Data.Is_Institution}</bsvc:Is_Institution>
+            <!--Optional:-->
+            <bsvc:Include_Code_in_Name>${Academic_Unit_Data.Include_Code_in_Name}</bsvc:Include_Code_in_Name>
+            <!--Optional:-->
+            <bsvc:Include_Incumbent_Leader_in_Name>${Academic_Unit_Data.Include_Incumbent_Leader_in_Name}</bsvc:Include_Incumbent_Leader_in_Name>
+            <!--Optional:-->
+            <bsvc:Academic_Organization_Subtype_Reference bsvc:Descriptor="${Academic_Unit_Data.Academic_Organization_Subtype_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Academic_Organization_Subtype_Reference.ID}">${Academic_Organization_Subtype_Reference.ID}</bsvc:ID>
+            </bsvc:Academic_Organization_Subtype_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Subtype_in_Name>${Academic_Unit_Data.Include_Subtype_in_Name}</bsvc:Include_Subtype_in_Name>
+            <!--Optional:-->
+            <bsvc:Inactive>${Academic_Unit_Data.Inactive}</bsvc:Inactive>
+            <!--Optional:-->
+            <bsvc:Company_Reference bsvc:Descriptor="${Academic_Unit_Data.Company_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Company_Reference.ID}">${Company_Reference.ID}</bsvc:ID>
+            </bsvc:Company_Reference>
+            <!--Optional:-->
+            <bsvc:CIP_Code_Reference bsvc:Descriptor="${Academic_Unit_Data.CIP_Code_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${CIP_Code_Reference.ID}">${CIP_Code_Reference.ID}</bsvc:ID>
+            </bsvc:CIP_Code_Reference>
+            <!--Optional:-->
+            <bsvc:External_URL_Reference bsvc:Descriptor="${Academic_Unit_Data.External_URL_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${External_URL_Reference.ID}">${External_URL_Reference.ID}</bsvc:ID>
+            </bsvc:External_URL_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Supervisory_Organization_Reference bsvc:Descriptor="${Academic_Unit_Data.Supervisory_Organization_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Supervisory_Organization_Reference.ID}">${Supervisory_Organization_Reference.ID}</bsvc:ID>
+            </bsvc:Supervisory_Organization_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Track_Type_Reference bsvc:Descriptor="${Academic_Unit_Data.Track_Type_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Track_Type_Reference.ID}">${Track_Type_Reference.ID}</bsvc:ID>
+            </bsvc:Track_Type_Reference>
+            <!--Optional:-->
+            <bsvc:Superior_Academic_Unit_Reference bsvc:Descriptor="${Academic_Unit_Data.Superior_Academic_Unit_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Superior_Academic_Unit_Reference.ID}">${Superior_Academic_Unit_Reference.ID}</bsvc:ID>
+            </bsvc:Superior_Academic_Unit_Reference>
+            <!--Optional:-->
+            <bsvc:Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference bsvc:Descriptor="${Academic_Unit_Data.Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference.ID}">${Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference.ID}</bsvc:ID>
+            </bsvc:Acceptable_External_Institution_Grading_Scheme_Point_Value_Reference>
+         </bsvc:Academic_Unit_Data>
+      </bsvc:Put_Academic_Unit_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Academic_Unit</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Put_Academic_Unit ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:05</sys_created_on>
+        <sys_id>8cb2f28f4f372300f94a00fe9310c707</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Academic_Unit</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_8cb2f28f4f372300f94a00fe9310c707</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:05</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

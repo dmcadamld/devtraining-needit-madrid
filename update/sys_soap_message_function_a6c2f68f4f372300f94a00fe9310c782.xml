@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Work_Status_Rule_Set_Request bsvc:Add_Only="${Put_Work_Status_Rule_Set_Request}" bsvc:version="${Put_Work_Status_Rule_Set_Request}">
+         <!--Optional:-->
+         <bsvc:Work_Status_Rule_Set_Reference bsvc:Descriptor="${Put_Work_Status_Rule_Set_Request.Work_Status_Rule_Set_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Work_Status_Rule_Set_Reference.ID}">${Work_Status_Rule_Set_Reference.ID}</bsvc:ID>
+         </bsvc:Work_Status_Rule_Set_Reference>
+         <!--Optional:-->
+         <bsvc:Work_Status_Rule_Set_Data>
+            <!--Optional:-->
+            <bsvc:ID>${Work_Status_Rule_Set_Data.ID}</bsvc:ID>
+            <bsvc:Work_Status_Rule_Set_Name>${Work_Status_Rule_Set_Data.Work_Status_Rule_Set_Name}</bsvc:Work_Status_Rule_Set_Name>
+            <!--Optional:-->
+            <bsvc:Work_Status_Rule_Set_Description>${Work_Status_Rule_Set_Data.Work_Status_Rule_Set_Description}</bsvc:Work_Status_Rule_Set_Description>
+            <!--Zero or more repetitions:-->
+            <bsvc:Restricted_to_Academic_Unit_Reference bsvc:Descriptor="${Work_Status_Rule_Set_Data.Restricted_to_Academic_Unit_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Restricted_to_Academic_Unit_Reference.ID}">${Restricted_to_Academic_Unit_Reference.ID}</bsvc:ID>
+            </bsvc:Restricted_to_Academic_Unit_Reference>
+            <!--Optional:-->
+            <bsvc:Default_Work_Status_Rule_Set>${Work_Status_Rule_Set_Data.Default_Work_Status_Rule_Set}</bsvc:Default_Work_Status_Rule_Set>
+            <!--Optional:-->
+            <bsvc:Inactive>${Work_Status_Rule_Set_Data.Inactive}</bsvc:Inactive>
+            <!--Zero or more repetitions:-->
+            <bsvc:Applies_to_Leave_Types_Reference bsvc:Descriptor="${Work_Status_Rule_Set_Data.Applies_to_Leave_Types_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Applies_to_Leave_Types_Reference.ID}">${Applies_to_Leave_Types_Reference.ID}</bsvc:ID>
+            </bsvc:Applies_to_Leave_Types_Reference>
+            <!--Optional:-->
+            <bsvc:Active_Periods_Required_for_Eligibility>${Work_Status_Rule_Set_Data.Active_Periods_Required_for_Eligibility}</bsvc:Active_Periods_Required_for_Eligibility>
+            <!--Optional:-->
+            <bsvc:Minimum_Years_Since_Last_Applicable_Leave>${Work_Status_Rule_Set_Data.Minimum_Years_Since_Last_Applicable_Leave}</bsvc:Minimum_Years_Since_Last_Applicable_Leave>
+            <!--Zero or more repetitions:-->
+            <bsvc:Work_Status_Rule_Row_Subdata bsvc:Delete="${Work_Status_Rule_Set_Data.Work_Status_Rule_Row_Subdata}" bsvc:Add_Only="${Work_Status_Rule_Set_Data.Work_Status_Rule_Row_Subdata}">
+               <!--Optional:-->
+               <bsvc:Work_Status_Rule_Row_ID>${Work_Status_Rule_Row_Subdata.Work_Status_Rule_Row_ID}</bsvc:Work_Status_Rule_Row_ID>
+               <bsvc:Order>${Work_Status_Rule_Row_Subdata.Order}</bsvc:Order>
+               <bsvc:Work_Status_Rule_Name>${Work_Status_Rule_Row_Subdata.Work_Status_Rule_Name}</bsvc:Work_Status_Rule_Name>
+               <bsvc:Work_Status_Reference bsvc:Descriptor="${Work_Status_Rule_Row_Subdata.Work_Status_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Work_Status_Reference.ID}">${Work_Status_Reference.ID}</bsvc:ID>
+               </bsvc:Work_Status_Reference>
+               <bsvc:Work_Status_Rule_Reference bsvc:Descriptor="${Work_Status_Rule_Row_Subdata.Work_Status_Rule_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Work_Status_Rule_Reference.ID}">${Work_Status_Rule_Reference.ID}</bsvc:ID>
+               </bsvc:Work_Status_Rule_Reference>
+            </bsvc:Work_Status_Rule_Row_Subdata>
+         </bsvc:Work_Status_Rule_Set_Data>
+      </bsvc:Put_Work_Status_Rule_Set_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Work_Status_Rule_Set</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Put_Work_Status_Rule_Set ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:32</sys_created_on>
+        <sys_id>a6c2f68f4f372300f94a00fe9310c782</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Work_Status_Rule_Set</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_a6c2f68f4f372300f94a00fe9310c782</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:32</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

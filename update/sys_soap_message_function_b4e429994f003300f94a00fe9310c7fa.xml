@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Work_Schedule_Calendar_Request bsvc:Add_Only="${Put_Work_Schedule_Calendar_Request}" bsvc:version="${Put_Work_Schedule_Calendar_Request}">
+         <!--Optional:-->
+         <bsvc:Work_Schedule_Calendar_Reference bsvc:Descriptor="${Put_Work_Schedule_Calendar_Request.Work_Schedule_Calendar_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Work_Schedule_Calendar_Reference.ID}">${Work_Schedule_Calendar_Reference.ID}</bsvc:ID>
+         </bsvc:Work_Schedule_Calendar_Reference>
+         <bsvc:Work_Schedule_Calendar_Data bsvc:ID="${Put_Work_Schedule_Calendar_Request.Work_Schedule_Calendar_Data}">
+            <bsvc:Name>${Work_Schedule_Calendar_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Schedule_Summary>${Work_Schedule_Calendar_Data.Schedule_Summary}</bsvc:Schedule_Summary>
+            <!--Optional:-->
+            <bsvc:Description>${Work_Schedule_Calendar_Data.Description}</bsvc:Description>
+            <!--Optional:-->
+            <bsvc:Condition_Rule_Reference bsvc:Descriptor="${Work_Schedule_Calendar_Data.Condition_Rule_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Condition_Rule_Reference.ID}">${Condition_Rule_Reference.ID}</bsvc:ID>
+            </bsvc:Condition_Rule_Reference>
+            <bsvc:Day_Breaker_Reference bsvc:Descriptor="${Work_Schedule_Calendar_Data.Day_Breaker_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Day_Breaker_Reference.ID}">${Day_Breaker_Reference.ID}</bsvc:ID>
+            </bsvc:Day_Breaker_Reference>
+            <!--Optional:-->
+            <bsvc:Day_Breaker_Divides_Reference bsvc:Descriptor="${Work_Schedule_Calendar_Data.Day_Breaker_Divides_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Day_Breaker_Divides_Reference.ID}">${Day_Breaker_Divides_Reference.ID}</bsvc:ID>
+            </bsvc:Day_Breaker_Divides_Reference>
+            <bsvc:Work_Week_Start_Day_Reference bsvc:Descriptor="${Work_Schedule_Calendar_Data.Work_Week_Start_Day_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Work_Week_Start_Day_Reference.ID}">${Work_Week_Start_Day_Reference.ID}</bsvc:ID>
+            </bsvc:Work_Week_Start_Day_Reference>
+            <!--Optional:-->
+            <bsvc:Biweekly_Calculation_Start_Date>${Work_Schedule_Calendar_Data.Biweekly_Calculation_Start_Date}</bsvc:Biweekly_Calculation_Start_Date>
+            <!--Optional:-->
+            <bsvc:Pattern_Start_Date>${Work_Schedule_Calendar_Data.Pattern_Start_Date}</bsvc:Pattern_Start_Date>
+            <!--Optional:-->
+            <bsvc:Number_of_Weeks>${Work_Schedule_Calendar_Data.Number_of_Weeks}</bsvc:Number_of_Weeks>
+            <!--Zero or more repetitions:-->
+            <bsvc:Work_Schedule_Calendar_Event_Data bsvc:ID="${Work_Schedule_Calendar_Data.Work_Schedule_Calendar_Event_Data}">
+               <bsvc:Name>${Work_Schedule_Calendar_Event_Data.Name}</bsvc:Name>
+               <!--Optional:-->
+               <bsvc:Display_Name>${Work_Schedule_Calendar_Event_Data.Display_Name}</bsvc:Display_Name>
+               <bsvc:Start_End_Data>
+                  <!--Optional:-->
+                  <bsvc:All_Day_Event>${Start_End_Data.All_Day_Event}</bsvc:All_Day_Event>
+                  <bsvc:Start_Date>${Start_End_Data.Start_Date}</bsvc:Start_Date>
+                  <!--Optional:-->
+                  <bsvc:Start_Time>${Start_End_Data.Start_Time}</bsvc:Start_Time>
+                  <!--Optional:-->
+                  <bsvc:End_Date>${Start_End_Data.End_Date}</bsvc:End_Date>
+                  <!--Optional:-->
+                  <bsvc:End_Time>${Start_End_Data.End_Time}</bsvc:End_Time>
+               </bsvc:Start_End_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Meal_Data>
+                  <bsvc:Meal_In>${Meal_Data.Meal_In}</bsvc:Meal_In>
+                  <bsvc:Meal_Out>${Meal_Data.Meal_Out}</bsvc:Meal_Out>
+               </bsvc:Meal_Data>
+               <!--Optional:-->
+               <bsvc:Recurrence_Data>
+                  <bsvc:Recurrence_Type_Reference bsvc:Descriptor="${Recurrence_Data.Recurrence_Type_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Recurrence_Type_Reference.ID}">${Recurrence_Type_Reference.ID}</bsvc:ID>
+                  </bsvc:Recurrence_Type_Reference>
+                  <!--Optional:-->
+                  <bsvc:Recurrence_Interval_Multiplier>${Recurrence_Data.Recurrence_Interval_Multiplier}</bsvc:Recurrence_Interval_Multiplier>
+                  <!--Optional:-->
+                  <bsvc:Recurs_Every_Weekday>${Recurrence_Data.Recurs_Every_Weekday}</bsvc:Recurs_Every_Weekday>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Day_of_the_Week_Reference bsvc:Descriptor="${Recurrence_Data.Day_of_the_Week_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Day_of_the_Week_Reference.ID}">${Day_of_the_Week_Reference.ID}</bsvc:ID>
+                  </bsvc:Day_of_the_Week_Reference>
+                  <!--Optional:-->
+                  <bsvc:First_Day_of_the_Week_Reference bsvc:Descriptor="${Recurrence_Data.First_Day_of_the_Week_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${First_Day_of_the_Week_Reference.ID}">${First_Day_of_the_Week_Reference.ID}</bsvc:ID>
+                  </bsvc:First_Day_of_the_Week_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Month_Reference bsvc:Descriptor="${Recurrence_Data.Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Month_Reference.ID}">${Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Month_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Day_of_the_Month_Reference bsvc:Descriptor="${Recurrence_Data.Day_of_the_Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Day_of_the_Month_Reference.ID}">${Day_of_the_Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Day_of_the_Month_Reference>
+                  <!--Optional:-->
+                  <bsvc:Week_of_the_Month_Reference bsvc:Descriptor="${Recurrence_Data.Week_of_the_Month_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Week_of_the_Month_Reference.ID}">${Week_of_the_Month_Reference.ID}</bsvc:ID>
+                  </bsvc:Week_of_the_Month_Reference>
+                  <bsvc:Recurrence_Start_Date>${Recurrence_Data.Recurrence_Start_Date}</bsvc:Recurrence_Start_Date>
+                  <!--Optional:-->
+                  <bsvc:Recurrence_End_Date>${Recurrence_Data.Recurrence_End_Date}</bsvc:Recurrence_End_Date>
+               </bsvc:Recurrence_Data>
+            </bsvc:Work_Schedule_Calendar_Event_Data>
+            <!--Optional:-->
+            <bsvc:Worker_Edit_Options_Data>
+               <!--Optional:-->
+               <bsvc:Enable_Worker_Editing_Options>${Worker_Edit_Options_Data.Enable_Worker_Editing_Options}</bsvc:Enable_Worker_Editing_Options>
+               <!--Optional:-->
+               <bsvc:Change_Scheduled_and_Non_Scheduled_Days>${Worker_Edit_Options_Data.Change_Scheduled_and_Non_Scheduled_Days}</bsvc:Change_Scheduled_and_Non_Scheduled_Days>
+               <!--Optional:-->
+               <bsvc:Change_Number_of_Scheduled_Days>${Worker_Edit_Options_Data.Change_Number_of_Scheduled_Days}</bsvc:Change_Number_of_Scheduled_Days>
+               <!--Optional:-->
+               <bsvc:Enable_Hours_Restrictions>${Worker_Edit_Options_Data.Enable_Hours_Restrictions}</bsvc:Enable_Hours_Restrictions>
+               <!--Optional:-->
+               <bsvc:Minimum_Number_of_Hours_per_Day>${Worker_Edit_Options_Data.Minimum_Number_of_Hours_per_Day}</bsvc:Minimum_Number_of_Hours_per_Day>
+               <!--Optional:-->
+               <bsvc:Maximum_Number_of_Hours_per_Day>${Worker_Edit_Options_Data.Maximum_Number_of_Hours_per_Day}</bsvc:Maximum_Number_of_Hours_per_Day>
+               <!--Optional:-->
+               <bsvc:Minimum_Number_of_Hours_per_Week>${Worker_Edit_Options_Data.Minimum_Number_of_Hours_per_Week}</bsvc:Minimum_Number_of_Hours_per_Week>
+               <!--Optional:-->
+               <bsvc:Maximum_Number_of_Hours_per_Week>${Worker_Edit_Options_Data.Maximum_Number_of_Hours_per_Week}</bsvc:Maximum_Number_of_Hours_per_Week>
+               <!--Optional:-->
+               <bsvc:Change_Daily_Start_and_End_Times>${Worker_Edit_Options_Data.Change_Daily_Start_and_End_Times}</bsvc:Change_Daily_Start_and_End_Times>
+               <!--Optional:-->
+               <bsvc:Uniform_Start_and_End_Times>${Worker_Edit_Options_Data.Uniform_Start_and_End_Times}</bsvc:Uniform_Start_and_End_Times>
+               <!--Optional:-->
+               <bsvc:Flexible_Start_Time>${Worker_Edit_Options_Data.Flexible_Start_Time}</bsvc:Flexible_Start_Time>
+               <!--Optional:-->
+               <bsvc:Flexible_End_Time>${Worker_Edit_Options_Data.Flexible_End_Time}</bsvc:Flexible_End_Time>
+               <!--Optional:-->
+               <bsvc:Allow_Meals>${Worker_Edit_Options_Data.Allow_Meals}</bsvc:Allow_Meals>
+               <!--Optional:-->
+               <bsvc:Change_Meal_Start_and_End_Times>${Worker_Edit_Options_Data.Change_Meal_Start_and_End_Times}</bsvc:Change_Meal_Start_and_End_Times>
+               <!--Optional:-->
+               <bsvc:Minimum_Meal_Duration>${Worker_Edit_Options_Data.Minimum_Meal_Duration}</bsvc:Minimum_Meal_Duration>
+               <!--Optional:-->
+               <bsvc:Maximum_Meal_Duration>${Worker_Edit_Options_Data.Maximum_Meal_Duration}</bsvc:Maximum_Meal_Duration>
+            </bsvc:Worker_Edit_Options_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Pattern_Schedule_Event_Data bsvc:ID="${Work_Schedule_Calendar_Data.Pattern_Schedule_Event_Data}">
+               <bsvc:Week_Number>${Pattern_Schedule_Event_Data.Week_Number}</bsvc:Week_Number>
+               <!--1 or more repetitions:-->
+               <bsvc:Day_of_the_Week_Reference bsvc:Descriptor="${Pattern_Schedule_Event_Data.Day_of_the_Week_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Day_of_the_Week_Reference.ID}">${Day_of_the_Week_Reference.ID}</bsvc:ID>
+               </bsvc:Day_of_the_Week_Reference>
+               <!--Optional:-->
+               <bsvc:Start_Time>${Pattern_Schedule_Event_Data.Start_Time}</bsvc:Start_Time>
+               <!--Optional:-->
+               <bsvc:End_Time>${Pattern_Schedule_Event_Data.End_Time}</bsvc:End_Time>
+               <!--Optional:-->
+               <bsvc:_24_Hour_Shift>${Pattern_Schedule_Event_Data._24_Hour_Shift}</bsvc:_24_Hour_Shift>
+               <!--Optional:-->
+               <bsvc:Meal_Start>${Pattern_Schedule_Event_Data.Meal_Start}</bsvc:Meal_Start>
+               <!--Optional:-->
+               <bsvc:Meal_End>${Pattern_Schedule_Event_Data.Meal_End}</bsvc:Meal_End>
+            </bsvc:Pattern_Schedule_Event_Data>
+         </bsvc:Work_Schedule_Calendar_Data>
+      </bsvc:Put_Work_Schedule_Calendar_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Work_Schedule_Calendar</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Put_Work_Schedule_Calendar ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:30</sys_created_on>
+        <sys_id>b4e429994f003300f94a00fe9310c7fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Work_Schedule_Calendar</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_b4e429994f003300f94a00fe9310c7fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:30</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

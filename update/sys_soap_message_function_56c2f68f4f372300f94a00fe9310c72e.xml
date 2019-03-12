@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Edit_Named_Professorship_Request bsvc:version="${Edit_Named_Professorship_Request}">
+         <!--Optional:-->
+         <bsvc:Business_Process_Parameters>
+            <!--Optional:-->
+            <bsvc:Auto_Complete>${Business_Process_Parameters.Auto_Complete}</bsvc:Auto_Complete>
+            <!--Optional:-->
+            <bsvc:Run_Now>${Business_Process_Parameters.Run_Now}</bsvc:Run_Now>
+            <!--Optional:-->
+            <bsvc:Comment_Data>
+               <!--Optional:-->
+               <bsvc:Comment>${Comment_Data.Comment}</bsvc:Comment>
+               <!--Optional:-->
+               <bsvc:Worker_Reference bsvc:Descriptor="${Comment_Data.Worker_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Worker_Reference.ID}">${Worker_Reference.ID}</bsvc:ID>
+               </bsvc:Worker_Reference>
+            </bsvc:Comment_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Business_Process_Attachment_Data>
+               <bsvc:File_Name>${Business_Process_Attachment_Data.File_Name}</bsvc:File_Name>
+               <!--Optional:-->
+               <bsvc:Event_Attachment_Description>${Business_Process_Attachment_Data.Event_Attachment_Description}</bsvc:Event_Attachment_Description>
+               <!--Optional:-->
+               <bsvc:Event_Attachment_Category_Reference bsvc:Descriptor="${Business_Process_Attachment_Data.Event_Attachment_Category_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Event_Attachment_Category_Reference.ID}">${Event_Attachment_Category_Reference.ID}</bsvc:ID>
+               </bsvc:Event_Attachment_Category_Reference>
+               <!--Optional:-->
+               <bsvc:File>cid:992831610248</bsvc:File>
+               <!--Optional:-->
+               <bsvc:Content_Type>${Business_Process_Attachment_Data.Content_Type}</bsvc:Content_Type>
+            </bsvc:Business_Process_Attachment_Data>
+         </bsvc:Business_Process_Parameters>
+         <bsvc:Edit_Named_Professorship_Data>
+            <bsvc:Named_Professorship_Reference bsvc:Descriptor="${Edit_Named_Professorship_Data.Named_Professorship_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Named_Professorship_Reference.ID}">${Named_Professorship_Reference.ID}</bsvc:ID>
+            </bsvc:Named_Professorship_Reference>
+            <bsvc:Effective_Date>${Edit_Named_Professorship_Data.Effective_Date}</bsvc:Effective_Date>
+            <bsvc:Reason_Reference bsvc:Descriptor="${Edit_Named_Professorship_Data.Reason_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Reason_Reference.ID}">${Reason_Reference.ID}</bsvc:ID>
+            </bsvc:Reason_Reference>
+            <!--Optional:-->
+            <bsvc:Include_Code_in_Display_Name>${Edit_Named_Professorship_Data.Include_Code_in_Display_Name}</bsvc:Include_Code_in_Display_Name>
+            <!--Optional:-->
+            <bsvc:Initially_Available_Date>${Edit_Named_Professorship_Data.Initially_Available_Date}</bsvc:Initially_Available_Date>
+            <!--Optional:-->
+            <bsvc:On_Hold_Date>${Edit_Named_Professorship_Data.On_Hold_Date}</bsvc:On_Hold_Date>
+            <!--Optional:-->
+            <bsvc:Discontinued_Date>${Edit_Named_Professorship_Data.Discontinued_Date}</bsvc:Discontinued_Date>
+            <bsvc:Named_Professorship_Snapshot_Data>
+               <bsvc:Gift_Reference bsvc:Descriptor="${Named_Professorship_Snapshot_Data.Gift_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Gift_Reference.ID}">${Gift_Reference.ID}</bsvc:ID>
+               </bsvc:Gift_Reference>
+               <bsvc:Professorship_Name>${Named_Professorship_Snapshot_Data.Professorship_Name}</bsvc:Professorship_Name>
+               <bsvc:Named_Professorship_Title>${Named_Professorship_Snapshot_Data.Named_Professorship_Title}</bsvc:Named_Professorship_Title>
+               <bsvc:Academic_Unit_for_Named_Professorship_Reference bsvc:Descriptor="${Named_Professorship_Snapshot_Data.Academic_Unit_for_Named_Professorship_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Academic_Unit_for_Named_Professorship_Reference.ID}">${Academic_Unit_for_Named_Professorship_Reference.ID}</bsvc:ID>
+               </bsvc:Academic_Unit_for_Named_Professorship_Reference>
+               <!--Optional:-->
+               <bsvc:Term_Limits>${Named_Professorship_Snapshot_Data.Term_Limits}</bsvc:Term_Limits>
+               <!--Optional:-->
+               <bsvc:Appointment_Restrictions>${Named_Professorship_Snapshot_Data.Appointment_Restrictions}</bsvc:Appointment_Restrictions>
+            </bsvc:Named_Professorship_Snapshot_Data>
+         </bsvc:Edit_Named_Professorship_Data>
+      </bsvc:Edit_Named_Professorship_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Edit_Named_Professorship</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Edit_Named_Professorship ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:31</sys_created_on>
+        <sys_id>56c2f68f4f372300f94a00fe9310c72e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Edit_Named_Professorship</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_56c2f68f4f372300f94a00fe9310c72e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:31</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

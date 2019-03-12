@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Update_Safety_Incident_Request bsvc:version="${Update_Safety_Incident_Request}">
+         <!--Optional:-->
+         <bsvc:Business_Process_Parameters>
+            <!--Optional:-->
+            <bsvc:Auto_Complete>${Business_Process_Parameters.Auto_Complete}</bsvc:Auto_Complete>
+            <!--Optional:-->
+            <bsvc:Run_Now>${Business_Process_Parameters.Run_Now}</bsvc:Run_Now>
+            <!--Optional:-->
+            <bsvc:Comment_Data>
+               <!--Optional:-->
+               <bsvc:Comment>${Comment_Data.Comment}</bsvc:Comment>
+               <!--Optional:-->
+               <bsvc:Worker_Reference bsvc:Descriptor="${Comment_Data.Worker_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Worker_Reference.ID}">${Worker_Reference.ID}</bsvc:ID>
+               </bsvc:Worker_Reference>
+            </bsvc:Comment_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Business_Process_Attachment_Data>
+               <bsvc:File_Name>${Business_Process_Attachment_Data.File_Name}</bsvc:File_Name>
+               <!--Optional:-->
+               <bsvc:Event_Attachment_Description>${Business_Process_Attachment_Data.Event_Attachment_Description}</bsvc:Event_Attachment_Description>
+               <!--Optional:-->
+               <bsvc:Event_Attachment_Category_Reference bsvc:Descriptor="${Business_Process_Attachment_Data.Event_Attachment_Category_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Event_Attachment_Category_Reference.ID}">${Event_Attachment_Category_Reference.ID}</bsvc:ID>
+               </bsvc:Event_Attachment_Category_Reference>
+               <!--Optional:-->
+               <bsvc:File>cid:1423148076328</bsvc:File>
+               <!--Optional:-->
+               <bsvc:Content_Type>${Business_Process_Attachment_Data.Content_Type}</bsvc:Content_Type>
+            </bsvc:Business_Process_Attachment_Data>
+         </bsvc:Business_Process_Parameters>
+         <bsvc:Update_Safety_Incident_Data>
+            <bsvc:Safety_Incident_Reference bsvc:Descriptor="${Update_Safety_Incident_Data.Safety_Incident_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Safety_Incident_Reference.ID}">${Safety_Incident_Reference.ID}</bsvc:ID>
+            </bsvc:Safety_Incident_Reference>
+            <bsvc:Safety_Incident_Data>
+               <!--Optional:-->
+               <bsvc:Safety_Incident_Reference_ID>${Safety_Incident_Data.Safety_Incident_Reference_ID}</bsvc:Safety_Incident_Reference_ID>
+               <!--Optional:-->
+               <bsvc:Status_Reference bsvc:Descriptor="${Safety_Incident_Data.Status_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Status_Reference.ID}">${Status_Reference.ID}</bsvc:ID>
+               </bsvc:Status_Reference>
+               <bsvc:Incident_Date_and_Time>${Safety_Incident_Data.Incident_Date_and_Time}</bsvc:Incident_Date_and_Time>
+               <!--Optional:-->
+               <bsvc:Notification_Date_and_Time>${Safety_Incident_Data.Notification_Date_and_Time}</bsvc:Notification_Date_and_Time>
+               <bsvc:Location_Reference bsvc:Descriptor="${Safety_Incident_Data.Location_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Location_Reference.ID}">${Location_Reference.ID}</bsvc:ID>
+               </bsvc:Location_Reference>
+               <!--Optional:-->
+               <bsvc:Reported_By_Worker_Reference bsvc:Descriptor="${Safety_Incident_Data.Reported_By_Worker_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Reported_By_Worker_Reference.ID}">${Reported_By_Worker_Reference.ID}</bsvc:ID>
+               </bsvc:Reported_By_Worker_Reference>
+               <!--Optional:-->
+               <bsvc:Reported_To_Worker_Reference bsvc:Descriptor="${Safety_Incident_Data.Reported_To_Worker_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Reported_To_Worker_Reference.ID}">${Reported_To_Worker_Reference.ID}</bsvc:ID>
+               </bsvc:Reported_To_Worker_Reference>
+               <!--Optional:-->
+               <bsvc:Supervised_By_Worker_Reference bsvc:Descriptor="${Safety_Incident_Data.Supervised_By_Worker_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Supervised_By_Worker_Reference.ID}">${Supervised_By_Worker_Reference.ID}</bsvc:ID>
+               </bsvc:Supervised_By_Worker_Reference>
+               <!--Optional:-->
+               <bsvc:Safety_Incident_Type_Reference bsvc:Descriptor="${Safety_Incident_Data.Safety_Incident_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Safety_Incident_Type_Reference.ID}">${Safety_Incident_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Safety_Incident_Type_Reference>
+               <!--Optional:-->
+               <bsvc:Safety_Incident_Location_Reference bsvc:Descriptor="${Safety_Incident_Data.Safety_Incident_Location_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Safety_Incident_Location_Reference.ID}">${Safety_Incident_Location_Reference.ID}</bsvc:ID>
+               </bsvc:Safety_Incident_Location_Reference>
+               <!--Optional:-->
+               <bsvc:Incident_Summary>${Safety_Incident_Data.Incident_Summary}</bsvc:Incident_Summary>
+               <!--Zero or more repetitions:-->
+               <bsvc:Note_Data>
+                  <!--Optional:-->
+                  <bsvc:Note_Date>${Note_Data.Note_Date}</bsvc:Note_Date>
+                  <!--Optional:-->
+                  <bsvc:Note_Subject>${Note_Data.Note_Subject}</bsvc:Note_Subject>
+                  <!--Optional:-->
+                  <bsvc:Note_Content>${Note_Data.Note_Content}</bsvc:Note_Content>
+                  <!--Optional:-->
+                  <bsvc:Is_Witness_Note>${Note_Data.Is_Witness_Note}</bsvc:Is_Witness_Note>
+               </bsvc:Note_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:File_Data>
+                  <!--Optional:-->
+                  <bsvc:Safety_Incident_File_Attachment_Reference bsvc:Descriptor="${File_Data.Safety_Incident_File_Attachment_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Safety_Incident_File_Attachment_Reference.ID}">${Safety_Incident_File_Attachment_Reference.ID}</bsvc:ID>
+                  </bsvc:Safety_Incident_File_Attachment_Reference>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:File_Attachment_Data>
+                     <!--Optional:-->
+                     <bsvc:ID>${File_Attachment_Data.ID}</bsvc:ID>
+                     <bsvc:Filename>${File_Attachment_Data.Filename}</bsvc:Filename>
+                     <bsvc:File_Content>cid:31251828332</bsvc:File_Content>
+                     <!--Optional:-->
+                     <bsvc:Mime_Type_Reference bsvc:Descriptor="${File_Attachment_Data.Mime_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Mime_Type_Reference.ID}">${Mime_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Mime_Type_Reference>
+                     <!--Optional:-->
+                     <bsvc:Comment>${File_Attachment_Data.Comment}</bsvc:Comment>
+                  </bsvc:File_Attachment_Data>
+               </bsvc:File_Data>
+               <!--Zero or more repetitions:-->
+               <bsvc:Involved_Party_Data>
+                  <!--Optional:-->
+                  <bsvc:Involved_Party_Worker_Reference bsvc:Descriptor="${Involved_Party_Data.Involved_Party_Worker_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Involved_Party_Worker_Reference.ID}">${Involved_Party_Worker_Reference.ID}</bsvc:ID>
+                  </bsvc:Involved_Party_Worker_Reference>
+                  <!--Optional:-->
+                  <bsvc:Involved_Party_Non-Worker_First_Name>${Involved_Party_Data.Involved_Party_Non-Worker_First_Name}</bsvc:Involved_Party_Non-Worker_First_Name>
+                  <!--Optional:-->
+                  <bsvc:Involved_Party_Non-Worker_Last_Name>${Involved_Party_Data.Involved_Party_Non-Worker_Last_Name}</bsvc:Involved_Party_Non-Worker_Last_Name>
+                  <!--Optional:-->
+                  <bsvc:Involved_Party_Non-Worker_Phone_Number>${Involved_Party_Data.Involved_Party_Non-Worker_Phone_Number}</bsvc:Involved_Party_Non-Worker_Phone_Number>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Organization_Reference bsvc:Descriptor="${Involved_Party_Data.Organization_Reference}">
+                     <!--Zero or more repetitions:-->
+                     <bsvc:ID bsvc:type="${Organization_Reference.ID}">${Organization_Reference.ID}</bsvc:ID>
+                  </bsvc:Organization_Reference>
+                  <!--Optional:-->
+                  <bsvc:Employee_Description_of_Incident>${Involved_Party_Data.Employee_Description_of_Incident}</bsvc:Employee_Description_of_Incident>
+                  <!--Optional:-->
+                  <bsvc:Nature_of_Injury_Illness_Data>
+                     <!--Optional:-->
+                     <bsvc:Time_Arrived_at_Work>${Nature_of_Injury_Illness_Data.Time_Arrived_at_Work}</bsvc:Time_Arrived_at_Work>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Nature_Reference bsvc:Descriptor="${Nature_of_Injury_Illness_Data.Injury_Illness_Nature_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Injury_Illness_Nature_Reference.ID}">${Injury_Illness_Nature_Reference.ID}</bsvc:ID>
+                     </bsvc:Injury_Illness_Nature_Reference>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Body_Part_Reference bsvc:Descriptor="${Nature_of_Injury_Illness_Data.Injury_Illness_Body_Part_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Injury_Illness_Body_Part_Reference.ID}">${Injury_Illness_Body_Part_Reference.ID}</bsvc:ID>
+                     </bsvc:Injury_Illness_Body_Part_Reference>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Source_Reference bsvc:Descriptor="${Nature_of_Injury_Illness_Data.Injury_Illness_Source_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Injury_Illness_Source_Reference.ID}">${Injury_Illness_Source_Reference.ID}</bsvc:ID>
+                     </bsvc:Injury_Illness_Source_Reference>
+                     <!--Optional:-->
+                     <bsvc:Object_or_Substance>${Nature_of_Injury_Illness_Data.Object_or_Substance}</bsvc:Object_or_Substance>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Work_Related>${Nature_of_Injury_Illness_Data.Injury_Illness_Work_Related}</bsvc:Injury_Illness_Work_Related>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Privacy_Case>${Nature_of_Injury_Illness_Data.Injury_Illness_Privacy_Case}</bsvc:Injury_Illness_Privacy_Case>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Sent_Home>${Nature_of_Injury_Illness_Data.Injury_Illness_Sent_Home}</bsvc:Injury_Illness_Sent_Home>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Severity_Reference bsvc:Descriptor="${Nature_of_Injury_Illness_Data.Injury_Illness_Severity_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Injury_Illness_Severity_Reference.ID}">${Injury_Illness_Severity_Reference.ID}</bsvc:ID>
+                     </bsvc:Injury_Illness_Severity_Reference>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Treatment_Required>${Nature_of_Injury_Illness_Data.Injury_Illness_Treatment_Required}</bsvc:Injury_Illness_Treatment_Required>
+                     <!--Optional:-->
+                     <bsvc:Treatment_Description>${Nature_of_Injury_Illness_Data.Treatment_Description}</bsvc:Treatment_Description>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Affected_Party_Died>${Nature_of_Injury_Illness_Data.Injury_Illness_Affected_Party_Died}</bsvc:Injury_Illness_Affected_Party_Died>
+                     <!--Optional:-->
+                     <bsvc:Date_of_Death>${Nature_of_Injury_Illness_Data.Date_of_Death}</bsvc:Date_of_Death>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Treatment_Disposition_Data>
+                        <bsvc:Health_Treatment_Type_Reference bsvc:Descriptor="${Treatment_Disposition_Data.Health_Treatment_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Health_Treatment_Type_Reference.ID}">${Health_Treatment_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:Health_Treatment_Type_Reference>
+                        <bsvc:Health_Treatment_Date>${Treatment_Disposition_Data.Health_Treatment_Date}</bsvc:Health_Treatment_Date>
+                        <bsvc:Health_Facility_Reference bsvc:Descriptor="${Treatment_Disposition_Data.Health_Facility_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Health_Facility_Reference.ID}">${Health_Facility_Reference.ID}</bsvc:ID>
+                        </bsvc:Health_Facility_Reference>
+                        <bsvc:Health_Worker_Reference bsvc:Descriptor="${Treatment_Disposition_Data.Health_Worker_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Health_Worker_Reference.ID}">${Health_Worker_Reference.ID}</bsvc:ID>
+                        </bsvc:Health_Worker_Reference>
+                     </bsvc:Treatment_Disposition_Data>
+                  </bsvc:Nature_of_Injury_Illness_Data>
+                  <!--Optional:-->
+                  <bsvc:Report_Details_Data>
+                     <!--Optional:-->
+                     <bsvc:Government_Reportable>${Report_Details_Data.Government_Reportable}</bsvc:Government_Reportable>
+                     <!--Optional:-->
+                     <bsvc:Case_Number>${Report_Details_Data.Case_Number}</bsvc:Case_Number>
+                     <!--Optional:-->
+                     <bsvc:Claim_Removed_Date>${Report_Details_Data.Claim_Removed_Date}</bsvc:Claim_Removed_Date>
+                     <!--Optional:-->
+                     <bsvc:Injury_Illness_Type_Reference bsvc:Descriptor="${Report_Details_Data.Injury_Illness_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Injury_Illness_Type_Reference.ID}">${Injury_Illness_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Injury_Illness_Type_Reference>
+                     <!--Optional:-->
+                     <bsvc:Specific_Work_Area>${Report_Details_Data.Specific_Work_Area}</bsvc:Specific_Work_Area>
+                     <!--Optional:-->
+                     <bsvc:Investigation_Due_Date>${Report_Details_Data.Investigation_Due_Date}</bsvc:Investigation_Due_Date>
+                     <!--Optional:-->
+                     <bsvc:Worker_Comp_Legal_Claim_Number>${Report_Details_Data.Worker_Comp_Legal_Claim_Number}</bsvc:Worker_Comp_Legal_Claim_Number>
+                     <!--Optional:-->
+                     <bsvc:Claim_Administrator_Code>${Report_Details_Data.Claim_Administrator_Code}</bsvc:Claim_Administrator_Code>
+                     <!--Optional:-->
+                     <bsvc:Worker_Prior_Activity>${Report_Details_Data.Worker_Prior_Activity}</bsvc:Worker_Prior_Activity>
+                     <!--Optional:-->
+                     <bsvc:What_Happened>${Report_Details_Data.What_Happened}</bsvc:What_Happened>
+                     <!--Optional:-->
+                     <bsvc:Preventative_Measures>${Report_Details_Data.Preventative_Measures}</bsvc:Preventative_Measures>
+                  </bsvc:Report_Details_Data>
+                  <!--Optional:-->
+                  <bsvc:Time_Lost_Data>
+                     <!--Optional:-->
+                     <bsvc:Full_Day_Lost>${Time_Lost_Data.Full_Day_Lost}</bsvc:Full_Day_Lost>
+                     <!--Optional:-->
+                     <bsvc:Job_Restrictions>${Time_Lost_Data.Job_Restrictions}</bsvc:Job_Restrictions>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Time_Away_Data>
+                        <bsvc:Safety_Incident_Time_Away_Type_Reference bsvc:Descriptor="${Time_Away_Data.Safety_Incident_Time_Away_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Safety_Incident_Time_Away_Type_Reference.ID}">${Safety_Incident_Time_Away_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:Safety_Incident_Time_Away_Type_Reference>
+                        <bsvc:Start_Date>${Time_Away_Data.Start_Date}</bsvc:Start_Date>
+                        <!--Optional:-->
+                        <bsvc:Proposed_End_Date>${Time_Away_Data.Proposed_End_Date}</bsvc:Proposed_End_Date>
+                        <!--Optional:-->
+                        <bsvc:Actual_End_Date>${Time_Away_Data.Actual_End_Date}</bsvc:Actual_End_Date>
+                     </bsvc:Time_Away_Data>
+                  </bsvc:Time_Lost_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Involved_Party_Note_Data>
+                     <!--Optional:-->
+                     <bsvc:Note_Date>${Involved_Party_Note_Data.Note_Date}</bsvc:Note_Date>
+                     <!--Optional:-->
+                     <bsvc:Note_Subject>${Involved_Party_Note_Data.Note_Subject}</bsvc:Note_Subject>
+                     <!--Optional:-->
+                     <bsvc:Note_Content>${Involved_Party_Note_Data.Note_Content}</bsvc:Note_Content>
+                     <!--Optional:-->
+                     <bsvc:Is_Witness_Note>${Involved_Party_Note_Data.Is_Witness_Note}</bsvc:Is_Witness_Note>
+                  </bsvc:Involved_Party_Note_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Involved_Party_File_Data>
+                     <!--Optional:-->
+                     <bsvc:Safety_Incident_File_Attachment_Reference bsvc:Descriptor="${Involved_Party_File_Data.Safety_Incident_File_Attachment_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Safety_Incident_File_Attachment_Reference.ID}">${Safety_Incident_File_Attachment_Reference.ID}</bsvc:ID>
+                     </bsvc:Safety_Incident_File_Attachment_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:File_Attachment_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${File_Attachment_Data.ID}</bsvc:ID>
+                        <bsvc:Filename>${File_Attachment_Data.Filename}</bsvc:Filename>
+                        <bsvc:File_Content>cid:396586201986</bsvc:File_Content>
+                        <!--Optional:-->
+                        <bsvc:Mime_Type_Reference bsvc:Descriptor="${File_Attachment_Data.Mime_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Mime_Type_Reference.ID}">${Mime_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:Mime_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comment>${File_Attachment_Data.Comment}</bsvc:Comment>
+                     </bsvc:File_Attachment_Data>
+                  </bsvc:Involved_Party_File_Data>
+               </bsvc:Involved_Party_Data>
+            </bsvc:Safety_Incident_Data>
+         </bsvc:Update_Safety_Incident_Data>
+      </bsvc:Update_Safety_Incident_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Update_Safety_Incident</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>asdas [ Update_Safety_Incident ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="asdas">dcd4e5994f003300f94a00fe9310c7b5</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 19:20:44</sys_created_on>
+        <sys_id>8cf42d994f003300f94a00fe9310c705</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update_Safety_Incident</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_8cf42d994f003300f94a00fe9310c705</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 19:20:44</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

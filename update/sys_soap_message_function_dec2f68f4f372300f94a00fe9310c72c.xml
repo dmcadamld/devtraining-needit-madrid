@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Dependent_Request bsvc:Add_Only="${Put_Dependent_Request}" bsvc:version="${Put_Dependent_Request}">
+         <!--Optional:-->
+         <bsvc:Dependent_Reference bsvc:Descriptor="${Put_Dependent_Request.Dependent_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Dependent_Reference.ID}">${Dependent_Reference.ID}</bsvc:ID>
+         </bsvc:Dependent_Reference>
+         <bsvc:Dependent_Data>
+            <!--Optional:-->
+            <bsvc:Dependent_ID>${Dependent_Data.Dependent_ID}</bsvc:Dependent_ID>
+            <!--Optional:-->
+            <bsvc:Employee_Reference bsvc:Descriptor="${Dependent_Data.Employee_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Employee_Reference.ID}">${Employee_Reference.ID}</bsvc:ID>
+            </bsvc:Employee_Reference>
+            <!--Optional:-->
+            <bsvc:Existing_Related_Person_Reference bsvc:Descriptor="${Dependent_Data.Existing_Related_Person_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Existing_Related_Person_Reference.ID}">${Existing_Related_Person_Reference.ID}</bsvc:ID>
+            </bsvc:Existing_Related_Person_Reference>
+            <!--Optional:-->
+            <bsvc:Related_Person_Relationship_Reference bsvc:Descriptor="${Dependent_Data.Related_Person_Relationship_Reference}">
+               <!--Zero or more repetitions:-->
+               <bsvc:ID bsvc:type="${Related_Person_Relationship_Reference.ID}">${Related_Person_Relationship_Reference.ID}</bsvc:ID>
+            </bsvc:Related_Person_Relationship_Reference>
+            <!--Optional:-->
+            <bsvc:Use_Employee_Address>${Dependent_Data.Use_Employee_Address}</bsvc:Use_Employee_Address>
+            <!--Optional:-->
+            <bsvc:Use_Employee_Phone>${Dependent_Data.Use_Employee_Phone}</bsvc:Use_Employee_Phone>
+            <!--Optional:-->
+            <bsvc:Irrevocable>${Dependent_Data.Irrevocable}</bsvc:Irrevocable>
+            <!--Optional:-->
+            <bsvc:Dependent_Personal_Information_Data>
+               <!--Optional:-->
+               <bsvc:Person_Name_Data>
+                  <!--Optional:-->
+                  <bsvc:Legal_Name_Data>
+                     <bsvc:Name_Detail_Data bsvc:Formatted_Name="${Legal_Name_Data.Name_Detail_Data}" bsvc:Reporting_Name="${Legal_Name_Data.Name_Detail_Data}">
+                        <bsvc:Country_Reference bsvc:Descriptor="${Name_Detail_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Prefix_Data>
+                           <!--Optional:-->
+                           <bsvc:Title_Reference bsvc:Descriptor="${Prefix_Data.Title_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Title_Reference.ID}">${Title_Reference.ID}</bsvc:ID>
+                           </bsvc:Title_Reference>
+                           <!--Optional:-->
+                           <bsvc:Title_Descriptor>${Prefix_Data.Title_Descriptor}</bsvc:Title_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Salutation_Reference bsvc:Descriptor="${Prefix_Data.Salutation_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Salutation_Reference.ID}">${Salutation_Reference.ID}</bsvc:ID>
+                           </bsvc:Salutation_Reference>
+                        </bsvc:Prefix_Data>
+                        <!--Optional:-->
+                        <bsvc:First_Name>${Name_Detail_Data.First_Name}</bsvc:First_Name>
+                        <!--Optional:-->
+                        <bsvc:Middle_Name>${Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                        <!--Optional:-->
+                        <bsvc:Last_Name>${Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Secondary_Last_Name>${Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Tertiary_Last_Name>${Name_Detail_Data.Tertiary_Last_Name}</bsvc:Tertiary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Local_Name_Detail_Data bsvc:Local_Name="${Name_Detail_Data.Local_Name_Detail_Data}" bsvc:Local_Script="${Name_Detail_Data.Local_Name_Detail_Data}">
+                           <!--Optional:-->
+                           <bsvc:First_Name>${Local_Name_Detail_Data.First_Name}</bsvc:First_Name>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name>${Local_Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                           <!--Optional:-->
+                           <bsvc:Last_Name>${Local_Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name>${Local_Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                           <!--Optional:-->
+                           <bsvc:First_Name_2>${Local_Name_Detail_Data.First_Name_2}</bsvc:First_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name_2>${Local_Name_Detail_Data.Middle_Name_2}</bsvc:Middle_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Last_Name_2>${Local_Name_Detail_Data.Last_Name_2}</bsvc:Last_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name_2>${Local_Name_Detail_Data.Secondary_Last_Name_2}</bsvc:Secondary_Last_Name_2>
+                        </bsvc:Local_Name_Detail_Data>
+                        <!--Optional:-->
+                        <bsvc:Suffix_Data>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Social_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Social_Suffix_Reference.ID}">${Social_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Social_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Descriptor>${Suffix_Data.Social_Suffix_Descriptor}</bsvc:Social_Suffix_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Academic_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Academic_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Academic_Suffix_Reference.ID}">${Academic_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Academic_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Hereditary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Hereditary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Hereditary_Suffix_Reference.ID}">${Hereditary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Hereditary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Honorary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Honorary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Honorary_Suffix_Reference.ID}">${Honorary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Honorary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Professional_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Professional_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Professional_Suffix_Reference.ID}">${Professional_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Professional_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Religious_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Religious_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Religious_Suffix_Reference.ID}">${Religious_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Religious_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Royal_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Royal_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Royal_Suffix_Reference.ID}">${Royal_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Royal_Suffix_Reference>
+                        </bsvc:Suffix_Data>
+                        <!--Optional:-->
+                        <bsvc:Full_Name_for_Singapore_and_Malaysia>${Name_Detail_Data.Full_Name_for_Singapore_and_Malaysia}</bsvc:Full_Name_for_Singapore_and_Malaysia>
+                     </bsvc:Name_Detail_Data>
+                  </bsvc:Legal_Name_Data>
+                  <!--Optional:-->
+                  <bsvc:Preferred_Name_Data>
+                     <bsvc:Name_Detail_Data bsvc:Formatted_Name="${Preferred_Name_Data.Name_Detail_Data}" bsvc:Reporting_Name="${Preferred_Name_Data.Name_Detail_Data}">
+                        <bsvc:Country_Reference bsvc:Descriptor="${Name_Detail_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Prefix_Data>
+                           <!--Optional:-->
+                           <bsvc:Title_Reference bsvc:Descriptor="${Prefix_Data.Title_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Title_Reference.ID}">${Title_Reference.ID}</bsvc:ID>
+                           </bsvc:Title_Reference>
+                           <!--Optional:-->
+                           <bsvc:Title_Descriptor>${Prefix_Data.Title_Descriptor}</bsvc:Title_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Salutation_Reference bsvc:Descriptor="${Prefix_Data.Salutation_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Salutation_Reference.ID}">${Salutation_Reference.ID}</bsvc:ID>
+                           </bsvc:Salutation_Reference>
+                        </bsvc:Prefix_Data>
+                        <!--Optional:-->
+                        <bsvc:First_Name>${Name_Detail_Data.First_Name}</bsvc:First_Name>
+                        <!--Optional:-->
+                        <bsvc:Middle_Name>${Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                        <!--Optional:-->
+                        <bsvc:Last_Name>${Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Secondary_Last_Name>${Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Tertiary_Last_Name>${Name_Detail_Data.Tertiary_Last_Name}</bsvc:Tertiary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Local_Name_Detail_Data bsvc:Local_Name="${Name_Detail_Data.Local_Name_Detail_Data}" bsvc:Local_Script="${Name_Detail_Data.Local_Name_Detail_Data}">
+                           <!--Optional:-->
+                           <bsvc:First_Name>${Local_Name_Detail_Data.First_Name}</bsvc:First_Name>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name>${Local_Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                           <!--Optional:-->
+                           <bsvc:Last_Name>${Local_Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name>${Local_Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                           <!--Optional:-->
+                           <bsvc:First_Name_2>${Local_Name_Detail_Data.First_Name_2}</bsvc:First_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name_2>${Local_Name_Detail_Data.Middle_Name_2}</bsvc:Middle_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Last_Name_2>${Local_Name_Detail_Data.Last_Name_2}</bsvc:Last_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name_2>${Local_Name_Detail_Data.Secondary_Last_Name_2}</bsvc:Secondary_Last_Name_2>
+                        </bsvc:Local_Name_Detail_Data>
+                        <!--Optional:-->
+                        <bsvc:Suffix_Data>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Social_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Social_Suffix_Reference.ID}">${Social_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Social_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Descriptor>${Suffix_Data.Social_Suffix_Descriptor}</bsvc:Social_Suffix_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Academic_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Academic_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Academic_Suffix_Reference.ID}">${Academic_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Academic_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Hereditary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Hereditary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Hereditary_Suffix_Reference.ID}">${Hereditary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Hereditary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Honorary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Honorary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Honorary_Suffix_Reference.ID}">${Honorary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Honorary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Professional_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Professional_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Professional_Suffix_Reference.ID}">${Professional_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Professional_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Religious_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Religious_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Religious_Suffix_Reference.ID}">${Religious_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Religious_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Royal_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Royal_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Royal_Suffix_Reference.ID}">${Royal_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Royal_Suffix_Reference>
+                        </bsvc:Suffix_Data>
+                        <!--Optional:-->
+                        <bsvc:Full_Name_for_Singapore_and_Malaysia>${Name_Detail_Data.Full_Name_for_Singapore_and_Malaysia}</bsvc:Full_Name_for_Singapore_and_Malaysia>
+                     </bsvc:Name_Detail_Data>
+                  </bsvc:Preferred_Name_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Additional_Name_Data>
+                     <bsvc:Name_Detail_Data bsvc:Formatted_Name="${Additional_Name_Data.Name_Detail_Data}" bsvc:Reporting_Name="${Additional_Name_Data.Name_Detail_Data}">
+                        <bsvc:Country_Reference bsvc:Descriptor="${Name_Detail_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Prefix_Data>
+                           <!--Optional:-->
+                           <bsvc:Title_Reference bsvc:Descriptor="${Prefix_Data.Title_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Title_Reference.ID}">${Title_Reference.ID}</bsvc:ID>
+                           </bsvc:Title_Reference>
+                           <!--Optional:-->
+                           <bsvc:Title_Descriptor>${Prefix_Data.Title_Descriptor}</bsvc:Title_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Salutation_Reference bsvc:Descriptor="${Prefix_Data.Salutation_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Salutation_Reference.ID}">${Salutation_Reference.ID}</bsvc:ID>
+                           </bsvc:Salutation_Reference>
+                        </bsvc:Prefix_Data>
+                        <!--Optional:-->
+                        <bsvc:First_Name>${Name_Detail_Data.First_Name}</bsvc:First_Name>
+                        <!--Optional:-->
+                        <bsvc:Middle_Name>${Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                        <!--Optional:-->
+                        <bsvc:Last_Name>${Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Secondary_Last_Name>${Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Tertiary_Last_Name>${Name_Detail_Data.Tertiary_Last_Name}</bsvc:Tertiary_Last_Name>
+                        <!--Optional:-->
+                        <bsvc:Local_Name_Detail_Data bsvc:Local_Name="${Name_Detail_Data.Local_Name_Detail_Data}" bsvc:Local_Script="${Name_Detail_Data.Local_Name_Detail_Data}">
+                           <!--Optional:-->
+                           <bsvc:First_Name>${Local_Name_Detail_Data.First_Name}</bsvc:First_Name>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name>${Local_Name_Detail_Data.Middle_Name}</bsvc:Middle_Name>
+                           <!--Optional:-->
+                           <bsvc:Last_Name>${Local_Name_Detail_Data.Last_Name}</bsvc:Last_Name>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name>${Local_Name_Detail_Data.Secondary_Last_Name}</bsvc:Secondary_Last_Name>
+                           <!--Optional:-->
+                           <bsvc:First_Name_2>${Local_Name_Detail_Data.First_Name_2}</bsvc:First_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Middle_Name_2>${Local_Name_Detail_Data.Middle_Name_2}</bsvc:Middle_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Last_Name_2>${Local_Name_Detail_Data.Last_Name_2}</bsvc:Last_Name_2>
+                           <!--Optional:-->
+                           <bsvc:Secondary_Last_Name_2>${Local_Name_Detail_Data.Secondary_Last_Name_2}</bsvc:Secondary_Last_Name_2>
+                        </bsvc:Local_Name_Detail_Data>
+                        <!--Optional:-->
+                        <bsvc:Suffix_Data>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Social_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Social_Suffix_Reference.ID}">${Social_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Social_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Social_Suffix_Descriptor>${Suffix_Data.Social_Suffix_Descriptor}</bsvc:Social_Suffix_Descriptor>
+                           <!--Optional:-->
+                           <bsvc:Academic_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Academic_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Academic_Suffix_Reference.ID}">${Academic_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Academic_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Hereditary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Hereditary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Hereditary_Suffix_Reference.ID}">${Hereditary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Hereditary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Honorary_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Honorary_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Honorary_Suffix_Reference.ID}">${Honorary_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Honorary_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Professional_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Professional_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Professional_Suffix_Reference.ID}">${Professional_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Professional_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Religious_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Religious_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Religious_Suffix_Reference.ID}">${Religious_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Religious_Suffix_Reference>
+                           <!--Optional:-->
+                           <bsvc:Royal_Suffix_Reference bsvc:Descriptor="${Suffix_Data.Royal_Suffix_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Royal_Suffix_Reference.ID}">${Royal_Suffix_Reference.ID}</bsvc:ID>
+                           </bsvc:Royal_Suffix_Reference>
+                        </bsvc:Suffix_Data>
+                        <!--Optional:-->
+                        <bsvc:Full_Name_for_Singapore_and_Malaysia>${Name_Detail_Data.Full_Name_for_Singapore_and_Malaysia}</bsvc:Full_Name_for_Singapore_and_Malaysia>
+                     </bsvc:Name_Detail_Data>
+                     <!--Optional:-->
+                     <bsvc:Name_Type_Reference bsvc:Descriptor="${Additional_Name_Data.Name_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Name_Type_Reference.ID}">${Name_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Name_Type_Reference>
+                  </bsvc:Additional_Name_Data>
+               </bsvc:Person_Name_Data>
+               <!--Optional:-->
+               <bsvc:Contact_Information_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Address_Data bsvc:Formatted_Address="${Contact_Information_Data.Address_Data}" bsvc:Address_Format_Type="${Contact_Information_Data.Address_Data}" bsvc:Defaulted_Business_Site_Address="${Contact_Information_Data.Address_Data}" bsvc:Delete="${Contact_Information_Data.Address_Data}" bsvc:Do_Not_Replace_All="${Contact_Information_Data.Address_Data}" bsvc:Effective_Date="${Contact_Information_Data.Address_Data}">
+                     <!--Optional:-->
+                     <bsvc:Country_Reference bsvc:Descriptor="${Address_Data.Country_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                     </bsvc:Country_Reference>
+                     <!--Optional:-->
+                     <bsvc:Last_Modified>${Address_Data.Last_Modified}</bsvc:Last_Modified>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Address_Line_Data bsvc:Descriptor="${Address_Data.Address_Line_Data}" bsvc:Type="${Address_Data.Address_Line_Data}">${Address_Data.Address_Line_Data}</bsvc:Address_Line_Data>
+                     <!--Optional:-->
+                     <bsvc:Municipality>${Address_Data.Municipality}</bsvc:Municipality>
+                     <!--Optional:-->
+                     <bsvc:Country_City_Reference bsvc:Descriptor="${Address_Data.Country_City_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Country_City_Reference.ID}" bsvc:parent_id="${Country_City_Reference.ID}" bsvc:parent_type="${Country_City_Reference.ID}">${Country_City_Reference.ID}</bsvc:ID>
+                     </bsvc:Country_City_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Submunicipality_Data bsvc:Address_Component_Name="${Address_Data.Submunicipality_Data}" bsvc:Type="${Address_Data.Submunicipality_Data}">${Address_Data.Submunicipality_Data}</bsvc:Submunicipality_Data>
+                     <!--Optional:-->
+                     <bsvc:Country_Region_Reference bsvc:Descriptor="${Address_Data.Country_Region_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Country_Region_Reference.ID}">${Country_Region_Reference.ID}</bsvc:ID>
+                     </bsvc:Country_Region_Reference>
+                     <!--Optional:-->
+                     <bsvc:Country_Region_Descriptor>${Address_Data.Country_Region_Descriptor}</bsvc:Country_Region_Descriptor>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Subregion_Data bsvc:Descriptor="${Address_Data.Subregion_Data}" bsvc:Type="${Address_Data.Subregion_Data}">${Address_Data.Subregion_Data}</bsvc:Subregion_Data>
+                     <!--Optional:-->
+                     <bsvc:Postal_Code>${Address_Data.Postal_Code}</bsvc:Postal_Code>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Usage_Data bsvc:Public="${Address_Data.Usage_Data}">
+                        <!--1 or more repetitions:-->
+                        <bsvc:Type_Data bsvc:Primary="${Usage_Data.Type_Data}">
+                           <bsvc:Type_Reference bsvc:Descriptor="${Type_Data.Type_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+                           </bsvc:Type_Reference>
+                        </bsvc:Type_Data>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Reference bsvc:Descriptor="${Usage_Data.Use_For_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Reference.ID}">${Use_For_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="${Usage_Data.Use_For_Tenanted_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Tenanted_Reference.ID}">${Use_For_Tenanted_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Tenanted_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comments>${Usage_Data.Comments}</bsvc:Comments>
+                     </bsvc:Usage_Data>
+                     <!--Optional:-->
+                     <bsvc:Number_of_Days>${Address_Data.Number_of_Days}</bsvc:Number_of_Days>
+                     <!--Optional:-->
+                     <bsvc:Municipality_Local>${Address_Data.Municipality_Local}</bsvc:Municipality_Local>
+                     <!--Optional:-->
+                     <bsvc:Address_Reference bsvc:Descriptor="${Address_Data.Address_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Address_Reference.ID}">${Address_Reference.ID}</bsvc:ID>
+                     </bsvc:Address_Reference>
+                     <!--Optional:-->
+                     <bsvc:Address_ID>${Address_Data.Address_ID}</bsvc:Address_ID>
+                  </bsvc:Address_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Phone_Data bsvc:Area_Code="${Contact_Information_Data.Phone_Data}" bsvc:Tenant_Formatted_Phone="${Contact_Information_Data.Phone_Data}" bsvc:International_Formatted_Phone="${Contact_Information_Data.Phone_Data}" bsvc:Delete="${Contact_Information_Data.Phone_Data}" bsvc:Do_Not_Replace_All="${Contact_Information_Data.Phone_Data}">
+                     <!--Optional:-->
+                     <bsvc:Country_ISO_Code>${Phone_Data.Country_ISO_Code}</bsvc:Country_ISO_Code>
+                     <!--Optional:-->
+                     <bsvc:International_Phone_Code>${Phone_Data.International_Phone_Code}</bsvc:International_Phone_Code>
+                     <!--Optional:-->
+                     <bsvc:Phone_Number>${Phone_Data.Phone_Number}</bsvc:Phone_Number>
+                     <!--Optional:-->
+                     <bsvc:Phone_Extension>${Phone_Data.Phone_Extension}</bsvc:Phone_Extension>
+                     <!--Optional:-->
+                     <bsvc:Phone_Device_Type_Reference bsvc:Descriptor="${Phone_Data.Phone_Device_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Phone_Device_Type_Reference.ID}">${Phone_Device_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Phone_Device_Type_Reference>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Usage_Data bsvc:Public="${Phone_Data.Usage_Data}">
+                        <!--1 or more repetitions:-->
+                        <bsvc:Type_Data bsvc:Primary="${Usage_Data.Type_Data}">
+                           <bsvc:Type_Reference bsvc:Descriptor="${Type_Data.Type_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+                           </bsvc:Type_Reference>
+                        </bsvc:Type_Data>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Reference bsvc:Descriptor="${Usage_Data.Use_For_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Reference.ID}">${Use_For_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="${Usage_Data.Use_For_Tenanted_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Tenanted_Reference.ID}">${Use_For_Tenanted_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Tenanted_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comments>${Usage_Data.Comments}</bsvc:Comments>
+                     </bsvc:Usage_Data>
+                     <!--Optional:-->
+                     <bsvc:Phone_Reference bsvc:Descriptor="${Phone_Data.Phone_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Phone_Reference.ID}">${Phone_Reference.ID}</bsvc:ID>
+                     </bsvc:Phone_Reference>
+                     <!--Optional:-->
+                     <bsvc:ID>${Phone_Data.ID}</bsvc:ID>
+                  </bsvc:Phone_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Email_Address_Data bsvc:Delete="${Contact_Information_Data.Email_Address_Data}" bsvc:Do_Not_Replace_All="${Contact_Information_Data.Email_Address_Data}">
+                     <!--Optional:-->
+                     <bsvc:Email_Address>${Email_Address_Data.Email_Address}</bsvc:Email_Address>
+                     <!--Optional:-->
+                     <bsvc:Email_Comment>${Email_Address_Data.Email_Comment}</bsvc:Email_Comment>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Usage_Data bsvc:Public="${Email_Address_Data.Usage_Data}">
+                        <!--1 or more repetitions:-->
+                        <bsvc:Type_Data bsvc:Primary="${Usage_Data.Type_Data}">
+                           <bsvc:Type_Reference bsvc:Descriptor="${Type_Data.Type_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+                           </bsvc:Type_Reference>
+                        </bsvc:Type_Data>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Reference bsvc:Descriptor="${Usage_Data.Use_For_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Reference.ID}">${Use_For_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="${Usage_Data.Use_For_Tenanted_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Tenanted_Reference.ID}">${Use_For_Tenanted_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Tenanted_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comments>${Usage_Data.Comments}</bsvc:Comments>
+                     </bsvc:Usage_Data>
+                     <!--Optional:-->
+                     <bsvc:Email_Reference bsvc:Descriptor="${Email_Address_Data.Email_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Email_Reference.ID}">${Email_Reference.ID}</bsvc:ID>
+                     </bsvc:Email_Reference>
+                     <!--Optional:-->
+                     <bsvc:ID>${Email_Address_Data.ID}</bsvc:ID>
+                  </bsvc:Email_Address_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Instant_Messenger_Data bsvc:Delete="${Contact_Information_Data.Instant_Messenger_Data}" bsvc:Do_Not_Replace_All="${Contact_Information_Data.Instant_Messenger_Data}">
+                     <!--Optional:-->
+                     <bsvc:Instant_Messenger_Address>${Instant_Messenger_Data.Instant_Messenger_Address}</bsvc:Instant_Messenger_Address>
+                     <!--Optional:-->
+                     <bsvc:Instant_Messenger_Type_Reference bsvc:Descriptor="${Instant_Messenger_Data.Instant_Messenger_Type_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Instant_Messenger_Type_Reference.ID}">${Instant_Messenger_Type_Reference.ID}</bsvc:ID>
+                     </bsvc:Instant_Messenger_Type_Reference>
+                     <!--Optional:-->
+                     <bsvc:Instant_Messenger_Comment>${Instant_Messenger_Data.Instant_Messenger_Comment}</bsvc:Instant_Messenger_Comment>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Usage_Data bsvc:Public="${Instant_Messenger_Data.Usage_Data}">
+                        <!--1 or more repetitions:-->
+                        <bsvc:Type_Data bsvc:Primary="${Usage_Data.Type_Data}">
+                           <bsvc:Type_Reference bsvc:Descriptor="${Type_Data.Type_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+                           </bsvc:Type_Reference>
+                        </bsvc:Type_Data>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Reference bsvc:Descriptor="${Usage_Data.Use_For_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Reference.ID}">${Use_For_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="${Usage_Data.Use_For_Tenanted_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Tenanted_Reference.ID}">${Use_For_Tenanted_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Tenanted_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comments>${Usage_Data.Comments}</bsvc:Comments>
+                     </bsvc:Usage_Data>
+                     <!--Optional:-->
+                     <bsvc:Instant_Messenger_Reference bsvc:Descriptor="${Instant_Messenger_Data.Instant_Messenger_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Instant_Messenger_Reference.ID}">${Instant_Messenger_Reference.ID}</bsvc:ID>
+                     </bsvc:Instant_Messenger_Reference>
+                     <!--Optional:-->
+                     <bsvc:ID>${Instant_Messenger_Data.ID}</bsvc:ID>
+                  </bsvc:Instant_Messenger_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Web_Address_Data bsvc:Delete="${Contact_Information_Data.Web_Address_Data}" bsvc:Do_Not_Replace_All="${Contact_Information_Data.Web_Address_Data}">
+                     <!--Optional:-->
+                     <bsvc:Web_Address>${Web_Address_Data.Web_Address}</bsvc:Web_Address>
+                     <!--Optional:-->
+                     <bsvc:Web_Address_Comment>${Web_Address_Data.Web_Address_Comment}</bsvc:Web_Address_Comment>
+                     <!--Zero or more repetitions:-->
+                     <bsvc:Usage_Data bsvc:Public="${Web_Address_Data.Usage_Data}">
+                        <!--1 or more repetitions:-->
+                        <bsvc:Type_Data bsvc:Primary="${Usage_Data.Type_Data}">
+                           <bsvc:Type_Reference bsvc:Descriptor="${Type_Data.Type_Reference}">
+                              <!--Zero or more repetitions:-->
+                              <bsvc:ID bsvc:type="${Type_Reference.ID}">${Type_Reference.ID}</bsvc:ID>
+                           </bsvc:Type_Reference>
+                        </bsvc:Type_Data>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Reference bsvc:Descriptor="${Usage_Data.Use_For_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Reference.ID}">${Use_For_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Reference>
+                        <!--Zero or more repetitions:-->
+                        <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="${Usage_Data.Use_For_Tenanted_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Use_For_Tenanted_Reference.ID}">${Use_For_Tenanted_Reference.ID}</bsvc:ID>
+                        </bsvc:Use_For_Tenanted_Reference>
+                        <!--Optional:-->
+                        <bsvc:Comments>${Usage_Data.Comments}</bsvc:Comments>
+                     </bsvc:Usage_Data>
+                     <!--Optional:-->
+                     <bsvc:Web_Address_Reference bsvc:Descriptor="${Web_Address_Data.Web_Address_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Web_Address_Reference.ID}">${Web_Address_Reference.ID}</bsvc:ID>
+                     </bsvc:Web_Address_Reference>
+                     <!--Optional:-->
+                     <bsvc:ID>${Web_Address_Data.ID}</bsvc:ID>
+                  </bsvc:Web_Address_Data>
+               </bsvc:Contact_Information_Data>
+               <!--Optional:-->
+               <bsvc:Person_Identification_Data>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:National_ID bsvc:Delete="${Person_Identification_Data.National_ID}">
+                     <!--Optional:-->
+                     <bsvc:National_ID_Reference bsvc:Descriptor="${National_ID.National_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${National_ID_Reference.ID}">${National_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:National_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:National_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${National_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${National_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Reference bsvc:Descriptor="${National_ID_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${National_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${National_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Verification_Date>${National_ID_Data.Verification_Date}</bsvc:Verification_Date>
+                        <!--Optional:-->
+                        <bsvc:Series>${National_ID_Data.Series}</bsvc:Series>
+                        <!--Optional:-->
+                        <bsvc:Issuing_Agency>${National_ID_Data.Issuing_Agency}</bsvc:Issuing_Agency>
+                        <!--Optional:-->
+                        <bsvc:Verified_By_Reference bsvc:Descriptor="${National_ID_Data.Verified_By_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Verified_By_Reference.ID}">${Verified_By_Reference.ID}</bsvc:ID>
+                        </bsvc:Verified_By_Reference>
+                     </bsvc:National_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:National_ID_Shared_Reference bsvc:Descriptor="${National_ID.National_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${National_ID_Shared_Reference.ID}">${National_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:National_ID_Shared_Reference>
+                  </bsvc:National_ID>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Government_ID bsvc:Delete="${Person_Identification_Data.Government_ID}">
+                     <!--Optional:-->
+                     <bsvc:Government_ID_Reference bsvc:Descriptor="${Government_ID.Government_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Government_ID_Reference.ID}">${Government_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:Government_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:Government_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${Government_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${Government_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Reference bsvc:Descriptor="${Government_ID_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${Government_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${Government_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Verification_Date>${Government_ID_Data.Verification_Date}</bsvc:Verification_Date>
+                        <!--Optional:-->
+                        <bsvc:Verified_by_Reference bsvc:Descriptor="${Government_ID_Data.Verified_by_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Verified_by_Reference.ID}">${Verified_by_Reference.ID}</bsvc:ID>
+                        </bsvc:Verified_by_Reference>
+                     </bsvc:Government_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:Government_ID_Shared_Reference bsvc:Descriptor="${Government_ID.Government_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Government_ID_Shared_Reference.ID}">${Government_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:Government_ID_Shared_Reference>
+                  </bsvc:Government_ID>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Visa_ID bsvc:Delete="${Person_Identification_Data.Visa_ID}">
+                     <!--Optional:-->
+                     <bsvc:Visa_ID_Reference bsvc:Descriptor="${Visa_ID.Visa_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Visa_ID_Reference.ID}">${Visa_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:Visa_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:Visa_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${Visa_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${Visa_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Reference bsvc:Descriptor="${Visa_ID_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${Visa_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${Visa_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Verification_Date>${Visa_ID_Data.Verification_Date}</bsvc:Verification_Date>
+                        <!--Optional:-->
+                        <bsvc:Verified_By_Reference bsvc:Descriptor="${Visa_ID_Data.Verified_By_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Verified_By_Reference.ID}">${Verified_By_Reference.ID}</bsvc:ID>
+                        </bsvc:Verified_By_Reference>
+                     </bsvc:Visa_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:Visa_ID_Shared_Reference bsvc:Descriptor="${Visa_ID.Visa_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Visa_ID_Shared_Reference.ID}">${Visa_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:Visa_ID_Shared_Reference>
+                  </bsvc:Visa_ID>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Passport_ID bsvc:Delete="${Person_Identification_Data.Passport_ID}">
+                     <!--Optional:-->
+                     <bsvc:Passport_ID_Reference bsvc:Descriptor="${Passport_ID.Passport_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Passport_ID_Reference.ID}">${Passport_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:Passport_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:Passport_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${Passport_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${Passport_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Reference bsvc:Descriptor="${Passport_ID_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${Passport_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${Passport_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Verification_Date>${Passport_ID_Data.Verification_Date}</bsvc:Verification_Date>
+                        <!--Optional:-->
+                        <bsvc:Verified_By_Reference bsvc:Descriptor="${Passport_ID_Data.Verified_By_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Verified_By_Reference.ID}">${Verified_By_Reference.ID}</bsvc:ID>
+                        </bsvc:Verified_By_Reference>
+                     </bsvc:Passport_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:Passport_ID_Shared_Reference bsvc:Descriptor="${Passport_ID.Passport_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Passport_ID_Shared_Reference.ID}">${Passport_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:Passport_ID_Shared_Reference>
+                  </bsvc:Passport_ID>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:License_ID bsvc:Delete="${Person_Identification_Data.License_ID}">
+                     <!--Optional:-->
+                     <bsvc:License_ID_Reference bsvc:Descriptor="${License_ID.License_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${License_ID_Reference.ID}">${License_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:License_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:License_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${License_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${License_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Reference bsvc:Descriptor="${License_ID_Data.Country_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Reference.ID}">${Country_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Region_Reference bsvc:Descriptor="${License_ID_Data.Country_Region_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Country_Region_Reference.ID}">${Country_Region_Reference.ID}</bsvc:ID>
+                        </bsvc:Country_Region_Reference>
+                        <!--Optional:-->
+                        <bsvc:Country_Region_Descriptor>${License_ID_Data.Country_Region_Descriptor}</bsvc:Country_Region_Descriptor>
+                        <!--Optional:-->
+                        <bsvc:Authority_Reference bsvc:Descriptor="${License_ID_Data.Authority_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Authority_Reference.ID}">${Authority_Reference.ID}</bsvc:ID>
+                        </bsvc:Authority_Reference>
+                        <!--Optional:-->
+                        <bsvc:License_Class>${License_ID_Data.License_Class}</bsvc:License_Class>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${License_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${License_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Verification_Date>${License_ID_Data.Verification_Date}</bsvc:Verification_Date>
+                        <!--Optional:-->
+                        <bsvc:Verified_By_Reference bsvc:Descriptor="${License_ID_Data.Verified_By_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Verified_By_Reference.ID}">${Verified_By_Reference.ID}</bsvc:ID>
+                        </bsvc:Verified_By_Reference>
+                     </bsvc:License_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:License_ID_Shared_Reference bsvc:Descriptor="${License_ID.License_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${License_ID_Shared_Reference.ID}">${License_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:License_ID_Shared_Reference>
+                  </bsvc:License_ID>
+                  <!--Zero or more repetitions:-->
+                  <bsvc:Custom_ID bsvc:Delete="${Person_Identification_Data.Custom_ID}">
+                     <!--Optional:-->
+                     <bsvc:Custom_ID_Reference bsvc:Descriptor="${Custom_ID.Custom_ID_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Custom_ID_Reference.ID}">${Custom_ID_Reference.ID}</bsvc:ID>
+                     </bsvc:Custom_ID_Reference>
+                     <!--Optional:-->
+                     <bsvc:Custom_ID_Data>
+                        <!--Optional:-->
+                        <bsvc:ID>${Custom_ID_Data.ID}</bsvc:ID>
+                        <!--Optional:-->
+                        <bsvc:ID_Type_Reference bsvc:Descriptor="${Custom_ID_Data.ID_Type_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${ID_Type_Reference.ID}">${ID_Type_Reference.ID}</bsvc:ID>
+                        </bsvc:ID_Type_Reference>
+                        <!--Optional:-->
+                        <bsvc:Issued_Date>${Custom_ID_Data.Issued_Date}</bsvc:Issued_Date>
+                        <!--Optional:-->
+                        <bsvc:Expiration_Date>${Custom_ID_Data.Expiration_Date}</bsvc:Expiration_Date>
+                        <!--Optional:-->
+                        <bsvc:Organization_ID_Reference bsvc:Descriptor="${Custom_ID_Data.Organization_ID_Reference}">
+                           <!--Zero or more repetitions:-->
+                           <bsvc:ID bsvc:type="${Organization_ID_Reference.ID}">${Organization_ID_Reference.ID}</bsvc:ID>
+                        </bsvc:Organization_ID_Reference>
+                        <!--Optional:-->
+                        <bsvc:Custom_Description>${Custom_ID_Data.Custom_Description}</bsvc:Custom_Description>
+                     </bsvc:Custom_ID_Data>
+                     <!--Optional:-->
+                     <bsvc:Custom_ID_Shared_Reference bsvc:Descriptor="${Custom_ID.Custom_ID_Shared_Reference}">
+                        <!--Zero or more repetitions:-->
+                        <bsvc:ID bsvc:type="${Custom_ID_Shared_Reference.ID}">${Custom_ID_Shared_Reference.ID}</bsvc:ID>
+                     </bsvc:Custom_ID_Shared_Reference>
+                  </bsvc:Custom_ID>
+               </bsvc:Person_Identification_Data>
+               <!--Optional:-->
+               <bsvc:Date_of_Birth>${Dependent_Personal_Information_Data.Date_of_Birth}</bsvc:Date_of_Birth>
+               <!--Optional:-->
+               <bsvc:Date_of_Death>${Dependent_Personal_Information_Data.Date_of_Death}</bsvc:Date_of_Death>
+               <!--Optional:-->
+               <bsvc:Gender_Reference bsvc:Descriptor="${Dependent_Personal_Information_Data.Gender_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Gender_Reference.ID}">${Gender_Reference.ID}</bsvc:ID>
+               </bsvc:Gender_Reference>
+               <!--Optional:-->
+               <bsvc:Uses_Tobacco>${Dependent_Personal_Information_Data.Uses_Tobacco}</bsvc:Uses_Tobacco>
+               <!--Optional:-->
+               <bsvc:Full-Time_Student>${Dependent_Personal_Information_Data.Full-Time_Student}</bsvc:Full-Time_Student>
+               <!--Optional:-->
+               <bsvc:Student_Status_Start_Date>${Dependent_Personal_Information_Data.Student_Status_Start_Date}</bsvc:Student_Status_Start_Date>
+               <!--Optional:-->
+               <bsvc:Student_Status_End_Date>${Dependent_Personal_Information_Data.Student_Status_End_Date}</bsvc:Student_Status_End_Date>
+               <!--Optional:-->
+               <bsvc:Disabled>${Dependent_Personal_Information_Data.Disabled}</bsvc:Disabled>
+               <!--Optional:-->
+               <bsvc:Inactive_Date>${Dependent_Personal_Information_Data.Inactive_Date}</bsvc:Inactive_Date>
+            </bsvc:Dependent_Personal_Information_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Court_Order_Replacement_Data>
+               <bsvc:Benefit_Coverage_Type_Reference bsvc:Descriptor="${Court_Order_Replacement_Data.Benefit_Coverage_Type_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Benefit_Coverage_Type_Reference.ID}">${Benefit_Coverage_Type_Reference.ID}</bsvc:ID>
+               </bsvc:Benefit_Coverage_Type_Reference>
+               <bsvc:Start_Date>${Court_Order_Replacement_Data.Start_Date}</bsvc:Start_Date>
+               <bsvc:End_Date>${Court_Order_Replacement_Data.End_Date}</bsvc:End_Date>
+            </bsvc:Court_Order_Replacement_Data>
+         </bsvc:Dependent_Data>
+      </bsvc:Put_Dependent_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Dependent</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Put_Dependent ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:31</sys_created_on>
+        <sys_id>dec2f68f4f372300f94a00fe9310c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Dependent</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_dec2f68f4f372300f94a00fe9310c72c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:31</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

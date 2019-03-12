@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>idm_person_from_wd</internal_name>
+        <label_cache>[{"name":"{{action.wd_legalfirstname}}","label":"action➛WD_LegalFirstName","type":"action","ref":""},{"name":"{{action.wd_legallastname}}","label":"action➛WD_LegalLastName","type":"action","ref":""},{"name":"{{action.wd_preferredname}}","label":"action➛WD_PreferredName","type":"action","ref":""},{"name":"{{action.wd_homephone}}","label":"action➛WD_HomePhone","type":"action","ref":""},{"name":"{{action.wd_homeemailaddress}}","label":"action➛WD_HomeEmailAddress","type":"action","ref":""},{"name":"{{action.wd_homeaddress}}","label":"action➛WD_HomeAddress","type":"action","ref":""},{"name":"{{action.wd_homecity}}","label":"action➛WD_HomeCity","type":"action","ref":""},{"name":"{{action.wd_homestate}}","label":"action➛WD_HomeState","type":"action","ref":""},{"name":"{{action.wd_homezipcode}}","label":"action➛WD_HomeZipCode","type":"action","ref":""}]</label_cache>
+        <latest_snapshot>fbd41c454f403300f94a00fe9310c7b8</latest_snapshot>
+        <master_snapshot>61a418454f403300f94a00fe9310c710</master_snapshot>
+        <name>IDM_Person_From_WD</name>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:46:11</sys_created_on>
+        <sys_id>1c7318054f403300f94a00fe9310c706</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>IDM_Person_From_WD</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_1c7318054f403300f94a00fe9310c706</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 20:11:01</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c7318054f403300f94a00fe9310c706"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1c7318054f403300f94a00fe9310c706"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c7318054f403300f94a00fe9310c706"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_city</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>aa7414454f403300f94a00fe9310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homecity}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_emailaddress</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>a67414454f403300f94a00fe9310c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homeemailaddress}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_legalfirstname</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>227414454f403300f94a00fe9310c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_legalfirstname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_legallastname</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>e27414454f403300f94a00fe9310c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_legallastname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_legalname</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>ae7414454f403300f94a00fe9310c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_legalfirstname}} {{action.wd_legallastname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_phonenumber</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>6e7414454f403300f94a00fe9310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homephone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_preferredname</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>267414454f403300f94a00fe9310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_preferredname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_state</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>627414454f403300f94a00fe9310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homestate}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_streetaddress</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>e67414454f403300f94a00fe9310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homeaddress}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>idm_zipcode</field>
+        <id>1c7318054f403300f94a00fe9310c706</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-05 18:50:42</sys_created_on>
+        <sys_id>6a7414454f403300f94a00fe9310c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-05 18:50:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1c7318054f403300f94a00fe9310c706</table>
+        <value>{{action.wd_homezipcode}}</value>
+    </sys_element_mapping>
+</record_update>

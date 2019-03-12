@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="INSERT_OR_UPDATE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+   <soapenv:Header>
+      <bsvc:Workday_Common_Header>
+         <!--Optional:-->
+         <bsvc:Include_Reference_Descriptors_In_Response>${Workday_Common_Header.Include_Reference_Descriptors_In_Response}</bsvc:Include_Reference_Descriptors_In_Response>
+      </bsvc:Workday_Common_Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <bsvc:Put_Job_Family_Request bsvc:Add_Only="${Put_Job_Family_Request}" bsvc:version="${Put_Job_Family_Request}">
+         <!--Optional:-->
+         <bsvc:Job_Family_Reference bsvc:Descriptor="${Put_Job_Family_Request.Job_Family_Reference}">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="${Job_Family_Reference.ID}">${Job_Family_Reference.ID}</bsvc:ID>
+         </bsvc:Job_Family_Reference>
+         <!--Optional:-->
+         <bsvc:Job_Family_Data>
+            <!--Optional:-->
+            <bsvc:ID>${Job_Family_Data.ID}</bsvc:ID>
+            <!--Optional:-->
+            <bsvc:Effective_Date>${Job_Family_Data.Effective_Date}</bsvc:Effective_Date>
+            <!--Optional:-->
+            <bsvc:Name>${Job_Family_Data.Name}</bsvc:Name>
+            <!--Optional:-->
+            <bsvc:Summary>${Job_Family_Data.Summary}</bsvc:Summary>
+            <!--Optional:-->
+            <bsvc:Inactive>${Job_Family_Data.Inactive}</bsvc:Inactive>
+            <!--Zero or more repetitions:-->
+            <bsvc:Job_Profile_Data bsvc:Delete="${Job_Family_Data.Job_Profile_Data}">
+               <!--Optional:-->
+               <bsvc:Job_Profile_Reference bsvc:Descriptor="${Job_Profile_Data.Job_Profile_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Job_Profile_Reference.ID}">${Job_Profile_Reference.ID}</bsvc:ID>
+               </bsvc:Job_Profile_Reference>
+            </bsvc:Job_Profile_Data>
+            <!--Zero or more repetitions:-->
+            <bsvc:Integration_Field_Override_Data>
+               <!--Optional:-->
+               <bsvc:Field_Reference bsvc:Descriptor="${Integration_Field_Override_Data.Field_Reference}">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="${Field_Reference.ID}" bsvc:parent_id="${Field_Reference.ID}" bsvc:parent_type="${Field_Reference.ID}">${Field_Reference.ID}</bsvc:ID>
+               </bsvc:Field_Reference>
+               <!--Optional:-->
+               <bsvc:Value>${Integration_Field_Override_Data.Value}</bsvc:Value>
+            </bsvc:Integration_Field_Override_Data>
+         </bsvc:Job_Family_Data>
+      </bsvc:Put_Job_Family_Request>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>Put_Job_Family</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>WD Employee Pull [ Put_Job_Family ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>https://wd5-impl-services1.workday.com/ccx/service/loandepot1/Human_Resources/v31.0</soap_endpoint>
+        <soap_message display_value="WD Employee Pull">6ea2328f4f372300f94a00fe9310c76b</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 01:14:24</sys_created_on>
+        <sys_id>f4c2b68f4f372300f94a00fe9310c77e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Put_Job_Family</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_soap_message_function_f4c2b68f4f372300f94a00fe9310c77e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 01:14:24</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+</record_update>

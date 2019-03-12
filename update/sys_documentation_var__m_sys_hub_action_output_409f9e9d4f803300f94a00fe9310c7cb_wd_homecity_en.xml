@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="wd_homecity" label="WD_HomeCity" language="en" table="var__m_sys_hub_action_output_409f9e9d4f803300f94a00fe9310c7cb">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>wd_homecity</element>
+            <help/>
+            <hint/>
+            <label>WD_HomeCity</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_409f9e9d4f803300f94a00fe9310c7cb</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-06 23:36:53</sys_created_on>
+            <sys_id>dc9fde9d4f803300f94a00fe9310c74a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>WD_HomeCity</sys_name>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_409f9e9d4f803300f94a00fe9310c7cb_wd_homecity_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-06 23:36:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
