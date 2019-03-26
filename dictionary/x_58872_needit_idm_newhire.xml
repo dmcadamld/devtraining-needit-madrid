@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="IDM_NewHire" max_length="40" name="x_58872_needit_idm_newhire" type="collection">
+        <element label="IDMGuid" max_length="50" name="idmguid" type="string"/>
+        <element default="0" label="RetryCount" max_length="3" name="retrycount" type="integer"/>
+        <element label="WD_ID" max_length="50" name="wd_id" type="string"/>
+    </element>
+</database>

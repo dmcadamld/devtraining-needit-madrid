@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>First attempt at a new hire workflow</description>
+        <internal_name>newhireflow</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛NeedIt Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit","column_name":"short_description"},{"name":"11ac7787-2b1e-4d9a-b55c-44c5545cc09f.email","label":"2.3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"Created_1.current","label":"Trigger➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference"},{"name":"Created_1.current.short_description","label":"Trigger➛NeedIt Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_58872_needit_needit","column_name":"short_description"},{"name":"35a59988-efa9-48c6-b8d0-3c739f2baafa.personguid","label":"1➛IDM_PersonGuid","type":"string","base_type":"string"},{"name":"41a5e829-11a8-4ec6-b1e2-b57f5a980182.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"41a5e829-11a8-4ec6-b1e2-b57f5a980182.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"a94255b6-49f1-4018-8661-b94b6bcb896f.record","label":"3.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"a94255b6-49f1-4018-8661-b94b6bcb896f.table_name","label":"3.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"001d769f-790f-4dcc-b36a-968a2ce85c88.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"001d769f-790f-4dcc-b36a-968a2ce85c88.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"d41c70fc-9111-4d23-a738-2b84721b1bef.record","label":"2.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"d41c70fc-9111-4d23-a738-2b84721b1bef.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"66727dc6-5678-42a6-b00a-62b99257e202.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"66727dc6-5678-42a6-b00a-62b99257e202.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"}]</label_cache>
+        <latest_snapshot>ae442bd74f903300f94a00fe9310c76c</latest_snapshot>
+        <master_snapshot>c13e321f4f103300f94a00fe9310c7e0</master_snapshot>
+        <name>NewHireFlow</name>
+        <outputs/>
+        <remote_trigger_id>063eb21f4f103300f94a00fe9310c734</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 17:05:16</sys_created_on>
+        <sys_id>d92cfe974f103300f94a00fe9310c76d</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>NewHireFlow</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_d92cfe974f103300f94a00fe9310c76d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-03-25 20:00:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d92cfe974f103300f94a00fe9310c76d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d92cfe974f103300f94a00fe9310c76d"/>
+</record_update>
