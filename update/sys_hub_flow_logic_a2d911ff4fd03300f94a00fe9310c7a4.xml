@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d2e6d93f4fd03300f94a00fe9310c78e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="IDM_CreatePersonFromWDEmployee">967cb69b4f103300f94a00fe9310c7c4</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.1</order>
+        <outputs_assigned>errorcode,errormessage</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id>7269ffc2-e5fd-40ff-830e-6b7af6b11eea</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 23:12:46</sys_created_on>
+        <sys_id>a2d911ff4fd03300f94a00fe9310c7a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_a2d911ff4fd03300f94a00fe9310c7a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 23:12:47</sys_updated_on>
+        <ui_id>876cf166-e06a-4135-910c-9a3b00b43f8d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a2d911ff4fd03300f94a00fe9310c7a4"/>
+    <sys_element_mapping action="delete_multiple" query="id=a2d911ff4fd03300f94a00fe9310c7a4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errorcode</field>
+        <id>a2d911ff4fd03300f94a00fe9310c7a4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 23:12:46</sys_created_on>
+        <sys_id>22d911ff4fd03300f94a00fe9310c7a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 23:12:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_967cb69b4f103300f94a00fe9310c7c4</table>
+        <value>{{8164c59d-ff4e-404a-8246-5c403dd63889.errorcode}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errormessage</field>
+        <id>a2d911ff4fd03300f94a00fe9310c7a4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 23:12:46</sys_created_on>
+        <sys_id>6ed911ff4fd03300f94a00fe9310c7a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 23:12:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_967cb69b4f103300f94a00fe9310c7c4</table>
+        <value>{{8164c59d-ff4e-404a-8246-5c403dd63889.errormessage}}</value>
+    </sys_element_mapping>
+</record_update>

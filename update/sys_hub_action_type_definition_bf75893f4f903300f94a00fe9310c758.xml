@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>increase_retry_count</internal_name>
+        <label_cache>[{"name":"{{action.record}}","label":"action➛value","type":"action","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].i}}","label":"step➛Script step➛i","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].in}}","label":"step➛Script step➛in","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].inc}}","label":"step➛Script step➛inc","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incr}}","label":"step➛Script step➛incr","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incre}}","label":"step➛Script step➛incre","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].increm}}","label":"step➛Script step➛increm","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].increme}}","label":"step➛Script step➛increme","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incremen}}","label":"step➛Script step➛incremen","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].increment}}","label":"step➛Script step➛increment","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incremente}}","label":"step➛Script step➛incremente","type":"step","ref":""},{"name":"{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incremented}}","label":"step➛Script step➛incremented","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>e547edfb4f143300f94a00fe9310c7ee</latest_snapshot>
+        <master_snapshot>472881f34fd03300f94a00fe9310c78a</master_snapshot>
+        <name>IDMNH Increase Retry Count</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 21:43:50</sys_created_on>
+        <sys_id>bf75893f4f903300f94a00fe9310c758</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>IDMNH Increase Retry Count</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_bf75893f4f903300f94a00fe9310c758</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:11:27</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=bf75893f4f903300f94a00fe9310c758"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bf75893f4f903300f94a00fe9310c758"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>bf75893f4f903300f94a00fe9310c758</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 22:38:18</sys_created_on>
+        <sys_id>a9f1157b4fd03300f94a00fe9310c7df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 22:38:18</sys_updated_on>
+        <value/>
+        <variable display_value="">e9f1157b4fd03300f94a00fe9310c7d6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bf75893f4f903300f94a00fe9310c758"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>incrementedvalue1</field>
+        <id>bf75893f4f903300f94a00fe9310c758</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 22:38:18</sys_created_on>
+        <sys_id>29f1157b4fd03300f94a00fe9310c7df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 22:38:18</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bf75893f4f903300f94a00fe9310c758</table>
+        <value>{{step[e4c25034-8e41-422b-9b13-df0279296d3a].incremented}}</value>
+    </sys_element_mapping>
+</record_update>

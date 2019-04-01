@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_sub_flow_instance">
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="IDM_CreateEmployeeFromWD">3c9c5cef4f143300f94a00fe9310c77a</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.2</order>
+        <parent_ui_id>72ec3a2b-a9bb-4fd4-a030-34f9278ee6ff</parent_ui_id>
+        <subflow display_value="IDM_CreatePersonFromWDEmployee">967cb69b4f103300f94a00fe9310c7c4</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 23:52:38</sys_created_on>
+        <sys_id>9ef2213b4f143300f94a00fe9310c744</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_sub_flow_instance_9ef2213b4f143300f94a00fe9310c744</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-03-27 18:31:16</sys_updated_on>
+        <ui_id>9718edfc-8045-4cac-9dfc-6cff7d572482</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ef2213b4f143300f94a00fe9310c744"/>
+    <sys_element_mapping action="delete_multiple" query="id=9ef2213b4f143300f94a00fe9310c744"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>employeeid</field>
+        <id>9ef2213b4f143300f94a00fe9310c744</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 23:52:38</sys_created_on>
+        <sys_id>16f2213b4f143300f94a00fe9310c74a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 23:52:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_967cb69b4f103300f94a00fe9310c7c4</table>
+        <value>{{Created or Updated_1.current.wd_id}}</value>
+    </sys_element_mapping>
+</record_update>

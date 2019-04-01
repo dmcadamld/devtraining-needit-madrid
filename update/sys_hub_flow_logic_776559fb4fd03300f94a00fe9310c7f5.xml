@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">336559fb4fd03300f94a00fe9310c7f4</block>
+        <comment/>
+        <connected_to>10e73807-6a56-43d9-9a76-19dc215be2d9</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="IDM_CreateEmployeeFromWD">3c9c5cef4f143300f94a00fe9310c77a</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2.6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>72ec3a2b-a9bb-4fd4-a030-34f9278ee6ff</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 22:53:28</sys_created_on>
+        <sys_id>776559fb4fd03300f94a00fe9310c7f5</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_776559fb4fd03300f94a00fe9310c7f5</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-03-27 18:31:17</sys_updated_on>
+        <ui_id>d2e4b9f4-85d0-4029-8924-f200db504430</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=776559fb4fd03300f94a00fe9310c7f5"/>
+</record_update>
